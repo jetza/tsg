@@ -1,18 +1,72 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
-const hankenGrotesk = Hanken_Grotesk({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-hanken",
+// Montserrat - za naslove i navigaciju
+const montserrat = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Montserrat-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-heading",
+// Hanken Grotesk - za body tekst
+const hankenGrotesk = localFont({
+  src: [
+    {
+      path: "../../public/fonts/HankenGrotesk-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/HankenGrotesk-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/HankenGrotesk-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/HankenGrotesk-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/HankenGrotesk-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-hanken",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="sr">
       <body
-        className={`${hankenGrotesk.variable} ${inter.variable} font-sans antialiased`}
+        className={`${montserrat.variable} ${hankenGrotesk.variable} font-sans antialiased`}
       >
         <div className="flex min-h-screen">
           <Sidebar />

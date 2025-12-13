@@ -16,6 +16,29 @@ body {
   font-feature-settings: "rlig" 1, "calt" 1;
 }
 
+/* Typography - Minimalist approach */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-weight: 300; /* Light weight for minimalist feel */
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-weight: 200; /* Extra light for main titles */
+}
+
+/* Navigation uses Montserrat Thin */
+nav,
+.menu-link {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-weight: 100;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -23,6 +46,6 @@ body {
 }
 
 /* Menu hover fill animation */
-.menu-hover-fill li:hover .menu-link {
-  background-size: 100% !important;
+.menu-link:hover {
+  background-size: 100% 100% !important;
 }

@@ -123,13 +123,6 @@ export default function Sidebar() {
   );
   const pathname = usePathname();
 
-  // CSS for hover effects that can't be done with inline styles
-  const hoverStyles = `
-    .menu-link:hover {
-      background-size: 100% 100% !important;
-    }
-  `;
-
   // Close all submenus when on home page or pages without submenus
   useEffect(() => {
     if (
@@ -219,7 +212,6 @@ export default function Sidebar() {
 
   return (
     <>
-      <style>{hoverStyles}</style>
       {/* Mobile menu button */}
       <button
         onClick={() => setIsOpen(!isOpen)}

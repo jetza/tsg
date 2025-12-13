@@ -36,7 +36,7 @@ export default function ONamaPage() {
             drugi.
           </p>
 
-          <div className="bg-primary-50 p-8 rounded-2xl my-8">
+          <div className="bg-primary-50 p-8 my-8">
             <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
               Naša vizija
             </h2>

@@ -21,7 +21,7 @@ export default function CrnaGoraZakoniPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Zakoni Crne Gore
             </h2>
@@ -59,7 +59,7 @@ export default function CrnaGoraZakoniPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Laws of Montenegro
             </h3>

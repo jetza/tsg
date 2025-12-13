@@ -26,7 +26,7 @@ export default function ObukaPCCrashPage() {
             saznati i specifičnosti primene programa.
           </p>
 
-          <div className="bg-primary-50 p-8 rounded-xl mt-8">
+          <div className="bg-primary-50 p-8 mt-8">
             <h2 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Šta je PC Crash?
             </h2>

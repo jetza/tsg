@@ -21,7 +21,7 @@ export default function XVSimpozijumPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               O Simpozijumu
             </h2>
@@ -101,7 +101,7 @@ export default function XVSimpozijumPage() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-primary-500 to-primary-300 p-6 rounded-lg text-white">
+              <div className="bg-white p-6 text-white">
                 <h3 className="text-2xl font-semibold mb-3">
                   Prijava za učešće
                 </h3>
@@ -116,7 +116,7 @@ export default function XVSimpozijumPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               About the Symposium
             </h3>

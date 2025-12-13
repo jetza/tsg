@@ -20,7 +20,7 @@ export default function EdukacijaPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Obuka za upotrebu programa PC Crash
             </h2>
@@ -30,7 +30,7 @@ export default function EdukacijaPage() {
               saznati i specifičnosti primene programa.
             </p>
 
-            <div className="bg-primary-50 p-6 rounded-xl mb-6">
+            <div className="bg-primary-50 p-6 mb-6">
               <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
                 Program obuke uključuje:
               </h3>
@@ -119,7 +119,7 @@ export default function EdukacijaPage() {
             </div>
           </div>
 
-          <div className="bg-primary-500 text-white p-8 rounded-2xl">
+          <div className="bg-primary-500 text-white p-8">
             <h3 className="text-2xl font-heading font-bold mb-4">
               Zainteresovani ste za obuku?
             </h3>
@@ -128,7 +128,7 @@ export default function EdukacijaPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-block px-8 py-3 bg-white text-primary-500 rounded-full font-semibold hover:bg-primary-50 transition-all"
+              className="inline-block px-8 py-3 bg-white text-primary-500 font-semibold hover:bg-primary-50 transition-all"
             >
               Kontakt
             </a>

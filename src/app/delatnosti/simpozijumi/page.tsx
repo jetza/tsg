@@ -31,7 +31,7 @@ export default function SimpozijumiPage() {
             </p>
           </section>
 
-          <div className="bg-primary-50 p-8 rounded-xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-xl font-heading font-semibold mb-4 text-primary-500">
               Teme simpozijuma:
             </h3>

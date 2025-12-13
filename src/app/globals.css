@@ -21,3 +21,8 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Menu hover fill animation */
+.menu-hover-fill li:hover .menu-link {
+  background-size: 100% !important;
+}

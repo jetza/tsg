@@ -58,7 +58,7 @@ export default function ZakonskaRegulativaPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all"
+              className="bg-white p-6 hover: transition-all"
             >
               <div className="flex items-start mb-4">
                 <svg
@@ -85,7 +85,7 @@ export default function ZakonskaRegulativaPage() {
                     <span>•</span>
                     <span>{doc.size}</span>
                   </div>
-                  <button className="inline-flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-400 transition-all">
+                  <button className="inline-flex items-center px-4 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]">
                     <svg
                       className="w-5 h-5 mr-2"
                       fill="none"
@@ -111,7 +111,7 @@ export default function ZakonskaRegulativaPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-12 bg-primary-50 p-8 rounded-2xl"
+          className="mt-12 bg-primary-50 p-8"
         >
           <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500">
             Potreban vam je određeni dokument?
@@ -122,7 +122,7 @@ export default function ZakonskaRegulativaPage() {
           </p>
           <a
             href="/kontakt"
-            className="inline-block px-6 py-3 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-400 transition-all"
+            className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
           >
             Kontaktirajte nas
           </a>

@@ -20,7 +20,7 @@ export default function ProjektiPage() {
           transition={{ delay: 0.2 }}
           className="prose prose-lg max-w-none"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg mb-8">
+          <div className="bg-white p-8 mb-8">
             <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
               TSG pruža usluge i projekte iz sledećih oblasti:
             </h2>
@@ -59,7 +59,7 @@ export default function ProjektiPage() {
             </ul>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <p className="text-lg text-gray-700">
               TSG je firma koja svoju osnovnu delatnost ostvaruje u oblasti
               bezbednosti saobraćaja, drugim rečima u oblasti zaštite ljudi i

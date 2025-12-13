@@ -22,7 +22,7 @@ export default function DokumentaPage() {
           className="space-y-6"
         >
           <Link href="/dokumenta/zakonska-regulativa">
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all cursor-pointer">
+            <div className="bg-white p-8 hover: transition-all cursor-pointer">
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
@@ -51,7 +51,7 @@ export default function DokumentaPage() {
             </div>
           </Link>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <div className="flex items-start">
               <svg
                 className="w-8 h-8 text-primary-400 mr-4 mt-1 flex-shrink-0"
@@ -77,7 +77,7 @@ export default function DokumentaPage() {
                 </p>
                 <Link
                   href="/registrovani-korisnici"
-                  className="inline-block px-6 py-3 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-400 transition-all"
+                  className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
                 >
                   Registruj se
                 </Link>

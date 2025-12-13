@@ -1,56 +1,33 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { motion } from"framer-motion";
+import Link from"next/link";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative h-screen flex items-center justify-center bg-white"
-      >
-        <div className="container mx-auto px-6 text-center">
-          <motion.h1
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-5xl md:text-7xl font-heading font-bold mb-6 text-primary-500"
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - Minimal */}
+      <section className="px-8 py-32 md:py-40">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-5xl mx-auto"
+        >
+          <h1 className="text-6xl md:text-8xl font-heading font-bold text-primary-500 mb-6 leading-tight">
+            Traffic Safety<br />Group
+          </h1>
+          <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-2xl">
+            Stručnjaci za saobraćajno-tehničke ekspertize
+          </p>
+          <Link
+            href="/kontakt"
+            className="inline-block text-xl border-2 border-primary-500 text-primary-500 px-8 py-4 hover:bg-primary-500 hover:text-white transition-colors"
           >
-            TSG Serbia
-          </motion.h1>
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-xl md:text-2xl mb-8 font-light text-gray-700"
-          >
-            Bezbednost saobraćaja - Traffic Safety Group
-          </motion.p>
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="flex gap-4 justify-center"
-          >
-            <Link
-              href="/delatnosti"
-              className="px-8 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
-            >
-              Naše usluge
-            </Link>
-            <Link
-              href="/kontakt"
-              className="px-8 py-3 border-2 border-[#546e7a] text-primary-500 font-semibold hover:bg-primary-500 hover:text-white transition-all"
-            >
-              Kontaktirajte nas
-            </Link>
-          </motion.div>
-        </div>
-      </motion.section>
+            Kontakt
+          </Link>
+        </motion.div>
+      </section>
 
       {/* About Section */}
       <section className="py-20 bg-white">
@@ -80,8 +57,8 @@ export default function HomePage() {
                 putevima&rdquo; i nekih od podzakonskih akata. Vodeći
                 prevoznici, sa preko 2,000 vozila učestvuju u našem projektu
                 podizanja nivoa bezbednosti u prevozu putnika. Organizujemo
-                stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali i
-                učestvujemo kao predavači na konferencijama koje organizuju
+                stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali
+                i učestvujemo kao predavači na konferencijama koje organizuju
                 Privredna komora Srbije, Saobraćajni fakultet u Beogradu, IRU
                 Academy iz Ženeve i drugi.
               </p>
@@ -104,7 +81,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white p-8 border-2 border-[#546e7a] hover:bg-primary-50 transition-colors"
+              className="bg-white p-8 hover: transition-shadow"
             >
               <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
                 Naši projekti
@@ -116,7 +93,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/delatnosti/projekti"
-                className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
+                className="inline-block px-6 py-2 bg-primary-400 text-white font-semibold hover:bg-primary-500 transition-colors"
               >
                 Pročitajte više
               </Link>
@@ -128,7 +105,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="bg-white p-8 border-2 border-[#546e7a] hover:bg-primary-50 transition-colors"
+              className="bg-white p-8 hover: transition-shadow"
             >
               <h3 className="text-2xl font-heading font-semibold mb-2 text-primary-500">
                 PC Crash obuka
@@ -143,7 +120,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/delatnosti/edukacija"
-                className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
+                className="inline-block px-6 py-2 bg-primary-400 text-white font-semibold hover:bg-primary-500 transition-colors"
               >
                 Pročitajte više
               </Link>
@@ -155,7 +132,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="bg-white p-8 border-2 border-[#546e7a] hover:bg-primary-50 transition-colors"
+              className="bg-white p-8 hover: transition-shadow"
             >
               <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
                 Zakonska regulativa
@@ -167,7 +144,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/dokumenta/zakonska-regulativa"
-                className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
+                className="inline-block px-6 py-2 bg-primary-400 text-white font-semibold hover:bg-primary-500 transition-colors"
               >
                 Pogledajte dokumente
               </Link>
@@ -179,7 +156,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="bg-white p-8 border-2 border-[#546e7a] hover:bg-primary-50 transition-colors"
+              className="bg-white p-8 hover: transition-shadow"
             >
               <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
                 Ekspertize
@@ -191,7 +168,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/delatnosti/ekspertize"
-                className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
+                className="inline-block px-6 py-2 bg-primary-400 text-white font-semibold hover:bg-primary-500 transition-colors"
               >
                 Pročitajte više
               </Link>

@@ -21,7 +21,7 @@ export default function KazneEvropaPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Pregled saobraćajnih kazni u evropskim zemljama
             </h2>
@@ -82,7 +82,7 @@ export default function KazneEvropaPage() {
                 </div>
               </div>
 
-              <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+              <div className="bg-yellow-50 p-6 border-l-4 border-yellow-400">
                 <h3 className="text-xl font-semibold text-yellow-800 mb-2">
                   Važna napomena
                 </h3>
@@ -93,7 +93,7 @@ export default function KazneEvropaPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Penalties in Europe
             </h3>

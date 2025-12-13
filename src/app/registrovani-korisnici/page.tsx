@@ -21,7 +21,7 @@ export default function RegistrovaniKorisniciPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Postanite povlašćeni korisnik
             </h2>
@@ -30,7 +30,7 @@ export default function RegistrovaniKorisniciPage() {
               dokumentima koji su dostupni samo registrovanim korisnicima.
             </p>
 
-            <div className="bg-primary-50 p-6 rounded-xl mb-8">
+            <div className="bg-primary-50 p-6 mb-8">
               <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
                 Benefiti registracije:
               </h3>
@@ -102,7 +102,7 @@ export default function RegistrovaniKorisniciPage() {
               </ul>
             </div>
 
-            <div className="bg-primary-500 text-white p-6 rounded-xl">
+            <div className="bg-primary-500 text-white p-6">
               <h3 className="text-xl font-heading font-bold mb-2">
                 Godišnja članarina
               </h3>
@@ -128,7 +128,7 @@ export default function RegistrovaniKorisniciPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <Link
               href="/registrovani-korisnici/prijava"
-              className="bg-primary-500 text-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center"
+              className="bg-primary-500 text-white p-8 hover: transition-all text-center"
             >
               <h3 className="text-2xl font-heading font-bold mb-2">Prijava</h3>
               <p>Već imate nalog? Prijavite se ovde.</p>
@@ -136,7 +136,7 @@ export default function RegistrovaniKorisniciPage() {
 
             <Link
               href="/registrovani-korisnici/registracija"
-              className="bg-white text-primary-500 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center border-2 border-primary-500"
+              className="bg-white text-primary-500 p-8 hover: transition-all text-center border-2 border-primary-500"
             >
               <h3 className="text-2xl font-heading font-bold mb-2">
                 Registracija

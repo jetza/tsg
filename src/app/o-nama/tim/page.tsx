@@ -48,7 +48,7 @@ export default function TimPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-2xl shadow-lg"
+              className="bg-white p-8"
             >
               <h3 className="text-2xl font-heading font-bold mb-2 text-primary-500">
                 {member.name}

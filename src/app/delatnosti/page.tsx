@@ -43,7 +43,7 @@ export default function DelatnostiPage() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-8 hover: transition-shadow"
             >
               <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
                 {activity.title}

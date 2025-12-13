@@ -57,7 +57,7 @@ export default function BlogPage() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full font-semibold transition-all ${
+              className={`px-6 py-2 font-semibold transition-all border-2 border-[#546e7a] ${
                 selectedCategory === category
                   ? "bg-primary-500 text-white"
                   : "bg-white text-primary-500 hover:bg-primary-50"
@@ -71,58 +71,33 @@ export default function BlogPage() {
         {/* Loading state */}
         {loading && (
           <div className="text-center py-20">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500"></div>
+            <div className="inline-block animate-spin h-12 w-12 border-b-2 border-primary-500 rounded-full"></div>
             <p className="mt-4 text-gray-600">Učitavanje...</p>
           </div>
         )}
 
         {/* Blog posts grid */}
         {!loading && posts.length > 0 && (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, index) => (
-              <motion.article
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#546e7a] border-2 border-[#546e7a]">
+            {posts.map((post) => (
+              <Link
                 key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                href={`/blog/${post.slug}`}
+                className="bg-white p-8 hover:bg-primary-500 hover:text-white transition-colors group"
               >
-                <div className="p-6">
-                  <div className="text-sm text-primary-400 font-semibold mb-2">
-                    {post.category}
-                  </div>
-                  <h2 className="text-2xl font-heading font-bold mb-3 text-primary-500">
-                    {post.title}
-                  </h2>
-                  <p className="text-gray-700 mb-4 line-clamp-3">
-                    {post.excerpt || "Kliknite da pročitate više..."}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
-                      {new Date(post.createdAt).toLocaleDateString("sr-RS")}
-                    </span>
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="text-primary-400 font-semibold hover:text-primary-500 inline-flex items-center"
-                    >
-                      Pročitaj više
-                      <svg
-                        className="w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
+                <div className="text-sm font-semibold mb-3 text-primary-400 group-hover:text-white">
+                  {post.category}
                 </div>
-              </motion.article>
+                <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500 group-hover:text-white">
+                  {post.title}
+                </h2>
+                <p className="text-gray-700 group-hover:text-white mb-4 line-clamp-3">
+                  {post.excerpt || "Kliknite da pročitate više..."}
+                </p>
+                <div className="text-sm text-gray-500 group-hover:text-white">
+                  {new Date(post.createdAt).toLocaleDateString("sr-RS")}
+                </div>
+              </Link>
             ))}
           </div>
         )}

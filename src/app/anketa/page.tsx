@@ -26,8 +26,8 @@ export default function AnketaPage() {
           className="space-y-12"
         >
           {/* Poll 1: Mladi i saobraćajne nezgode */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-            <h2 className="text-2xl font-heading font-semibold mb-6 bg-gray-800 text-white p-4 rounded-lg">
+          <div className="bg-white p-8 border border-gray-200">
+            <h2 className="text-2xl font-heading font-semibold mb-6 bg-gray-800 text-white p-4">
               Mladi i saobraćajne nezgode
             </h2>
             <p className="text-lg font-medium mb-6 text-gray-800">
@@ -43,7 +43,7 @@ export default function AnketaPage() {
               ].map((option) => (
                 <label
                   key={option}
-                  className="flex items-center space-x-3 cursor-pointer hover:bg-primary-50 p-3 rounded-lg transition-colors"
+                  className="flex items-center space-x-3 cursor-pointer hover:bg-primary-50 p-3 transition-colors"
                 >
                   <input
                     type="radio"
@@ -58,10 +58,10 @@ export default function AnketaPage() {
               ))}
             </div>
             <div className="flex gap-4">
-              <button className="px-6 py-2 bg-gray-400 text-white rounded-lg font-semibold hover:bg-gray-500 transition-colors">
+              <button className="px-6 py-2 bg-gray-400 text-white font-semibold hover:bg-gray-500 transition-colors">
                 Vote
               </button>
-              <button className="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:bg-gray-400 transition-colors">
+              <button className="px-6 py-2 bg-gray-300 text-gray-800 font-semibold hover:bg-gray-400 transition-colors">
                 Results
               </button>
             </div>
@@ -69,8 +69,8 @@ export default function AnketaPage() {
           </div>
 
           {/* Poll 2: Saobraćajne nezgode tokom letnjih meseci */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-            <h2 className="text-2xl font-heading font-semibold mb-6 bg-gray-800 text-white p-4 rounded-lg">
+          <div className="bg-white p-8 border border-gray-200">
+            <h2 className="text-2xl font-heading font-semibold mb-6 bg-gray-800 text-white p-4">
               Saobraćajne nezgode tokom letnjih meseci
             </h2>
             <p className="text-lg font-medium mb-6 text-gray-800">
@@ -86,7 +86,7 @@ export default function AnketaPage() {
               ].map((option) => (
                 <label
                   key={option}
-                  className="flex items-center space-x-3 cursor-pointer hover:bg-primary-50 p-3 rounded-lg transition-colors"
+                  className="flex items-center space-x-3 cursor-pointer hover:bg-primary-50 p-3 transition-colors"
                 >
                   <input
                     type="radio"
@@ -101,10 +101,10 @@ export default function AnketaPage() {
               ))}
             </div>
             <div className="flex gap-4">
-              <button className="px-6 py-2 bg-gray-400 text-white rounded-lg font-semibold hover:bg-gray-500 transition-colors">
+              <button className="px-6 py-2 bg-gray-400 text-white font-semibold hover:bg-gray-500 transition-colors">
                 Vote
               </button>
-              <button className="px-6 py-2 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:bg-gray-400 transition-colors">
+              <button className="px-6 py-2 bg-gray-300 text-gray-800 font-semibold hover:bg-gray-400 transition-colors">
                 Results
               </button>
             </div>

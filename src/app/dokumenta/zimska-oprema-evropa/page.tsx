@@ -21,7 +21,7 @@ export default function ZimskaOpremaEvropaPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Propisi o zimskoj opremi po državama
             </h2>
@@ -123,7 +123,7 @@ export default function ZimskaOpremaEvropaPage() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+              <div className="bg-blue-50 p-6 border-l-4 border-blue-400">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">
                   Preporuke za putovanje
                 </h3>
@@ -138,7 +138,7 @@ export default function ZimskaOpremaEvropaPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Winter Equipment in Europe
             </h3>

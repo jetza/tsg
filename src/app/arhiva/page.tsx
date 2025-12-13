@@ -18,7 +18,7 @@ export default function ArhivaPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-white p-8 rounded-2xl shadow-lg"
+          className="bg-white p-8"
         >
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Arhiva blog postova i članaka.

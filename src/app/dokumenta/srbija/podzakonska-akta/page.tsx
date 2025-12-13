@@ -21,7 +21,7 @@ export default function SrbijaPodzakonskaAktaPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Podzakonska akta Republike Srbije
             </h2>
@@ -68,7 +68,7 @@ export default function SrbijaPodzakonskaAktaPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Bylaws of the Republic of Serbia
             </h3>

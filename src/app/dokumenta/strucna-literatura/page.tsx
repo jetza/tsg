@@ -21,7 +21,7 @@ export default function StrucnaLiteraturaPage() {
           transition={{ delay: 0.2 }}
           className="space-y-8"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               Preporučena stručna literatura
             </h2>
@@ -35,13 +35,13 @@ export default function StrucnaLiteraturaPage() {
                   Saobraćajne ekspertize
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Saobraćajno-tehnička ekspertiza</p>
                     <p className="text-gray-600 text-sm">Dr Milan Vujanić, Dr Milorad Cvijan</p>
                     <p className="text-gray-500 text-sm mt-1">Osnove saobraćajno-tehničkih ekspertiza i metodologija analize saobraćajnih nezgoda</p>
                   </div>
 
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Sudska procena saobraćajnih nezgoda</p>
                     <p className="text-gray-600 text-sm">Dr Vojin Todorović</p>
                     <p className="text-gray-500 text-sm mt-1">Pravni aspekti i sudska praksa u procesuiranju saobraćajnih nezgoda</p>
@@ -54,13 +54,13 @@ export default function StrucnaLiteraturaPage() {
                   Rekonstrukcija saobraćajnih nezgoda
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Accident Reconstruction</p>
                     <p className="text-gray-600 text-sm">J. Stannard Baker, Lynn B. Fricke</p>
                     <p className="text-gray-500 text-sm mt-1">Temeljno delo o rekonstrukciji saobraćajnih nezgoda (Engleski jezik)</p>
                   </div>
 
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Traffic Accident Reconstruction Manual</p>
                     <p className="text-gray-600 text-sm">John Daily, Nathan Shigemura, Jeremy Daily</p>
                     <p className="text-gray-500 text-sm mt-1">Priručnik za analizu i rekonstrukciju saobraćajnih nezgoda (Engleski jezik)</p>
@@ -73,13 +73,13 @@ export default function StrucnaLiteraturaPage() {
                   PC Crash i kompjuterske simulacije
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">PC Crash - Priručnik za korisnike</p>
                     <p className="text-gray-600 text-sm">Dr. techn. Hermann Steffan</p>
                     <p className="text-gray-500 text-sm mt-1">Zvanični priručnik za rad u programu PC Crash</p>
                   </div>
 
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Simulacija saobraćajnih nezgoda</p>
                     <p className="text-gray-600 text-sm">Razni autori - Zbornici radova sa simpozijuma</p>
                     <p className="text-gray-500 text-sm mt-1">Praktični primeri primene softvera za simulaciju</p>
@@ -92,13 +92,13 @@ export default function StrucnaLiteraturaPage() {
                   Bezbednost saobraćaja
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Bezbednost saobraćaja</p>
                     <p className="text-gray-600 text-sm">Prof. dr Krsto Lipovac</p>
                     <p className="text-gray-500 text-sm mt-1">Sveobuhvatna analiza faktora bezbednosti saobraćaja</p>
                   </div>
 
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Traffic Safety</p>
                     <p className="text-gray-600 text-sm">Leonard Evans</p>
                     <p className="text-gray-500 text-sm mt-1">Međunarodni standardi i naučni pristup bezbednosti (Engleski jezik)</p>
@@ -111,7 +111,7 @@ export default function StrucnaLiteraturaPage() {
                   Zbornici radova
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-gray-50 p-4 rounded">
+                  <div className="bg-gray-50 p-4">
                     <p className="font-semibold text-gray-800">Međunarodni simpozijum o saobraćajno-tehničkim ekspertizama</p>
                     <p className="text-gray-600 text-sm">TSG Serbia (organizator)</p>
                     <p className="text-gray-500 text-sm mt-1">Godišnji zbornici radova sa međunarodnih simpozijuma (2009-danas)</p>
@@ -119,7 +119,7 @@ export default function StrucnaLiteraturaPage() {
                 </div>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+              <div className="bg-blue-50 p-6 border-l-4 border-blue-400">
                 <h3 className="text-xl font-semibold text-blue-800 mb-2">
                   Za dodatne informacije
                 </h3>
@@ -130,7 +130,7 @@ export default function StrucnaLiteraturaPage() {
             </div>
           </div>
 
-          <div className="bg-primary-50 p-8 rounded-2xl">
+          <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
               Professional Literature
             </h3>

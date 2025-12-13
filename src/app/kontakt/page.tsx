@@ -60,7 +60,7 @@ export default function KontaktPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border-2 border-[#546e7a] focus:ring-2 focus:ring-primary-400 transition-all"
                 />
               </div>
 
@@ -78,7 +78,7 @@ export default function KontaktPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border-2 border-[#546e7a] focus:ring-2 focus:ring-primary-400 transition-all"
                 />
               </div>
 
@@ -96,7 +96,7 @@ export default function KontaktPage() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border-2 border-[#546e7a] focus:ring-2 focus:ring-primary-400 transition-all"
                 />
               </div>
 
@@ -113,14 +113,14 @@ export default function KontaktPage() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all resize-none"
+                  rows={5}
+                  className="w-full px-4 py-3 border-2 border-[#546e7a] focus:ring-2 focus:ring-primary-400 transition-all resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-400 transition-all hover:scale-105"
+                className="w-full px-8 py-4 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
               >
                 Pošalji poruku
               </button>
@@ -134,93 +134,82 @@ export default function KontaktPage() {
             transition={{ delay: 0.4 }}
             className="space-y-8"
           >
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8">
               <h2 className="text-2xl font-heading font-bold mb-6 text-primary-500">
                 Kontakt informacije
               </h2>
 
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <svg
-                    className="w-6 h-6 text-primary-400 mr-4 mt-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Email</h3>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">DIRECTOR</h3>
+                  <p className="text-gray-700">
+                    Tijana Ivanišević, graduate traffic engineer
+                  </p>
+                  <p className="text-gray-700">
+                    Email:{" "}
+                    <a
+                      href="mailto:t.ivanisevic@tsgserbia.com"
+                      className="text-primary-400 hover:text-primary-500"
+                    >
+                      t.ivanisevic@tsgserbia.com
+                    </a>
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    ASSISTANT DIRECTOR
+                  </h3>
+                  <p className="text-gray-700">
+                    Milan M. Vujanić, graduate traffic engineer
+                  </p>
+                  <p className="text-gray-700">
+                    Email:{" "}
+                    <a
+                      href="mailto:m.vujanic@tsgserbia.com"
+                      className="text-primary-400 hover:text-primary-500"
+                    >
+                      m.vujanic@tsgserbia.com
+                    </a>
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    BUSINESS SECRETARY
+                  </h3>
+                  <p className="text-gray-700">Branka Milojević</p>
+                  <p className="text-gray-700">
+                    Email:{" "}
+                    <a
+                      href="mailto:b.milojevic@tsgserbia.com"
+                      className="text-primary-400 hover:text-primary-500"
+                    >
+                      b.milojevic@tsgserbia.com
+                    </a>
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t-2 border-primary-100">
+                  <p className="text-gray-700 mb-2">
+                    You can also contact us directly at: <br />
                     <a
                       href="mailto:office@tsgserbia.com"
                       className="text-primary-400 hover:text-primary-500"
                     >
                       office@tsgserbia.com
                     </a>
-                  </div>
+                  </p>
+                  <p className="text-gray-700">
+                    or on{" "}
+                    <a
+                      href="tel:+381114202010"
+                      className="text-primary-400 hover:text-primary-500"
+                    >
+                      +381 (11) 4202010
+                    </a>
+                  </p>
                 </div>
-
-                <div className="flex items-start">
-                  <svg
-                    className="w-6 h-6 text-primary-400 mr-4 mt-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Telefon</h3>
-                    <p className="text-gray-700">+381 11 XXX XXXX</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <svg
-                    className="w-6 h-6 text-primary-400 mr-4 mt-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Adresa</h3>
-                    <p className="text-gray-700">Beograd, Srbija</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-primary-50 p-8 rounded-2xl">
-              <h3 className="text-xl font-heading font-bold mb-4 text-primary-500">
-                Radno vreme
-              </h3>
-              <div className="space-y-2 text-gray-700">
-                <p>Ponedeljak - Petak: 09:00 - 17:00</p>
-                <p>Subota: Po dogovoru</p>
-                <p>Nedelja: Zatvoreno</p>
               </div>
             </div>
           </motion.div>

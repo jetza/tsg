@@ -41,7 +41,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   if (loading) {
     return (
       <div className="min-h-screen py-20 px-6 flex items-center justify-center">
-        <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500"></div>
+        <div className="inline-block animate-spin h-12 w-12 border-b-2 border-primary-500 rounded-full"></div>
       </div>
     );
   }
@@ -58,7 +58,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           animate={{ opacity: 1, y: 0 }}
         >
           <div className="mb-6">
-            <span className="inline-block px-4 py-1 bg-primary-100 text-primary-500 rounded-full text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-1 bg-primary-100 text-primary-500 text-sm font-semibold mb-4">
               {post.category}
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <div
-            className="prose prose-lg max-w-none bg-white p-8 rounded-2xl shadow-lg"
+            className="prose prose-lg max-w-none bg-white p-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </motion.div>

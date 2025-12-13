@@ -60,17 +60,36 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-heading font-bold mb-6 text-primary-500">
-              O nama
+            <h2 className="text-4xl font-heading font-bold mb-8 text-center text-primary-500">
+              Dobrodošli u Traffic Safety Group
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Naša specijalnost je razvoj i primena inovativnih projekata u
-              oblasti bezbednosti saobraćaja. Članovi našeg tima učestvovali su
-              u izradi &ldquo;Zakona o bezbednosti saobraćaja na putevima&rdquo;
-              i nekih od podzakonskih akata.
-            </p>
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+              <p>
+                Traffic Safety Group (TSG) se bavi projektovanjem i pružanjem
+                konsultantskih usluga iz oblasti drumskog i gradskog saobraćaja
+                i transporta. Garancija kvaliteta naših usluga su dugogodišnje
+                iskustvo, profesionalni autoritet i odlični poslovni rezultati
+                našeg tima i konsultanata sa kojima sarađujemo.
+              </p>
+              <p>
+                Naša specijalnost je razvoj i primena inovativnih projekata u
+                oblasti bezbednosti saobraćaja. Članovi našeg tima učestvovali
+                su u izradi &ldquo;Zakona o bezbednosti saobraćaja na
+                putevima&rdquo; i nekih od podzakonskih akata. Vodeći
+                prevoznici, sa preko 2,000 vozila učestvuju u našem projektu
+                podizanja nivoa bezbednosti u prevozu putnika. Organizujemo
+                stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali
+                i učestvujemo kao predavači na konferencijama koje organizuju
+                Privredna komora Srbije, Saobraćajni fakultet u Beogradu, IRU
+                Academy iz Ženeve i drugi.
+              </p>
+              <p>
+                Naša vizija je da postanemo priznati lider u razvoju i primeni
+                projekata u oblasti bezbednosti saobraćaja u regionu.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -78,63 +97,105 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="py-20 bg-primary-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-heading font-bold mb-12 text-center text-primary-500">
-            Naše usluge
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Projekti",
-                description:
-                  "Tim TSG-a je učestvovao na izradi i implementaciji projekata iz različitih oblasti.",
-                href: "/delatnosti/projekti",
-              },
-              {
-                title: "Ekspertize",
-                description:
-                  "Prilikom pružanja ekspertskih usluga TSG koristi najviše standarde države Srbije.",
-                href: "/delatnosti/ekspertize",
-              },
-              {
-                title: "Edukacija",
-                description:
-                  "Obuka za rad u najobuhvatnijem programu za analizu saobraćajnih nezgoda – PC Crash.",
-                href: "/delatnosti/edukacija",
-              },
-            ].map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Naši projekti */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
+                Naši projekti
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Tim TSG-a je učestvovao na izradi i implementaciji projekata iz
+                različitih oblasti. Za svaki od urađenih projekata je bilo
+                najvažnije projektovati željeni nivo bezbednosti saobraćaja.
+              </p>
+              <Link
+                href="/delatnosti/projekti"
+                className="inline-block px-6 py-2 bg-primary-400 text-white rounded-lg font-semibold hover:bg-primary-500 transition-colors"
               >
-                <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 mb-6">{service.description}</p>
-                <Link
-                  href={service.href}
-                  className="text-primary-400 font-semibold hover:text-primary-500 inline-flex items-center"
-                >
-                  Saznajte više
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
-              </motion.div>
-            ))}
+                Pročitajte više
+              </Link>
+            </motion.div>
+
+            {/* PC Crash obuka */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-2xl font-heading font-semibold mb-2 text-primary-500">
+                PC Crash obuka
+              </h3>
+              <p className="text-sm text-gray-500 mb-4">
+                Obuka za rad u najobuhvatnijem programu
+              </p>
+              <p className="text-gray-700 mb-6">
+                Obuka za rad u najobuhvatnijem programu za analizu saobraćajnih
+                nezgoda – PC Crash. Pored poznavanja rukovanja PC Crash-om,
+                možete saznati i specifičnosti primene programa.
+              </p>
+              <Link
+                href="/delatnosti/edukacija"
+                className="inline-block px-6 py-2 bg-primary-400 text-white rounded-lg font-semibold hover:bg-primary-500 transition-colors"
+              >
+                Pročitajte više
+              </Link>
+            </motion.div>
+
+            {/* Zakonska regulativa */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
+                Zakonska regulativa
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Pregled zakonske regulative vezane za saobraćaj u Srbiji, Crnoj
+                Gori i BiH. Sva dokumenta su u PDF formatu i dostupna su za
+                download.
+              </p>
+              <Link
+                href="/dokumenta/zakonska-regulativa"
+                className="inline-block px-6 py-2 bg-primary-400 text-white rounded-lg font-semibold hover:bg-primary-500 transition-colors"
+              >
+                Pogledajte dokumente
+              </Link>
+            </motion.div>
+
+            {/* Ekspertize */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
+                Ekspertize
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Prilikom pružanja ekspertskih usluga TSG koristi najviše
+                standarde države Srbije, uzimajući u obzir trenutna dostignuća
+                iz relevantnih oblasti u svetu.
+              </p>
+              <Link
+                href="/delatnosti/ekspertize"
+                className="inline-block px-6 py-2 bg-primary-400 text-white rounded-lg font-semibold hover:bg-primary-500 transition-colors"
+              >
+                Pročitajte više
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

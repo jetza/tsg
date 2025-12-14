@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import LoadingScreen from "@/components/LoadingScreen";
 
 // Montserrat - za naslove i navigaciju
 const montserrat = localFont({
@@ -84,6 +85,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${hankenGrotesk.variable} font-sans antialiased`}
       >
+        <LoadingScreen />
         <div className="flex min-h-screen">
           <Sidebar />
           <main className="flex-1 ml-0 md:ml-64 transition-all duration-300">

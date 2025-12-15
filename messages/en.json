@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "activities": "Activities",
+    "documents": "Documents",
+    "archive": "Archive",
+    "blog": "Blog",
+    "advice": "Advice",
+    "survey": "Survey",
+    "contact": "Contact",
+    "registeredUsers": "Registered Users"
+  },
+  "hero": {
+    "title": "TSG Serbia",
+    "subtitle": "Traffic Safety Group",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "welcome": "Welcome to Traffic Safety Group",
+    "intro": "Traffic Safety Group (TSG) deals with design and consulting services in the field of road and urban traffic and transport. The guarantee of quality of our services is long-term experience, professional authority and excellent business results of our team and consultants we work with.",
+    "specialty": "Our specialty is the development and implementation of innovative projects in the field of traffic safety. Members of our team participated in the drafting of the \"Law on Road Traffic Safety\" and some of the bylaws. Leading carriers with over 2,000 vehicles participate in our project to raise the level of safety in passenger transport. We organize professional meetings aimed at improving business operations, and we also participate as lecturers at conferences organized by the Serbian Chamber of Commerce, Faculty of Transport in Belgrade, IRU Academy from Geneva and others.",
+    "vision": "Our vision is to become a recognized leader in the development and implementation of projects in the field of traffic safety in the region."
+  },
+  "services": {
+    "title": "Our Services"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

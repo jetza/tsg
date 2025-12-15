@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "activities": "Delatnosti",
+    "documents": "Dokumenta",
+    "archive": "Arhiva",
+    "blog": "Blog",
+    "advice": "Saveti",
+    "survey": "Anketa",
+    "contact": "Kontakt",
+    "registeredUsers": "Registrovani korisnici"
+  },
+  "hero": {
+    "title": "TSG Serbia",
+    "subtitle": "Bezbednost saobraćaja - Traffic Safety Group",
+    "ourServices": "Naše usluge",
+    "contactUs": "Kontaktirajte nas"
+  },
+  "about": {
+    "welcome": "Dobrodošli u Traffic Safety Group",
+    "intro": "Traffic Safety Group (TSG) se bavi projektovanjem i pružanjem konsultantskih usluga iz oblasti drumskog i gradskog saobraćaja i transporta. Garancija kvaliteta naših usluga su dugogodišnje iskustvo, profesionalni autoritet i odlični poslovni rezultati našeg tima i konsultanata sa kojima sarađujemo.",
+    "specialty": "Naša specijalnost je razvoj i primena inovativnih projekata u oblasti bezbednosti saobraćaja. Članovi našeg tima učestvovali su u izradi \"Zakona o bezbednosti saobraćaja na putevima\" i nekih od podzakonskih akata. Vodeći prevoznici, sa preko 2,000 vozila učestvuju u našem projektu podizanja nivoa bezbednosti u prevozu putnika. Organizujemo stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali i učestvujemo kao predavači na konferencijama koje organizuju Privredna komora Srbije, Saobraćajni fakultet u Beogradu, IRU Academy iz Ženeve i drugi.",
+    "vision": "Naša vizija je da postanemo priznati lider u razvoju i primeni projekata u oblasti bezbednosti saobraćaja u regionu."
+  },
+  "services": {
+    "title": "Naše usluge"
+  },
+  "footer": {
+    "rights": "Sva prava zadržana"
+  }
+}

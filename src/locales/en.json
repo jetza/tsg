@@ -1,0 +1,231 @@
+{
+  "oNama": {
+    "title": "About Us",
+    "intro1": "Our specialty is the development and application of innovative projects in the field of traffic safety. Members of our team participated in the creation of the \"Law on Road Traffic Safety\" and some of the bylaws.",
+    "intro2": "Leading carriers, with over 2,000 vehicles, participate in our project to raise the level of safety in passenger transport. We organize professional gatherings aimed at improving business operations, and we also participate as lecturers at conferences organized by the Serbian Chamber of Commerce, Faculty of Transport and Traffic Engineering in Belgrade, IRU Academy from Geneva, and others.",
+    "visionTitle": "Our Vision",
+    "vision": "Our vision is to become a recognized leader in the development and application of projects in the field of traffic safety in the region."
+  },
+  "firma": {
+    "title": "Company",
+    "tsgTitle": "Traffic Safety Group (TSG)",
+    "tsgIntro1": "Traffic Safety Group (TSG) is the leading consulting company in the field of traffic safety and transport in Southeastern Europe. The company was founded in 2008.",
+    "tsgIntro2": "Our team consists of experts with long-term practical experience. Experienced team of traffic experts worked on more than 5000 cases of traffic accidents.",
+    "expertiseTitle": "Traffic Accident Expertise",
+    "expertiseP1": "Results of the traffic accident expertise, represent the part of the evidence material that is used for reaching the Court decision. Therefore traffic accident expertise has to be done correctly in order for the Court decision to be based on the results of the expertise.",
+    "expertiseP2": "Traffic accident expertise can be done according to the Court order, order of the defense counsel or the prosecutor, order of the other legal entity for determining facts that are important for the further Court process, the parties involved in the Court process or any other legal entity for further business.",
+    "expertiseP3": "Traffic accident expertise can be done in order to determine mistakes of the traffic accident participants, but as well for determining credibility of the traffic accident occurrence, in other words - for detecting and proving fraud in insurance.",
+    "expertiseP4": "As it is written in the Law: \"...Expertise represent expert activities that together with the scientific, technical and other achievements, give to the Court or the other entity in charge for the procedure, necessary expert knowledge that is used during determining, evaluating or clarifying legally relevant facts...\".",
+    "symposiumsTitle": "Symposiums",
+    "symposiumsP1": "Beside traffic accident expertise, Traffic Safety Group (TSG) organizes International Symposiums: \"Traffic Accident Expertise and Fraud in Insurance\" since 2009.",
+    "symposiumsP2": "There is a rising number of litigations and procedures due to frauds in insurance. Among the accused, there were people from the police, traffic experts, claim accountants, liquidators, leaders of the insurance companies etc. Faculty for Transport and Traffic Engineering and TSG developed the models for finding out fraud in insurance and doing traffic accident expertise. Special attention is given to insurance companies, lawyers, judges and prosecutors, and everyone who is interested in the field of fraud in insurance.",
+    "symposiumsP3": "The usage of the Law on Road Traffic Safety is specific, thus education of experts and exchange of experiences is necessary.",
+    "educationTitle": "Education",
+    "educationP1": "TSG organizes training for safe participation in traffic and training for the use of PC-Crash software.",
+    "educationP2": "PC-Crash is the world's leading software for simulation and reconstruction of traffic accidents. The program is used by court experts, police forensics, lawyers and insurance companies worldwide.",
+    "projectsTitle": "Projects",
+    "projectsP1": "TSG has participated in the creation of numerous projects and studies in the field of traffic safety:",
+    "projectsList": [
+      "Law on Road Traffic Safety",
+      "Regulations and other bylaws",
+      "Traffic Safety Strategy for the City of Belgrade",
+      "Traffic safety studies for various cities and municipalities",
+      "Projects for improving safety in transport companies"
+    ]
+  },
+  "zaposleni": {
+    "title": "Employees",
+    "intro": "Traffic Safety Group (TSG) is the leading consultant company for business in the field of traffic safety and transport in the region of Southeastern Europe. Our team consists exclusively of leading experts with long time practical experience.",
+    "directorTitle": "Director Tijana Ivanišević, B.Sc.",
+    "directorBio": "Associate in business traffic and technical expertise in the Expert Commission of the Institute of Traffic Engineering in Belgrade and TRAFFIC SAFETY GROUP LTD She is currently working as a traffic engineer at temporary jobs, the jobs database, the Division for the management - information systems in transport, in \"Roads of Serbia\", in the Republic of Serbia. She is a member of the research team on multiple projects and studies at the Faculty of Transport in Belgrade. She participated in numerous scientific and professional conferences, where she has published dozens of scientific papers, both in Serbia and abroad. By education, since 2014, is a graduate engineer of traffic and is currently improving her knowledge in the field of traffic safety.",
+    "deputyDirectorTitle": "Deputy Director Milan M. Vujanić, M.Sc.",
+    "deputyDirectorBio": "Expert in traffic and technical expertise and the member of committee of experts at the Institute of Faculty of Transport and Traffic Engineering in Belgrade. He is also technical secretary on the project Strategy on traffic safety for the city of Belgrade. He is M.Sc in traffic engineering who is currently at doctoral studies in the field of traffic safety at the Faculty of Transport and Traffic Engineering in Belgrade.",
+    "secretaryTitle": "Business Secretary Branka Kovač",
+    "consultantsTitle": "Part of our team are also our expert consultants:",
+    "consultantsList": [
+      "Milan Vujanic, Ph.D.",
+      "Milorad Cvijan, B.Sc.",
+      "Legal team",
+      "Doc. dr sc. med Zoran V. Ćosić",
+      "Ognjen Pantelić, Ph.D."
+    ]
+  },
+  "konsultanti": {
+    "title": "Expert Consultants",
+    "transportTitle": "Transport",
+    "milanVujanicTitle": "Milan Vujanić Ph.D.",
+    "milanVujanicBio": "He is full professor at Faculty of Transport and Traffic Engineering in Belgrade and the chief of department for road and urban traffic and transport and the chief of module for traffic safety. He is the president of the committee of experts at the Institute of Faculty of Transport and Traffic Engineering, and a full professor at Faculty of Transport and Traffic Engineering in Doboj and a full professor at Faculty of Traffic, Communication and Logistics in Berane. He was the team leader for writing the Law on Road Traffic Safety (Službeni glasnik RS, number 41, 02.06.2009) and the team leader for numerous projects and studies in the field of traffic safety. CV (curriculum vitae)",
+    "cvijanTitle": "Milorad Cvijan, Engineer",
+    "cvijanBio": "He is the court Expert in the field of traffic safety, with long-term experience in traffic accident expertise. As a member of the research team at the Institute of Faculty of Transport and Traffic Engineering he took part in many projects and studies in the field of traffic safety. He is the author and the co-author of many papers at expert gatherings, symposiums and conferences about traffic safety.",
+    "informationTitle": "Information Systems",
+    "pantelicTitle": "Ognjen Pantelić, Ph.D.",
+    "pantelicBio": "He is assistant professor at the Faculty of Organizational Sciences in Belgrade and a consultant for information systems in traffic.",
+    "medicineTitle": "Medicine",
+    "cosicTitle": "Doc. Dr Sc. Med Zoran V. Ćosić, Ph.D.",
+    "cosicBio": "He is MD, with the title of assistant professor at the University. He is a clinical radiologist, with specialization of internal medicine and subspecialized in cardiology, Fellow of European Association of Cardiologist and director assistant at the Clinical Center \"Dr Dragiša Mišović Dedinje\" in Belgrade. CV (curriculum vitae)",
+    "lawTitle": "Law",
+    "lawTeamTitle": "Legal Team",
+    "lawTeamBio": "Our legal team consists of lawyers specialized in traffic law, insurance and civil liability. They provide legal support in all phases of the procedure, from drafting the lawsuit to court representation."
+  },
+  "delatnosti": {
+    "title": "Services",
+    "intro": "TSG provides services and projects in the following areas:",
+    "services": [
+      "Design of traffic surfaces and appropriate signaling",
+      "Development of technological projects for car bases, bus stations and stops, parking areas, parking garages, fuel supply stations",
+      "Development of construction site protection projects",
+      "Child protection projects in elementary school zones",
+      "Verification of proper functioning of signal plans at intersections (from the aspect of traffic safety)",
+      "Consulting analyses for misdemeanor, criminal and civil proceedings in traffic",
+      "Computer analysis and verification of speeds of vehicles involved in a collision",
+      "Obtaining technical characteristics and data on road and other modes of transport vehicles",
+      "Assessment of damage to vehicles and facilities, analysis of causes and circumstances of harmful events (traffic accidents) and assistance in exercising the right to compensation"
+    ],
+    "mainActivity": "TSG is a company that realizes its core business in the field of traffic safety, in other words in the field of protection of people and property in traffic",
+    "standards": "When providing services, TSG uses the highest standards of the Republic of Serbia, taking into account current achievements from relevant fields in the world",
+    "consulting": "A special part of TSG deals with consulting activities in the field of traffic, especially in the part of normative acts that every company dealing with traffic must have. Documents prepared in this way allow the company's liability to be lower, or the company's liability to be only for what each company must be responsible for."
+  },
+  "ekspertize": {
+    "title": "Expertise",
+    "intro": "When determining the causes or circumstances of an event, it is necessary to engage experts who, in addition to a high degree of knowledge in the field being analyzed, also possess appropriate skills. The analysis of the causes and circumstances of events in the field of road and urban traffic and transport must be entrusted to traffic and technical experts.",
+    "definition": "Traffic-technical expertise is a field that uses knowledge from the fields of medicine, mechanical engineering, psychology and other fields. Experts specialized in the field of traffic are engineers or graduate traffic engineers.",
+    "importance1": "The results of traffic-technical expertise represent part of the evidence material used in making a court decision. For this reason, it is necessary that the Expert's Finding and Opinion be done accurately, as the Court's decision is based on the results of traffic-technical expertise.",
+    "types1": "Traffic-technical expertise can be done at the request of the Court, at the request of the defense counsel of the accused or the representative of the injured parties, at the request of another legal entity for the purpose of collecting or determining facts important for further Court proceedings, parties in Court proceedings or another legal entity for business purposes.",
+    "types2": "Traffic-technical expertise can be done for the purpose of determining the omissions of traffic accident participants, but also for the purpose of determining the credibility of the occurrence of a traffic accident, i.e. detecting and proving fraud in insurance.",
+    "law": "Law on Court Experts: '...Expert work, within the meaning of this law, represents professional activities which, through the use of scientific, technical and other achievements, provide the court or other body conducting the procedure with the necessary expert knowledge used in determining, evaluating or clarifying legally relevant facts...'.",
+    "examplesTitle": "Several examples of traffic accident expertise:",
+    "examples": [
+      "Collision of vehicles from opposite directions",
+      "Collision of vehicle and motorcycle",
+      "Collision of bus and transport composition"
+    ],
+    "servicesTitle": "Our expertise services include:",
+    "services": [
+      "Computer simulations and reconstructions of traffic accidents",
+      "Analysis of vehicle speeds and mechanical damage",
+      "Assessment of accident avoidance possibilities",
+      "Reports for court proceedings"
+    ]
+  },
+  "simpozijumi": {
+    "title": "Symposiums",
+    "intro1": "In addition to expertise, Traffic Safety Group (TSG) has been organizing professional international symposiums since 2009.",
+    "intro2": "The first two symposiums organized in Vrnjačka Banja that year had the themes: 'Traffic-Technical Expertise and Damage Assessment', and 'Vehicle and Pedestrian Collision'. These topics aroused great interest, contributed to the writing of quality papers and resulted in useful discussions at the symposium itself.",
+    "fraudIssue": "However, we noticed that more and more disputes and proceedings are being conducted due to attempted insurance fraud. There were accused people from the traffic police, traffic-technical experts, assessors, liquidators, heads of insurance departments, etc. Therefore, we turned to organizing professional symposiums with the theme: 'Traffic Accident Expertise and Insurance Fraud'.",
+    "development": "At the Faculty of Transport and Traffic Engineering in Belgrade and at TSG, models have been developed for detecting fraud and preparing traffic-technical expertise reports. Special attention is paid to insurance companies, lawyers, judges and prosecutors, and everyone interested in the field of insurance fraud.",
+    "lawApplication": "The matter related to the application of the Law on Road Traffic Safety (LRTS) is very specific, so knowledge from this field has been systematized and prepared to facilitate judges, prosecutors, lawyers and other interested parties in the correct application of the LRTS in procedures.",
+    "uniformity": "In addition to differences in the way experts express themselves, differences have been noticed in assessments and analyses of dangerous situations. In order to clearly express experts' opinions on causes and contributions related to the occurrence and analysis of dangerous situations, at our Symposiums we propose ways for experts to express their views and analyze dangerous situations, which is important for everyone in the procedure, i.e. prosecutors, judges, lawyers and parties, so that they can easily and clearly understand what experts could determine and what they determined.",
+    "organization": "Symposiums are organized by the professional team of TSG. We publish information on the main theme, prices, date and venue of the symposium on our website at least 3 months before the symposium.",
+    "openType": "The symposium is of an open type. Everyone who registers can attend the lectures.",
+    "goalTitle": "Symposium Goal",
+    "goal1": "The intention of the Symposium Organizing Committee is to continue the tradition and improve the situation in the part of processes related to traffic accidents and their consequences - fatalities, injuries and huge material damage.",
+    "goal2": "The state loses huge funds due to treatment of the injured, costs of court proceedings and huge accompanying unnecessary costs that arise as a consequence of traffic accidents. Considering that the Republic of Serbia loses at least 3% of GDP due to damages caused by traffic accidents, and that about 2% of GDP is the share of the Ministry of Education or the Ministry of Defense in the state budget, it is clear that the costs for the functioning of 1.5 ministries, including complete costs, citizens of Serbia unnecessarily destroy in traffic accidents.",
+    "goal3": "The first two of the most important things that every person has are the life and freedom of each individual. Due to traffic accidents, both the lives and freedom of traffic accident participants are endangered, but in such a way that in peacetime the largest number of fatalities occurs as a consequence of traffic accidents in road traffic. Expertise of traffic accidents affects a fairer life for citizens because the real culprits are punished, and the damaged are compensated, unnecessary state costs are reduced and court proceedings are shortened.",
+    "goal4": "It is especially important that quality and uniform expertise enables citizens of Serbia to be equal before the law and to avoid punishing the innocent.",
+    "goal5": "With these Symposiums, we continue the path towards a uniform approach and solution to criminal and civil liability, towards a more realistic and fairer legal system and insistence that in this matter the influence of professionalism be strengthened to the level achieved in the developed world."
+  },
+  "edukacija": {
+    "title": "Education",
+    "intro": "On the transport network of our country, on an annual basis, about 1000 people die in traffic accidents. Public awareness of the importance of traffic safety is at a very low level. The basic condition for reducing the number of traffic accidents and the severity of the consequences of traffic accidents is that each participant in traffic behaves safely.",
+    "tsgActivity": "Traffic Safety Group Ltd. deals with the organization of education for all traffic participants and the development of a plan and program of education for schools and academies that deal with safe driving training.",
+    "closedSystems": "Traffic Safety Group Ltd. (TSG) organizes and conducts lectures in closed systems, in order to improve the level of traffic safety. Within closed systems, TSG organizes lectures and education in the field of application of: the new Road Traffic Safety Law, the new Compulsory Insurance Law, preparation and application of internal acts of internal traffic safety control, motor vehicle and cargo insurance, damage collection, safe participation in traffic (defensive driving course), TSG also organizes the provision of legal advice in the field of traffic.",
+    "programTitle": "The training program includes:",
+    "programItems": [
+      "Basics of working with PC Crash software",
+      "Traffic accident reconstruction",
+      "Vehicle collision analysis",
+      "Vehicle motion simulations",
+      "Preparation of expert reports"
+    ],
+    "ctaTitle": "Interested in training?",
+    "ctaText": "Contact us for more information about training dates and prices.",
+    "ctaButton": "Contact"
+  },
+  "obukaBezbedno": {
+    "title": "Training for Safe Participation in Traffic",
+    "program": "After many years of research and work on educating traffic participants, TSG established a training program for safe participation in traffic in 2008. The basis of safe participation in traffic is detailed knowledge of the rights and obligations of all participants (Law on Traffic Safety) and their behavior in accordance with the rules. The program is based on so-called 'defensive' participation in traffic.",
+    "learning": "You can learn a lot from lecturers who have been studying traffic safety for many years, investigating the causes and circumstances under which traffic accidents occurred, participating in the drafting of the Law on Traffic Safety, exchanging domestic experiences with foreign partners, applying foreign experiences in domestic conditions, setting up education programs in other domestic safe driving schools.",
+    "additional": "In addition to training for safe participation in traffic (participants of all ages), TSG also organizes training for safe organization in road traffic and transport."
+  },
+  "obukaPCCrash": {
+    "title": "Training for PC Crash Software",
+    "intro": "Training for the application of PC Crash software is based on knowledge of the software package and experience gained during traffic accident analysis. In addition to knowing how to operate PC Crash, you can also learn the specifics of using the program.",
+    "specifics": "You can learn the specifics of using the program, observed during the analysis of various traffic accident cases, in a very short time.",
+    "about": "PC Crash is a software package whose use makes it possible to more precisely analyze elements on the basis of which it is possible to determine the causes and circumstances under which a traffic accident occurred. The program represents a tool that 'quickly' performs very complex calculations that cannot be carried out using 'conventional' methods.",
+    "requirements": "For proper use of PC Crash software, professional knowledge in the field of traffic (especially traffic accident analysis) as well as knowledge of computer work is necessary. PC Crash is only an aid in traffic accident analysis, and the quality of input data on the basis of which the program performs calculations depends on the quality of the expert's work and the quality of material evidence from the File.",
+    "precision": "With PC Crash software, it is possible to precisely check parameters determined by 'conventional' methods, as well as more precisely determine those parameters that could not be precisely determined by classical methods.",
+    "example": "For example, it is often the case, in a head-on collision of a vehicle and a pedestrian, that traces fallen from the vehicle and/or pedestrian are recorded in the investigation documentation, as well as the stopping position of the pedestrian, so that 'conventional methods', using formulas, calculate the speed of the vehicle at the moment of collision based on the distance the pedestrian was thrown. The speed calculated in this way can have a deviation of ±10%, taking into account only the throwing distance of the pedestrian determined experimentally for a pedestrian of average height and weight, while PC Crash analyzes other details important for precise accident analysis, such as the height and weight of the pedestrian, the mutual position of the vehicle and the pedestrian (which can be determined based on the pedestrian's injuries), the characteristics of the vehicle involved in the accident (vehicle weight, number and weight of people in the vehicle, geometric characteristics of the vehicle, etc.).",
+    "advanced": "PC Crash can help determine the place of collision when traces of the traffic accident are not (or are not quality) recorded. For example, in cases where traces of the traffic accident are not recorded, but vehicle damage is recorded, vehicle stopping positions, directions of vehicle movement are known and injuries to persons in the vehicles are described. Based on the damage, it is possible to precisely determine the mutual position of the vehicles at the moment of collision, and taking into account the injuries to persons in the vehicle, it is possible to estimate the speeds at which the vehicles were driven at the moment of collision. Based on this evidence, using PC Crash software, the collision site is 'searched for', which is possible to determine. This method of determining the collision site requires large time losses."
+  },
+  "projekti": {
+    "title": "Projects",
+    "intro": "The TSG team participated in the development and implementation of projects from various fields. A large number of these projects were implemented for the first time in our region. For each of the completed projects, it was most important to design the desired level of traffic safety.",
+    "passengerTransport": "Project for Safe Passenger Transport",
+    "passengerDesc": "Development of the Project for Safe Passenger Transport began in December 2004. Project implementation began in May 2009. The project goal is to improve the level of traffic safety among Carriers engaged in public mass passenger transport."
+  },
+  "dokumenta": {
+    "srbija": {
+      "zakoni": {
+        "title": "Laws",
+        "subtitle": "Legal Regulations in Serbia",
+        "activeTitle": "Legal Acts – In Force",
+        "inactiveTitle": "Legal Acts – No Longer in Force"
+      },
+      "podzakonska": {
+        "title": "Bylaws",
+        "subtitle": "Legal Regulations in Serbia",
+        "activeTitle": "Bylaws – In Force",
+        "inactiveTitle": "Bylaws – No Longer in Force"
+      }
+    },
+    "crnaGora": {
+      "zakoni": {
+        "title": "Laws",
+        "subtitle": "Legal Regulations in Montenegro",
+        "activeTitle": "Legal acts",
+        "lawsIntro": "Relevant Montenegrin laws relating to traffic and road safety.",
+        "lawTitle": "Law on Drivers and Driving Licenses",
+        "lawDesc": "Conditions for acquiring the right to drive motor vehicles.",
+        "englishTitle": "Laws of Montenegro",
+        "englishIntro": "Relevant laws of Montenegro related to traffic and road safety."
+      },
+      "podzakonska": {
+        "title": "Bylaws",
+        "subtitle": "Legal regulations in Montenegro",
+        "activeTitle": "Bylaws",
+        "englishTitle": "Bylaws of Montenegro"
+      },
+      "putovanje": {
+        "title": "If You Are Traveling by Car to Montenegro"
+      }
+    },
+    "bih": {
+      "zakoni": {
+        "title": "Laws",
+        "subtitle": "Legal Regulations in Bosnia and Herzegovina",
+        "activeTitle": "Legal acts",
+        "lawsIntro": "Relevant laws of Bosnia and Herzegovina relating to traffic and road safety.",
+        "law1Title": "Law on Drivers",
+        "law1Desc": "Conditions for acquiring the right to drive motor vehicles.",
+        "law2Title": "Law on Technical Inspections of Motor Vehicles",
+        "law2Desc": "Regulates technical correctness and vehicle inspection.",
+        "englishTitle": "Laws of Bosnia and Herzegovina",
+        "englishIntro": "Relevant laws of Bosnia and Herzegovina related to traffic and road safety."
+      },
+      "podzakonska": {
+        "title": "Bylaws",
+        "subtitle": "Legal regulations in Bosnia and Herzegovina",
+        "activeTitle": "Bylaws",
+        "englishTitle": "Bylaws of Bosnia and Herzegovina"
+      }
+    },
+    "hrvatska": {
+      "title": "Croatia",
+      "subtitle": "Legal Regulations in Croatia"
+    },
+    "makedonija": {
+      "title": "North Macedonia",
+      "subtitle": "Legal Regulations in North Macedonia"
+    }
+  }
+}

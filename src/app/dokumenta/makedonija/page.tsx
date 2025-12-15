@@ -1,19 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function MakedonijaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Severna Makedonija - Saobraćajna regulativa
-          <span className="block text-2xl mt-2 text-primary-300">North Macedonia - Traffic Regulations</span>
+          {t.dokumenta.makedonija.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.makedonija.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +91,9 @@ export default function MakedonijaPage() {
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
                   <li>Obavezno korišćenje dnevnih svetala tokom cele godine</li>
                   <li>Zimska oprema obavezna od 15. novembra do 15. marta</li>
-                  <li>Dozvoljeni nivo alkohola: 0.5 promila (0.0 za mlade vozače)</li>
+                  <li>
+                    Dozvoljeni nivo alkohola: 0.5 promila (0.0 za mlade vozače)
+                  </li>
                   <li>Kazne se naplaćuju na licu mesta</li>
                 </ul>
               </div>
@@ -83,7 +103,9 @@ export default function MakedonijaPage() {
                   Putarina
                 </h3>
                 <p className="text-gray-600">
-                  Na auto-putevima u Severnoj Makedoniji naplaćuje se putarina. Dostupna je naplata u gotovini i platnim karticama na svim naplatnim stanicama.
+                  Na auto-putevima u Severnoj Makedoniji naplaćuje se putarina.
+                  Dostupna je naplata u gotovini i platnim karticama na svim
+                  naplatnim stanicama.
                 </p>
               </div>
             </div>
@@ -94,7 +116,9 @@ export default function MakedonijaPage() {
               Traffic Regulations in North Macedonia
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Relevant laws and regulations about traffic in North Macedonia, including speed limits, required documents, mandatory equipment, and toll road information.
+              Relevant laws and regulations about traffic in North Macedonia,
+              including speed limits, required documents, mandatory equipment,
+              and toll road information.
             </p>
           </div>
         </motion.div>

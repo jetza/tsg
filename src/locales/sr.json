@@ -1,0 +1,231 @@
+{
+  "oNama": {
+    "title": "O Nama",
+    "intro1": "Naša specijalnost je razvoj i primena inovativnih projekata u oblasti bezbednosti saobraćaja. Članovi našeg tima učestvovali su u izradi \"Zakona o bezbednosti saobraćaja na putevima\" i nekih od podzakonskih akata.",
+    "intro2": "Vodeći prevoznici, sa preko 2,000 vozila učestvuju u našem projektu podizanja nivoa bezbednosti u prevozu putnika. Organizujemo stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali i učestvujemo kao predavači na konferencijama koje organizuju Privredna komora Srbije, Saobraćajni fakultet u Beogradu, IRU Academy iz Ženeve i drugi.",
+    "visionTitle": "Naša vizija",
+    "vision": "Naša vizija je da postanemo priznati lider u razvoju i primeni projekata u oblasti bezbednosti saobraćaja u regionu."
+  },
+  "firma": {
+    "title": "Firma",
+    "tsgTitle": "Traffic Safety Group (TSG)",
+    "tsgIntro1": "Traffic Safety Group (TSG) je vodeća konsultantska kompanija u oblasti bezbednosti saobraćaja i transporta u jugoistočnoj Evropi. Kompanija je osnovana 2008. godine.",
+    "tsgIntro2": "Naš tim čine eksperti sa dugogodišnjim praktičnim iskustvom. Iskusan tim stručnjaka za saobraćaj radio je na više od 5000 slučajeva saobraćajnih nezgoda.",
+    "expertiseTitle": "Ekspertiza saobraćajnih nezgoda",
+    "expertiseP1": "Rezultati ekspertize saobraćajnih nezgoda predstavljaju deo dokaznog materijala koji se koristi za donošenje sudske odluke. Stoga se ekspertiza saobraćajnih nezgoda mora izvršiti pravilno da bi sudska odluka bila zasnovana na rezultatima ekspertize.",
+    "expertiseP2": "Ekspertiza saobraćajnih nezgoda može se izvršiti po nalogu suda, nalogu branioca ili tužioca, nalogu drugog pravnog lica radi utvrđivanja činjenica značajnih za dalji sudski proces, strana u sudskom postupku ili bilo kog drugog pravnog lica za dalje poslovanje.",
+    "expertiseP3": "Ekspertiza saobraćajnih nezgoda može se izvršiti u cilju utvrđivanja grešaka učesnika u saobraćajnoj nezgodi, ali i radi utvrđivanja verodostojnosti nastanka saobraćajne nezgode, drugim rečima - za otkrivanje i dokazivanje prevare u osiguranju.",
+    "expertiseP4": "Kao što je napisano u Zakonu: \"...Ekspertiza predstavlja stručnu aktivnost koja zajedno sa naučnim, tehničkim i drugim dostignućima, pruža sudu ili drugom organu nadležnom za postupak, neophodna stručna znanja koja se koriste prilikom utvrđivanja, ocenjivanja ili razjašnjavanja pravno relevantnih činjenica...\".",
+    "symposiumsTitle": "Simpozijumi",
+    "symposiumsP1": "Pored ekspertize saobraćajnih nezgoda, Traffic Safety Group (TSG) organizuje međunarodne simpozijume: \"Ekspertiza saobraćajnih nezgoda i prevara u osiguranju\" od 2009. godine.",
+    "symposiumsP2": "Postoji rastući broj sporova i postupaka zbog prevara u osiguranju. Među optuženima su bili ljudi iz policije, stručnjaci za saobraćaj, procenitelji štete, likvidatori, rukovodioci osiguravajućih kompanija itd. Saobraćajni fakultet i TSG razvili su modele za otkrivanje prevare u osiguranju i izvođenje ekspertiza saobraćajnih nezgoda. Posebna pažnja je posvećena osiguravajućim kompanijama, advokatima, sudijama i tužiocima, i svima koji su zainteresovani za oblast prevare u osiguranju.",
+    "symposiumsP3": "Primena Zakona o bezbednosti saobraćaja na putevima je specifična, stoga je neophodna edukacija stručnjaka i razmena iskustava.",
+    "educationTitle": "Edukacija",
+    "educationP1": "TSG organizuje obuke za bezbedno učešće u saobraćaju i obuke za upotrebu programa PC-Crash.",
+    "educationP2": "PC-Crash je vodeći svetski softver za simulaciju i rekonstrukciju saobraćajnih nezgoda. Program koriste sudski veštaci, policijski forenzičari, advokaiti i osiguravajuće kompanije širom sveta.",
+    "projectsTitle": "Projekti",
+    "projectsP1": "TSG je učestvovao u izradi brojnih projekata i studija u oblasti bezbednosti saobraćaja:",
+    "projectsList": [
+      "Zakon o bezbednosti saobraćaja na putevima",
+      "Pravilnici i drugi podzakonski akti",
+      "Strategija bezbednosti saobraćaja za grad Beograd",
+      "Studije bezbednosti saobraćaja za različite gradove i opštine",
+      "Projekti za unapređenje bezbednosti u prevoznim kompanijama"
+    ]
+  },
+  "zaposleni": {
+    "title": "Zaposleni",
+    "intro": "Traffic Safety Group (TSG) je vodeća konsultantska kompanija za poslovanje u oblasti bezbednosti saobraćaja i transporta u regionu jugoistočne Evrope. Naš tim se sastoji isključivo od vodećih stručnjaka sa dugogodišnjim praktičnim iskustvom.",
+    "directorTitle": "Direktor Tijana Ivanišević, dipl. inž.",
+    "directorBio": "Saradnik u poslovno saobraćajnim i tehničkim ekspertizama u Komisiji za vještačenje Instituta saobraćajnog fakulteta u Beogradu i Traffic Safety Group DOO. Trenutno radi kao saobraćajni inženjer na privremenim poslovima, poslovima baze podataka, Odeljenja za upravljanje - informacioni sistemi u saobraćaju, u \"Putevi Srbije\", u Republici Srbiji. Član je istraživačkog tima na više projekata i studija na Saobraćajnom fakultetu u Beogradu. Učestvovala je na brojnim naučnim i stručnim konferencijama, gde je objavila desetine naučnih radova, kako u Srbiji tako i u inostranstvu. Po obrazovanju, od 2014. godine je diplomirani inženjer saobraćaja i trenutno usavršava svoje znanje u oblasti bezbednosti saobraćaja.",
+    "deputyDirectorTitle": "Zamenik direktora Milan M. Vujanić, master inž.",
+    "deputyDirectorBio": "Ekspert za saobraćajne i tehničke ekspertize i član komisije stručnjaka pri Institutu Saobraćajnog fakulteta u Beogradu. On je takođe tehnički sekretar na projektu Strategije bezbednosti saobraćaja za grad Beograd. Master je inženjer saobraćaja koji je trenutno na doktorskim studijama iz oblasti bezbednosti saobraćaja na Saobraćajnom fakultetu u Beogradu.",
+    "secretaryTitle": "Poslovni sekretar Branka Kovač",
+    "consultantsTitle": "Deo našeg tima su i naši stručni konsultanti:",
+    "consultantsList": [
+      "Prof. dr Milan Vujanić",
+      "Milorad Cvijan, dipl. inž.",
+      "Pravni tim",
+      "Doc. dr sc. med Zoran V. Ćosić",
+      "Prof. dr Ognjen Pantelić"
+    ]
+  },
+  "konsultanti": {
+    "title": "Stručni konsultanti",
+    "transportTitle": "Transport",
+    "milanVujanicTitle": "Prof. dr Milan Vujanić",
+    "milanVujanicBio": "Redovni je profesor na Saobraćajnom fakultetu u Beogradu i šef katedre za drumski i gradski saobraćaj i transport i šef modula za bezbednost saobraćaja. Predsednik je komisije stručnjaka pri Institutu Saobraćajnog fakulteta, redovni profesor na Saobraćajnom fakultetu u Doboju i redovni profesor na Fakultetu za saobraćaj, komunikacije i logistiku u Beranama. Bio je vođa tima za pisanje Zakona o bezbednosti saobraćaja na putevima (Službeni glasnik RS, broj 41, 02.06.2009) i vođa tima za brojne projekte i studije u oblasti bezbednosti saobraćaja. CV (curriculum vitae)",
+    "cvijanTitle": "Milorad Cvijan, dipl. inž.",
+    "cvijanBio": "Sudski je veštak iz oblasti bezbednosti saobraćaja, sa dugogodišnjim iskustvom u ekspertizi saobraćajnih nezgoda. Kao član istraživačkog tima Instituta Saobraćajnog fakulteta učestvovao je u mnogim projektima i studijama iz oblasti bezbednosti saobraćaja. Autor je i koautor mnogih radova na stručnim skupovima, simpozijumima i konferencijama o bezbednosti saobraćaja.",
+    "informationTitle": "Informacioni sistemi",
+    "pantelicTitle": "Prof. dr Ognjen Pantelić",
+    "pantelicBio": "Docent je na Fakultetu organizacionih nauka u Beogradu i konsultant za informacione sisteme u saobraćaju.",
+    "medicineTitle": "Medicina",
+    "cosicTitle": "Doc. dr sc. med Zoran V. Ćosić",
+    "cosicBio": "Doktor medicine, sa zvanjem docenta na Univerzitetu. Klinički je radiolog, sa specijalizacijom iz interne medicine i subspecijalizacijom iz kardiologije, Fellow of European Association of Cardiologist i pomoćnik direktora u Kliničkom centru \"Dr Dragiša Mišović Dedinje\" u Beogradu. CV (curriculum vitae)",
+    "lawTitle": "Pravo",
+    "lawTeamTitle": "Pravni tim",
+    "lawTeamBio": "Naš pravni tim čine advokati specijalizovani za saobraćajno pravo, osiguranje i građansku odgovornost. Pružaju pravnu podršku u svim fazama postupka, od izrade tužbe do zastupanja pred sudom."
+  },
+  "delatnosti": {
+    "title": "Delatnosti",
+    "intro": "TSG pruža usluge i projekte iz sledećih oblasti:",
+    "services": [
+      "Projektovanje saobraćajnih površina i odgovarajuće signalizacije",
+      "Izrada tehnoloških projekata auto baza, autobuskih stanica i stajališta, površina za parkiranje, parking garaža, stanica za snabdevanje gorivom",
+      "Izrada projekata zaštite gradilišta",
+      "Projekti zaštite dece u zonama osnovnih škola",
+      "Provere pravilnog funkcionisanja signalnih planova na raskrsnicama (sa aspekta bezbednosti odvijanja saobraćaja)",
+      "Konsultativne analize za potrebe prekršajnih, krivičnih i parničnih postupaka u saobraćaju",
+      "Izrada kompjuterskih analiza i provera brzina vozila koja su učestvovala u sudaru",
+      "Pribavljanje tehničkih karakteristika i podataka o vozilima drumskog i ostalih vidova saobraćaja",
+      "Procena visine štete na vozilima i objektima, analiza uzroka i okolnosti nastanka štetnog događaja (saobraćajne nezgode) i pomoć pri ostvarenju prava na naknadu štete"
+    ],
+    "mainActivity": "TSG je firma koja svoju osnovnu delatnost ostvaruje u oblasti bezbednosti saobraćaja, drugim rečima u oblasti zaštite ljudi i imovine u saobraćaju",
+    "standards": "Prilikom pružanja usluga TSG koristi najviše standarde države Srbije, uzimajući u obzir trenutna dostignuća iz relevantnih oblasti u svetu",
+    "consulting": "Poseban deo TSG-a se bavi konsultantskom delatnošću iz oblasti saobraćaja i to posebno iz dela normativnih akata koje svaka firma koja se bavi saobraćajem mora da ima. Ovako urađena dokumenta omogućavaju da odgovornost firme bude manja, odnosno da odgovornost firme bude samo za ono za šta svaka firma i mora biti odgovorna."
+  },
+  "ekspertize": {
+    "title": "Ekspertize",
+    "intro": "Prilikom utvrđivanja uzroka odnosno okolnosti nastanka nekog događaja, neophodno je angažovati stručnjake, koji pored visokog stepena znanja iz oblasti koja se analizira poseduju i odgovarajuću veštinu. Analizu uzroka i okolnosti nastanka događaja iz oblasti drumskog i gradskog saobraćaja i transporta je neophodno poveriti veštacima saobraćajno-tehničke struke.",
+    "definition": "Saobraćajno-tehničko veštačenje je oblast koja koristi znanja iz oblasti medicine, mašinstva, psihologije i ostalih oblasti. Veštaci specijalizovani za oblast saobraćaja su inženjeri ili diplomirani inženjeri saobraćaja.",
+    "importance1": "Rezultati saobraćajno-tehničkog veštačenja predstavljaju deo dokaznog materijala koji se koristi pri donošenju sudske presude. Iz tog razloga je neophodno da Nalaz i mišljenje veštaka budu urađeni tačno jer je Sudska presuda zasnovana i na rezultatima saobraćajno-tehničkog veštačenja.",
+    "types1": "Saobraćajno-tehničko veštačenje može biti urađeno po zahtevu Suda, po zahtevu branioca okrivljenog ili zastupnika oštećenih, po zahtevu drugog pravnog lica u cilju prikupljanja, odnosno utvrđivanja činjenica važnih za dalje postupanja Suda, stranaka u Sudskom postupku ili drugog pravnog lica za potrebe poslovanja.",
+    "types2": "Saobraćajno-tehničko veštačenje može biti urađeno za potrebe utvrđivanja propusta učesnika saobraćajne nezgode, ali i za potrebe utvrđivanja verodostojnosti nastanka saobraćajne nezgode, odnosno otkrivanja i dokazivanja prevare u osiguranju.",
+    "law": "Zakon o sudskim veštacima: '...Poslovi veštačenja, u smislu ovog zakona, predstavljaju stručne aktivnosti čijim se obavljanjem, uz korišćenje naučnih, tehničkih i drugih dostignuća, pružaju sudu ili drugom organu koji vodi postupak potrebna stručna znanja koja se koriste prilikom utvrđivanja, ocene ili razjašnjenja pravno relevantnih činjenica...'.",
+    "examplesTitle": "Nekoliko primera ekspertiza saobraćajnih nezgoda:",
+    "examples": [
+      "Sudar vozila iz suprotnih smerova",
+      "Sudar vozila i motocikla",
+      "Sudar autobusa i transportnog sastava"
+    ],
+    "servicesTitle": "Naše usluge ekspertize uključuju:",
+    "services": [
+      "Kompjuterske simulacije i rekonstrukcije saobraćajnih nezgoda",
+      "Analiza brzina vozila i mehaničkih oštećenja",
+      "Procena mogućnosti izbegavanja nezgode",
+      "Izveštaji za sudske postupke"
+    ]
+  },
+  "simpozijumi": {
+    "title": "Simpozijumi",
+    "intro1": "Pored veštačenja Traffic Safety Group (TSG) od 2009. Godine organizuje stručne međunarodne simpozijume.",
+    "intro2": "Prva dva simpozijuma organizovana u Vrnjačkoj Banji te godine imala su teme: 'Saobraćajno-tehnička veštačenja i procena štete', i 'Sudar vozila i pešaka'. Ove teme su izazvale veliko interesovanje, doprinele pisanju kvalitetnih radova i rezultirale korisnim raspravama na samom simpozijumu.",
+    "fraudIssue": "Međutim, primetili smo smo da se sve više sporova i postupaka vodi zbog pokušaja prevara u osiguranju. Bilo je optuženih i iz redova saobraćajne policije, veštaka saobraćajno-tehničke struke, procenitelja, likvidatora, rukovodilaca OD-ova itd. Stoga smo se okrenuli organizovanju stručnih simpozijuma s temom: 'Veštačenje saobraćajnih nezgoda i prevare u osiguranju'.",
+    "development": "Na Saobraćajnom Fakultetu u Beogradu i u TSG-u su razvijani modeli za otkrivanje prevara i izrade nalaza saobraćajno-tehničkih veštačenja. Posebna pažnja je posvećena osiguravajućim kompanijama, advokatima, sudijama i tužiocima, odnosno svima koje interesuje materija o prevarama u osiguranju.",
+    "lawApplication": "Materija vezana za primenu Zakona o Bezbednosti saobraćaja (ZBS) je vrlo specifična, pa su znanja iz ove oblasti sistematizovana i pripremljena da olakšaju sudijama, tužiocima, advokatima i ostalim zainteresovanima za pravilnu primenu ZBS-a u postupcima.",
+    "uniformity": "Pored razlika u načinu izražavanja veštaka, uočene su razlike u procenama i analizama opasnih situacija. U cilju jasnog izražavanja veštaka o uzrocima i doprinosima vezanim za nastanak i analizu opasne situacije, na našim Simpozijumima se predlažu načini izražavanja stavova veštaka i analize opasnih situacija, a što je važno svima u postupku, tj. tužiocima, sudijama, advokatima i strankama da bi mogli lako i jasno da razumeju šta su veštaci mogli da utvrde, a šta su utvrdili.",
+    "organization": "Simpozijume organizuje stručan tim firme TSG. Informacije o osnovnoj temi, cenama, datumu i mestu održavanja simpozijuma objavljujemo na našem sajtu najmanje 3 meseca pre održavanja simpozijuma.",
+    "openType": "Simpozijum je otvorenog tipa. Svi koji se prijave mogu da prisustvuju predavanjima.",
+    "goalTitle": "Cilj simpozijuma",
+    "goal1": "Namera Organizacionog odbora Simpozijuma je da, nastavljajući tradiciju, poboljša stanje u delu procesa vezanih za saobraćajne nezgode i njihove posledice- smrtne slučajeve, povrede i ogromne materijalne štete.",
+    "goal2": "Država gubi ogromna sredstva zbog lečenja povređenih, troškova sudskih postupaka i ogromnih pratećih nepotrebnih troškova koji nastaju kao posledica saobraćajnih nezgoda. Računajući da najmanje 3% BND Republika Srbija gubi zbog šteta izazvanih saobraćajnim nezgodama, a da je oko 2% BND učešće ministarstva obrazovanja ili ministarstva odbrane u državnom budžetu, jasno je da troškovi za funkcionisanje 1,5 ministarstava, uključujući kompletne troškove, građani Srbije bespotrebno unište u saobraćajnim nezgodama.",
+    "goal3": "Prve dve od najvažnijih stvari koje svaki čovek ima, predstavljaju život i sloboda svakog pojedinca. Zbog saobraćajnih nezgoda, i u saobraćajnim nezgodama, ugroženi su i životi i sloboda učesnika saobraćajnih nezgoda, ali tako da u mirnodopskim uslovima najveći broj smrtnih slučajeva nastaje kao posledica saobraćajnih nezgoda u drumskom saobraćaju. Veštačenjem (ekspertizama) saobraćajnih nezgoda utiče se na pravedniji život građana jer pravi krivci bivaju kažnjeni, a oštećeni obeštećeni, smanjuju se nepotrebni troškovi države i skraćuju sudski postupci.",
+    "goal4": "Posebno je bitno da se kvalitetnim i ujednačenim veštačenjem omogućava da građani Srbije budu jednaki pred zakonom i da se izbegne kažnjavanje nevinih.",
+    "goal5": "Ovim Simpozijumima nastavljamo put ka ujednačenom pristupu i rešavanju krivične i civilne odgovornosti, ka realnijem i ispravnijem pravnom sistemu i insistiranju da se u ovoj materiji pojača uticaj profesionalizma do nivoa koji je postignut u razvijenom svetu."
+  },
+  "edukacija": {
+    "title": "Edukacija",
+    "intro": "Na transportnoj mreži naše zemlje na godišnjem nivou, u saobraćajnim nezgodama, smrtno strada oko 1000 ljudi. Svest stanovništva o značaju bezbednosti saobraćaja je na veoma niskom nivou. Osnovni uslov za smanjenje broja saobraćajnih nezgoda i težine posledica saobraćajnih nezgoda je da se svaki od učesnika u saobraćaju ponaša bezbedno.",
+    "tsgActivity": "Traffic Safety Group d.o.o. se bavi organizacijom edukacije svih učesnika u saobraćaju i izradom plana i programa edukacije za škole i akademije koje se bave obukom bezbedne vožnje.",
+    "closedSystems": "Traffic Safety Group d.o.o. (TSG) organizuje i izvodi predavanja u zatvorenim sistemima, u cilju unapređenja nivoa bezbednosti saobraćaja. U okviru zatvorenih sistema, TSG organizuje predavanja i edukaciju iz oblasti primene: novog ZBS-a (Zakona o Bezbednosti Saobraćaja na putevima), novog Zakona o Obaveznom Osiguranju, izrade i primene internih akata unutrašnje kontrole bezbednosti saobraćaja, osiguranja motornih vozila i robe, naplate štete, bezbednog učestvovanja u saobraćaju (kurs defanzivne vožnje), TSG organizuje i pružanje pravnih saveta iz oblasti saobraćaja.",
+    "programTitle": "Program obuke uključuje:",
+    "programItems": [
+      "Osnove rada u PC Crash programu",
+      "Rekonstrukcija saobraćajnih nezgoda",
+      "Analiza sudara vozila",
+      "Simulacije kretanja vozila",
+      "Izrada stručnih izveštaja"
+    ],
+    "ctaTitle": "Zainteresovani ste za obuku?",
+    "ctaText": "Kontaktirajte nas za više informacija o terminima i ceni obuke.",
+    "ctaButton": "Kontakt"
+  },
+  "obukaBezbedno": {
+    "title": "Obuka za bezbedno učestvovanje u saobraćaju",
+    "program": "Nakon dugogodišnjeg istraživanja i rada na edukaciji učesnika u saobraćaju, TSG je tokom 2008. godine postavio program obuke za bezbedno učestvovanje u saobraćaju. Osnova bezbednog učestvovanja u saobraćaju je detaljno poznavanje prava i obaveza svih učesnika (Zakona o bezbednosti saobraćaja) i njihovo ponašanje u skladu sa pravilima. Program je zasnovan na tzv. 'defanzivnom' učestvovanju u saobraćaju.",
+    "learning": "Možete naučiti puno od predavača koji dugo godina izučavaju bezbednost saobraćaja, istražuju uzroke i okolnosti pod kojima su se dogodile saobraćajne nezgode, učestvuju u izradi Zakona o bezbednosti saobraćaja, razmenjuju domaća iskustva sa inostranim saradnicima, primenjuju strana iskustva u domaćim uslovima, postavljaju programe edukacije u drugim domaćim školama bezbedne vožnje.",
+    "additional": "Pored obuke za bezbedno učestvovanje u saobraćaju (učesnika svih uzrasta), TSG organizuje i obuke za bezbednu organizaciju u drumskom saobraćaju i transportu."
+  },
+  "obukaPCCrash": {
+    "title": "Obuka za upotrebu programa PC Crash",
+    "intro": "Obuka za primenu programa PC Crash je zasnovana na poznavanju programskog paketa i na iskustvu stečenom tokom analiza saobraćajnih nezgoda. Pored poznavanja rukovanja PC Crash-om, možete saznati i specifičnosti primene programa.",
+    "specifics": "Specifičnosti primene programa, uočene tokom analize najrazličitijih slučajeva saobraćajnih nezgoda, možete saznati za veoma kratko vreme.",
+    "about": "PC Crash je programski paket čijom upotrebom je moguće preciznije analizirati elemente na osnovu kojih je moguće utvrditi uzroke i okolnosti pod kojima se dogodila neka saobraćajna nezgoda. Program predstavlja alat koji 'brzo' obavlja veoma složene proračune koje 'konvencionalnim' metodama nije moguće sprovesti.",
+    "requirements": "Za pravilnu upotrebu programa PC Crash, neophodno je stručno znanje iz oblasti saobraćaja (posebno analize saobraćajnih nezgoda) kao i poznavanje rada na računaru. PC Crash predstavlja samo pomoć pri analizi saobraćajnih nezgoda, a kvalitet ulaznih podataka na osnovu kojih program vrši proračune zavisi od kvaliteta rada veštaka i kvaliteta materijalnih dokaza iz Spisa.",
+    "precision": "Programom PC Crash moguće je precizno proveriti parametre utvrđene 'konvencionalnim' metodama, kao i preciznije odrediti one parametre koji nisu mogli biti precizno utvrđeni klasičnim metodama.",
+    "example": "Na primer, čest je slučaj, pri čeonom sudaru vozila i pešaka, da su u uviđajnoj dokumentaciji fiksirani tragovi otpali sa vozila i/ili pešaka, kao i zaustavna pozicija pešaka, pa da se 'konvencijalnim metodama', primenom formula izračuna brzina vozila u trenutku sudara na osnovu daljine odbačaja pešaka. Ovako izračunata brzina može imati odstupanje od ±10%, pri čemu se u obzir uzima samo daljina odbačaja pešaka utvrđena eksperimentalno za pešaka prosečne visine i mase, dok PC Crash analizira i druge detalje važne za preciznu analizu nezgode, kao što su visina i masa pešaka, međusobni položaj vozila i pešaka (koji je moguće odrediti na osnovu povreda pešaka), karakteristike vozila koje je učestvovalo u nezgodi (masa vozila, broj i masa osoba koje su se nalazile u vozilu, geometrijske karakteristike vozila i dr.).",
+    "advanced": "PC Crash može pomoći za utvrđivanje mesta sudara kada nisu (ili nisu kvalitetno) fiksirani tragovi saobraćajne nezgode. Na primer, u slučaju kada nisu fiksirani tragovi saobraćajne nezgode, a fiksirana su oštećenja vozila, zaustavne pozicije vozila, poznati su smerovi kretanja vozila i opisane su povrede lica koja su se nalazila u vozilima. Na osnovu oštećenja, moguće je precizno utvrditi međusobni položaj vozila u trenutku sudara, a uzimajući u obzir povrede lica koja su se nalazila u vozilu, moguće je proceniti i brzine kojima su vožena vozila u trenutku sudara. Na osnovu ovih dokaza, primenom programa PC Crash se 'traži' mesto sudara, a što je moguće utvrditi. Ovakav način utvrđivanja mesta sudara zahteva velike vremenske gubitke."
+  },
+  "projekti": {
+    "title": "Projekti",
+    "intro": "Tim TSG-a je učestvovao na izradi i implementaciji projekata iz različitih oblasti. Veliki broj ovih projekata je na našim prostorima implementiran po prvi put. Za svaki od urađenih projekata je bilo najvažnije projektovati željeni nivo bezbednosti saobraćaja.",
+    "passengerTransport": "Projekat za bezbedan prevoz putnika",
+    "passengerDesc": "U decembru 2004. godine je započet razvoj Projekta za bezbedan prevoz putnika. Realizacija projekta je započeta maja 2009. godine. Cilj projekta je unapređenje nivoa bezbednosti saobraćaja kod Prevoznika koji se bave javnim masovnim prevozom putnika."
+  },
+  "dokumenta": {
+    "srbija": {
+      "zakoni": {
+        "title": "Zakoni",
+        "subtitle": "Zakonska regulativa u Srbiji",
+        "activeTitle": "Zakonska akta – važeća",
+        "inactiveTitle": "Zakonska akta – nisu više u primeni"
+      },
+      "podzakonska": {
+        "title": "Podzakonska akta",
+        "subtitle": "Zakonska regulativa u Srbiji",
+        "activeTitle": "Podzakonska akta – važeća",
+        "inactiveTitle": "Podzakonska akta – nisu više u primeni"
+      }
+    },
+    "crnaGora": {
+      "zakoni": {
+        "title": "Zakoni",
+        "subtitle": "Zakonska regulativa u Crnoj Gori",
+        "activeTitle": "Zakonska akta",
+        "lawsIntro": "Relevantni zakoni Crne Gore koji se odnose na saobraćaj i bezbednost na putevima.",
+        "lawTitle": "Zakon o vozačima i saobraćajnim dozvolama",
+        "lawDesc": "Uslovi za sticanje prava na upravljanje motornim vozilima.",
+        "englishTitle": "Laws of Montenegro",
+        "englishIntro": "Relevant laws of Montenegro related to traffic and road safety."
+      },
+      "podzakonska": {
+        "title": "Podzakonska akta",
+        "subtitle": "Zakonska regulativa u Crnoj Gori",
+        "activeTitle": "Podzakonska akta",
+        "englishTitle": "Bylaws of Montenegro"
+      },
+      "putovanje": {
+        "title": "Ukoliko putujete automobilom u Crnu Goru"
+      }
+    },
+    "bih": {
+      "zakoni": {
+        "title": "Zakoni",
+        "subtitle": "Zakonska regulativa u Bosni i Hercegovini",
+        "activeTitle": "Zakonska akta",
+        "lawsIntro": "Relevantni zakoni Bosne i Hercegovine koji se odnose na saobraćaj i bezbednost na putevima.",
+        "law1Title": "Zakon o vozačima",
+        "law1Desc": "Uslovi za sticanje prava na upravljanje motornim vozilima.",
+        "law2Title": "Zakon o tehničkim pregledima motornih vozila",
+        "law2Desc": "Reguliše tehničku ispravnost i pregled vozila.",
+        "englishTitle": "Laws of Bosnia and Herzegovina",
+        "englishIntro": "Relevant laws of Bosnia and Herzegovina related to traffic and road safety."
+      },
+      "podzakonska": {
+        "title": "Podzakonska akta",
+        "subtitle": "Zakonska regulativa u Bosni i Hercegovini",
+        "activeTitle": "Podzakonska akta",
+        "englishTitle": "Bylaws of Bosnia and Herzegovina"
+      }
+    },
+    "hrvatska": {
+      "title": "Hrvatska",
+      "subtitle": "Zakonska regulativa u Hrvatskoj"
+    },
+    "makedonija": {
+      "title": "Makedonija",
+      "subtitle": "Zakonska regulativa u Makedoniji"
+    }
+  }
+}

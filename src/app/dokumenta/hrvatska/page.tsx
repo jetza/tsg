@@ -1,19 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function HrvatskaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Hrvatska - Saobraćajna regulativa
-          <span className="block text-2xl mt-2 text-primary-300">Croatia - Traffic Regulations</span>
+          {t.dokumenta.hrvatska.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.hrvatska.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +44,9 @@ export default function HrvatskaPage() {
               Saobraćajna regulativa Hrvatske
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Kao članica EU, Hrvatska primenjuje harmonizovanu saobraćajnu regulativu sa dodatnim specifičnostima za vožnju na domaćem teritoriju.
+              Kao članica EU, Hrvatska primenjuje harmonizovanu saobraćajnu
+              regulativu sa dodatnim specifičnostima za vožnju na domaćem
+              teritoriju.
             </p>
 
             <div className="space-y-6">
@@ -71,10 +91,20 @@ export default function HrvatskaPage() {
                   Dodatne informacije
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  <li>Obvezno korištenje dnevnih svjetala tijekom cijele godine</li>
-                  <li>Zimska oprema obavezna od 15. novembra do 15. aprila u zimskim uslovima</li>
-                  <li>Naplatne stanice na auto-putevima (gotovina i kartice)</li>
-                  <li>Stroga primena propisa o vožnji pod uticajem alkohola (0.5 promila)</li>
+                  <li>
+                    Obvezno korištenje dnevnih svjetala tijekom cijele godine
+                  </li>
+                  <li>
+                    Zimska oprema obavezna od 15. novembra do 15. aprila u
+                    zimskim uslovima
+                  </li>
+                  <li>
+                    Naplatne stanice na auto-putevima (gotovina i kartice)
+                  </li>
+                  <li>
+                    Stroga primena propisa o vožnji pod uticajem alkohola (0.5
+                    promila)
+                  </li>
                 </ul>
               </div>
             </div>
@@ -85,7 +115,10 @@ export default function HrvatskaPage() {
               Traffic Regulations in Croatia
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              As an EU member, Croatia applies harmonized traffic regulations with specific requirements for driving on its territory, including speed limits, mandatory equipment, and seasonal winter tire requirements.
+              As an EU member, Croatia applies harmonized traffic regulations
+              with specific requirements for driving on its territory, including
+              speed limits, mandatory equipment, and seasonal winter tire
+              requirements.
             </p>
           </div>
         </motion.div>

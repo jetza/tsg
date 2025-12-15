@@ -1,19 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function CrnaGoraPodzakonskaAktaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Crna Gora - Podzakonska akta
-          <span className="block text-2xl mt-2 text-primary-300">Montenegro - Bylaws</span>
+          {t.dokumenta.crnaGora.podzakonska.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.crnaGora.podzakonska.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +44,8 @@ export default function CrnaGoraPodzakonskaAktaPage() {
               Podzakonska akta Crne Gore
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u Crnoj Gori.
+              Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u
+              Crnoj Gori.
             </p>
 
             <div className="space-y-4">
@@ -64,7 +83,8 @@ export default function CrnaGoraPodzakonskaAktaPage() {
               Bylaws of Montenegro
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Regulations and decrees that regulate traffic in Montenegro in more detail.
+              Regulations and decrees that regulate traffic in Montenegro in
+              more detail.
             </p>
           </div>
         </motion.div>

@@ -70,8 +70,24 @@ const hankenGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TSG Serbia - Traffic Safety Group",
-  description: "Bezbednost saobraćaja - Traffic Safety Group",
+  title: "TSG - Tehnika Saobraćaja Grupa",
+  description:
+    "Stručni konsultanti za saobraćaj - ekspertize, edukacija, projekti iz oblasti bezbednosti saobraćaja",
+  keywords: [
+    "saobraćaj",
+    "bezbednost",
+    "ekspertize",
+    "edukacija",
+    "TSG",
+    "Srbija",
+  ],
+  authors: [{ name: "TSG Serbia" }],
+  openGraph: {
+    title: "TSG - Tehnika Saobraćaja Grupa",
+    description: "Stručni konsultanti za saobraćaj",
+    type: "website",
+    locale: "sr_RS",
+  },
 };
 
 export default function RootLayout({

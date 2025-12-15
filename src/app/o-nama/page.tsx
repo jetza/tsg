@@ -1,17 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function ONamaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        {/* Language Switcher */}
+        <div className="flex justify-end mb-6">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          O Nama
+          {t.oNama.title}
         </motion.h1>
 
         <motion.div
@@ -21,29 +34,18 @@ export default function ONamaPage() {
           className="prose prose-lg max-w-none"
         >
           <p className="text-xl text-gray-700 leading-relaxed mb-6">
-            Naša specijalnost je razvoj i primena inovativnih projekata u
-            oblasti bezbednosti saobraćaja. Članovi našeg tima učestvovali su u
-            izradi &ldquo;Zakona o bezbednosti saobraćaja na putevima&rdquo; i
-            nekih od podzakonskih akata.
+            {t.oNama.intro1}
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Vodeći prevoznici, sa preko 2,000 vozila učestvuju u našem projektu
-            podizanja nivoa bezbednosti u prevozu putnika. Organizujemo stručne
-            skupove čiji je cilj unapređenje nivoa poslovanja, ali i učestvujemo
-            kao predavači na konferencijama koje organizuju Privredna komora
-            Srbije, Saobraćajni fakultet u Beogradu, IRU Academy iz Ženeve i
-            drugi.
+            {t.oNama.intro2}
           </p>
 
           <div className="bg-primary-50 p-8 my-8">
             <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
-              Naša vizija
+              {t.oNama.visionTitle}
             </h2>
-            <p className="text-lg text-gray-700">
-              Naša vizija je da postanemo priznati lider u razvoju i primeni
-              projekata u oblasti bezbednosti saobraćaja u regionu.
-            </p>
+            <p className="text-lg text-gray-700">{t.oNama.vision}</p>
           </div>
         </motion.div>
       </div>

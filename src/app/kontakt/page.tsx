@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function KontaktPage() {
+  const { locale, switchLocale } = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,12 +32,20 @@ export default function KontaktPage() {
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-6xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          Kontakt
+          {locale === "sr" ? "Kontakt" : "Contact"}
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -51,7 +61,7 @@ export default function KontaktPage() {
                   htmlFor="name"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  Ime i prezime
+                  {locale === "sr" ? "Ime i prezime" : "Full Name"}
                 </label>
                 <input
                   type="text"
@@ -87,7 +97,7 @@ export default function KontaktPage() {
                   htmlFor="subject"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  Naslov
+                  {locale === "sr" ? "Naslov" : "Subject"}
                 </label>
                 <input
                   type="text"
@@ -105,7 +115,7 @@ export default function KontaktPage() {
                   htmlFor="message"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  Poruka
+                  {locale === "sr" ? "Poruka" : "Message"}
                 </label>
                 <textarea
                   id="message"
@@ -122,7 +132,7 @@ export default function KontaktPage() {
                 type="submit"
                 className="w-full px-8 py-4 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
               >
-                Pošalji poruku
+                {locale === "sr" ? "Pošalji poruku" : "Send Message"}
               </button>
             </form>
           </motion.div>
@@ -136,7 +146,9 @@ export default function KontaktPage() {
           >
             <div className="bg-white p-8">
               <h2 className="text-2xl font-heading font-bold mb-6 text-primary-500">
-                Kontakt informacije
+                {locale === "sr"
+                  ? "Kontakt informacije"
+                  : "Contact Information"}
               </h2>
 
               <div className="space-y-6">

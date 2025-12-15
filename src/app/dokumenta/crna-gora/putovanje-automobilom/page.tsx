@@ -1,18 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function CrnaGoraPutovanjeAutomobilomPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Putovanje automobilom - Crna Gora
-          <span className="block text-2xl mt-2 text-primary-300">Traveling by Car - Montenegro</span>
+          {t.dokumenta.crnaGora.putovanje.title}
         </motion.h1>
 
         <motion.div
@@ -71,7 +81,9 @@ export default function CrnaGoraPutovanjeAutomobilomPage() {
                   Važne napomene
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  <li>Duž obale saobraćaj može biti intenzivan tokom letnje sezone</li>
+                  <li>
+                    Duž obale saobraćaj može biti intenzivan tokom letnje sezone
+                  </li>
                   <li>Planinskim putevima voziti oprezno, posebno zimi</li>
                   <li>Parkiranje u turističkim mestima često je naplatno</li>
                   <li>Tokom vožnje obavezno korišćenje dnevnih svetala</li>
@@ -85,7 +97,9 @@ export default function CrnaGoraPutovanjeAutomobilomPage() {
               Practical Travel Advice
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Everything you need to know before traveling to Montenegro by car, including required documents, speed limits, and mandatory equipment.
+              Everything you need to know before traveling to Montenegro by car,
+              including required documents, speed limits, and mandatory
+              equipment.
             </p>
           </div>
         </motion.div>

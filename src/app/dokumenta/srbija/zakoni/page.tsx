@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLocale } from "@/hooks/useLocale";
 
 const zakoni = [
   {

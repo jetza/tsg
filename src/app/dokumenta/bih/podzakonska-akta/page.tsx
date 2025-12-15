@@ -1,19 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function BiHPodzakonskaAktaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          BiH - Podzakonska akta
-          <span className="block text-2xl mt-2 text-primary-300">Bosnia and Herzegovina - Bylaws</span>
+          {t.dokumenta.bih.podzakonska.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.bih.podzakonska.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +44,8 @@ export default function BiHPodzakonskaAktaPage() {
               Podzakonska akta Bosne i Hercegovine
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u Bosni i Hercegovini.
+              Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u
+              Bosni i Hercegovini.
             </p>
 
             <div className="space-y-4">
@@ -53,7 +72,8 @@ export default function BiHPodzakonskaAktaPage() {
                   Pravilnik o medicinskim pregledima vozača
                 </h3>
                 <p className="text-gray-600">
-                  Uslovi zdravstvene sposobnosti za upravljanje motornim vozilima.
+                  Uslovi zdravstvene sposobnosti za upravljanje motornim
+                  vozilima.
                 </p>
               </div>
 
@@ -73,7 +93,8 @@ export default function BiHPodzakonskaAktaPage() {
               Bylaws of Bosnia and Herzegovina
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Regulations and decrees that regulate traffic in Bosnia and Herzegovina in more detail.
+              Regulations and decrees that regulate traffic in Bosnia and
+              Herzegovina in more detail.
             </p>
           </div>
         </motion.div>

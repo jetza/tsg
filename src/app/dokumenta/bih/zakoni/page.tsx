@@ -1,19 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function BiHZakoniPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          BiH - Zakoni
-          <span className="block text-2xl mt-2 text-primary-300">Bosnia and Herzegovina - Laws</span>
+          {t.dokumenta.bih.zakoni.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.bih.zakoni.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,46 +41,28 @@ export default function BiHZakoniPage() {
         >
           <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
-              Zakoni Bosne i Hercegovine
+              {t.dokumenta.bih.zakoni.activeTitle}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Relevantni zakoni Bosne i Hercegovine koji se odnose na saobraćaj i bezbednost na putevima.
+            <p className="text-lg text-gray-700 leading-relaxed">
+              {t.dokumenta.bih.zakoni.lawsIntro}
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-6 mt-6">
               <div className="border-l-4 border-primary-400 pl-4">
                 <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Zakon o osnovama bezbjednosti saobraćaja na putevima u BiH
+                  {t.dokumenta.bih.zakoni.law1Title}
                 </h3>
                 <p className="text-gray-600">
-                  Osnovni zakon koji reguliše bezbednost saobraćaja u Bosni i Hercegovini.
+                  {t.dokumenta.bih.zakoni.law1Desc}
                 </p>
               </div>
 
               <div className="border-l-4 border-primary-400 pl-4">
                 <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Zakon o javnim putevima
+                  {t.dokumenta.bih.zakoni.law2Title}
                 </h3>
                 <p className="text-gray-600">
-                  Reguliše javne puteve i saobraćajnu infrastrukturu.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Zakon o vozačima
-                </h3>
-                <p className="text-gray-600">
-                  Uslovi za sticanje prava na upravljanje motornim vozilima.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Zakon o tehničkim pregledima motornih vozila
-                </h3>
-                <p className="text-gray-600">
-                  Reguliše tehničku ispravnost i pregled vozila.
+                  {t.dokumenta.bih.zakoni.law2Desc}
                 </p>
               </div>
             </div>
@@ -70,10 +70,10 @@ export default function BiHZakoniPage() {
 
           <div className="bg-primary-50 p-8">
             <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
-              Laws of Bosnia and Herzegovina
+              {t.dokumenta.bih.zakoni.englishTitle}
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Relevant laws of Bosnia and Herzegovina related to traffic and road safety.
+              {t.dokumenta.bih.zakoni.englishIntro}
             </p>
           </div>
         </motion.div>

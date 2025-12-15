@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLocale } from "@/hooks/useLocale";
 
 const podzakonskaAktaVazeca = [
   {
@@ -174,16 +175,34 @@ const podzakonskaAktaArhiva = [
 ];
 
 export default function SrbijaPodzakonskaAktaPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-heading font-bold mb-8 text-primary-500"
+          className="text-5xl font-heading font-bold mb-4 text-primary-500"
         >
-          Podzakonska akta
+          {t.dokumenta.srbija.podzakonska.title}
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-xl text-primary-300 mb-12"
+        >
+          {t.dokumenta.srbija.podzakonska.subtitle}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -194,7 +213,7 @@ export default function SrbijaPodzakonskaAktaPage() {
           {/* Važeća podzakonska akta */}
           <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
-              Podzakonska akta – važeća
+              {t.dokumenta.srbija.podzakonska.activeTitle}
             </h2>
 
             <div className="space-y-2">

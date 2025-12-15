@@ -21,7 +21,6 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { title: "Početna", href: "/" },
   {
     title: "O Nama",
     href: "/o-nama",
@@ -54,7 +53,6 @@ const menuItems: MenuItem[] = [
       { title: "Projekti", href: "/delatnosti/projekti" },
     ],
   },
-  { title: "Registrovani korisnici", href: "/registrovani-korisnici" },
   {
     title: "Dokumenta",
     href: "/dokumenta",
@@ -113,6 +111,7 @@ const menuItems: MenuItem[] = [
   },
   { title: "Blog", href: "/blog" },
   { title: "Kontakt", href: "/kontakt" },
+  { title: "Admin", href: "/admin" },
 ];
 
 export default function Sidebar() {
@@ -127,9 +126,9 @@ export default function Sidebar() {
   useEffect(() => {
     if (
       pathname === "/" ||
-      pathname === "/registrovani-korisnici" ||
       pathname === "/blog" ||
-      pathname === "/kontakt"
+      pathname === "/kontakt" ||
+      pathname === "/admin"
     ) {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       setOpenSubmenu(null);
@@ -257,7 +256,11 @@ export default function Sidebar() {
       >
         <div className="p-6">
           <Link href="/" className="block mb-8">
-            <h1 className="text-2xl font-heading font-bold">TSG Serbia</h1>
+            <img
+              src="/logo/tria.svg"
+              alt="TSG Logo"
+              className="w-24 h-20 mx-auto"
+            />
           </Link>
 
           <nav>

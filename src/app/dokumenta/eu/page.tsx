@@ -1,18 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function EUPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Evropska unija - Saobraćajna regulativa
-          <span className="block text-2xl mt-2 text-primary-300">European Union - Traffic Regulations</span>
+          {locale === "sr"
+            ? "Evropska unija - Saobraćajna regulativa"
+            : "European Union - Traffic Regulations"}
         </motion.h1>
 
         <motion.div
@@ -26,7 +38,9 @@ export default function EUPage() {
               Saobraćajna regulativa EU
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Evropska unija ima harmonizovanu saobraćajnu regulativu koja obezbeđuje visok nivo bezbednosti saobraćaja u svim državama članicama.
+              Evropska unija ima harmonizovanu saobraćajnu regulativu koja
+              obezbeđuje visok nivo bezbednosti saobraćaja u svim državama
+              članicama.
             </p>
 
             <div className="space-y-6">
@@ -51,7 +65,10 @@ export default function EUPage() {
                   Vozačka dozvola EU
                 </h3>
                 <p className="text-gray-600">
-                  Vozačka dozvola izdata u bilo kojoj državi članici EU važeća je u svim ostalim državama članicama. Jedinstveni format u vidu kartice sa mikročipom olakšava identifikaciju i smanjuje mogućnost falsifikovanja.
+                  Vozačka dozvola izdata u bilo kojoj državi članici EU važeća
+                  je u svim ostalim državama članicama. Jedinstveni format u
+                  vidu kartice sa mikročipom olakšava identifikaciju i smanjuje
+                  mogućnost falsifikovanja.
                 </p>
               </div>
 
@@ -60,7 +77,10 @@ export default function EUPage() {
                   Tehnički pregled vozila
                 </h3>
                 <p className="text-gray-600">
-                  Države članice su obavezne da sprovode periodične tehničke preglede vozila prema harmonizovanim standardima, čime se obezbeđuje da sva vozila na putevima EU ispunjavaju minimalne tehničke uslove.
+                  Države članice su obavezne da sprovode periodične tehničke
+                  preglede vozila prema harmonizovanim standardima, čime se
+                  obezbeđuje da sva vozila na putevima EU ispunjavaju minimalne
+                  tehničke uslove.
                 </p>
               </div>
 
@@ -69,7 +89,10 @@ export default function EUPage() {
                   Kazne i prekršaji
                 </h3>
                 <p className="text-gray-600">
-                  EU radi na uspostavljanju sistema prekograničnih kazni, gde vozači mogu biti kažnjeni za prekršaje učinjene u drugoj državi članici. Najčešći prekršaji uključuju prekoračenje brzine, vožnju pod uticajem alkohola i nepropisno parkiranje.
+                  EU radi na uspostavljanju sistema prekograničnih kazni, gde
+                  vozači mogu biti kažnjeni za prekršaje učinjene u drugoj
+                  državi članici. Najčešći prekršaji uključuju prekoračenje
+                  brzine, vožnju pod uticajem alkohola i nepropisno parkiranje.
                 </p>
               </div>
             </div>
@@ -80,7 +103,10 @@ export default function EUPage() {
               EU Traffic Regulations
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              The European Union has harmonized traffic regulations ensuring high level of road safety across all member states, including unified driving license format, vehicle technical standards, and cross-border penalty systems.
+              The European Union has harmonized traffic regulations ensuring
+              high level of road safety across all member states, including
+              unified driving license format, vehicle technical standards, and
+              cross-border penalty systems.
             </p>
           </div>
         </motion.div>

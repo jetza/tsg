@@ -1,17 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function SavetiPage() {
+  const { locale, switchLocale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          Saveti / Advice
+          {locale === "sr" ? "Saveti" : "Advice"}
         </motion.h1>
 
         <motion.div
@@ -37,12 +48,12 @@ export default function SavetiPage() {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               Many choose their car so they could drive it to their vacation,
-              i.e. across borders or to the sea. Due to frequent traffic jams and
-              high temperatures, it is important that your vehicle is in a good
-              condition, so you could travel safely. Preparation of the vehicle
-              for winter drive is somewhat more complicated, because you need to
-              have winter tires, chains for the tires and similar equipment.
-              However, there are some rules for summer drive as well.
+              i.e. across borders or to the sea. Due to frequent traffic jams
+              and high temperatures, it is important that your vehicle is in a
+              good condition, so you could travel safely. Preparation of the
+              vehicle for winter drive is somewhat more complicated, because you
+              need to have winter tires, chains for the tires and similar
+              equipment. However, there are some rules for summer drive as well.
             </p>
           </section>
 
@@ -56,18 +67,18 @@ export default function SavetiPage() {
               Around 20% of drivers have either too small or too big amount of
               oil in the vehicle. Checking the oil is not complicated, so it is
               recommended to do it correctly. Checking the air condition of the
-              vehicle is also necessary, and it should be done before the season.
-              Air condition is easily checked by checking if it cools down the
-              vehicle and if it works in all gears. If it is not cooling the air
-              well enough, it means there is not enough fluids in the system. The
-              gas in the device should be refilled every 2-3 years (in other
-              words, 4 years after car has been produced). The lack of fluids is
-              often the consequence of leaking through the damaged pipes. These
-              problems are solved in specialized services. One more thing that is
-              necessary for the air condition to work properly, is changing
-              filters. Filter gathers bacteria and stops it from reaching vehicle
-              cabin. Car producers usually recommend changing filters every
-              10000-15000 km.
+              vehicle is also necessary, and it should be done before the
+              season. Air condition is easily checked by checking if it cools
+              down the vehicle and if it works in all gears. If it is not
+              cooling the air well enough, it means there is not enough fluids
+              in the system. The gas in the device should be refilled every 2-3
+              years (in other words, 4 years after car has been produced). The
+              lack of fluids is often the consequence of leaking through the
+              damaged pipes. These problems are solved in specialized services.
+              One more thing that is necessary for the air condition to work
+              properly, is changing filters. Filter gathers bacteria and stops
+              it from reaching vehicle cabin. Car producers usually recommend
+              changing filters every 10000-15000 km.
             </p>
           </section>
 
@@ -78,14 +89,14 @@ export default function SavetiPage() {
               cooling the cabin
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Temperature that is not adjusted correctly could be very dangerous.
-              It is recommended that the difference in temperature in the cabin
-              and outside the vehicle should not be more than 5-6°C. It is
-              recommended that, if we want to make difference in temperatures
-              more than 10°C, we turn off the air condition 15 minutes before we
-              leave the vehicle, so the difference in temperatures would decrease.
-              Another advice is to try to park your vehicle in the shadow and to
-              use sun protectors for the vehicle.
+              Temperature that is not adjusted correctly could be very
+              dangerous. It is recommended that the difference in temperature in
+              the cabin and outside the vehicle should not be more than 5-6°C.
+              It is recommended that, if we want to make difference in
+              temperatures more than 10°C, we turn off the air condition 15
+              minutes before we leave the vehicle, so the difference in
+              temperatures would decrease. Another advice is to try to park your
+              vehicle in the shadow and to use sun protectors for the vehicle.
             </p>
           </section>
 
@@ -96,11 +107,12 @@ export default function SavetiPage() {
               during traveling seasons
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Feeling tired during driving is the cause of many traffic accidents.
-              The main thing is not to start the journey if you haven&apos;t had
-              rest. It would be ideal if you could make 30 min break after every
-              two hours of driving. Of course, it is of biggest importance to
-              know the regulations of the country. Never try risky overtaking.
+              Feeling tired during driving is the cause of many traffic
+              accidents. The main thing is not to start the journey if you
+              haven&apos;t had rest. It would be ideal if you could make 30 min
+              break after every two hours of driving. Of course, it is of
+              biggest importance to know the regulations of the country. Never
+              try risky overtaking.
             </p>
           </section>
         </motion.div>

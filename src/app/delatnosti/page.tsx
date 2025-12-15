@@ -2,25 +2,25 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function DelatnostiPage() {
+  const { t, locale, switchLocale } = useLocale();
+
   const activities = [
     {
-      title: "Projekti",
-      description:
-        "Tim TSG-a je učestvovao na izradi i implementaciji projekata iz različitih oblasti. Za svaki od urađenih projekata je bilo najvažnije projektovati željeni nivo bezbednosti saobraćaja.",
+      title: t.projekti.title,
+      description: t.projekti.intro,
       href: "/delatnosti/projekti",
     },
     {
-      title: "Ekspertize",
-      description:
-        "Prilikom pružanja ekspertskih usluga TSG koristi najviše standarde države Srbije, uzimajući u obzir trenutna dostignuća iz relevantnih oblasti u svetu.",
+      title: t.ekspertize.title,
+      description: t.delatnosti.standards,
       href: "/delatnosti/ekspertize",
     },
     {
-      title: "Edukacija",
-      description:
-        "Obuka za rad u najobuhvatnijem programu za analizu saobraćajnih nezgoda – PC Crash. Pored poznavanja rukovanja PC Crash-om, možete saznati i specifičnosti primene programa.",
+      title: t.edukacija.title,
+      description: t.obukaPCCrash.intro,
       href: "/delatnosti/edukacija",
     },
   ];
@@ -28,12 +28,20 @@ export default function DelatnostiPage() {
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-6xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={switchLocale}
+            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
+          >
+            {locale === "sr" ? "EN" : "SR"}
+          </button>
+        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          Delatnosti
+          {t.delatnosti.title}
         </motion.h1>
 
         <div className="space-y-8">
@@ -55,7 +63,7 @@ export default function DelatnostiPage() {
                 href={activity.href}
                 className="inline-flex items-center text-primary-400 font-semibold hover:text-primary-500"
               >
-                Saznajte više
+                {locale === "sr" ? "Saznajte više" : "Learn more"}
                 <svg
                   className="w-5 h-5 ml-2"
                   fill="none"

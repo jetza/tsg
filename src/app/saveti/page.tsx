@@ -4,25 +4,17 @@ import { motion } from "framer-motion";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function SavetiPage() {
-  const { locale, switchLocale } = useLocale();
+  const { t } = useLocale();
 
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          {locale === "sr" ? "Saveti" : "Advice"}
+          {t.saveti.title}
         </motion.h1>
 
         <motion.div
@@ -31,90 +23,79 @@ export default function SavetiPage() {
           transition={{ delay: 0.2 }}
           className="space-y-12"
         >
-          {/* Main Question */}
-          <section>
-            <h2 className="text-3xl font-heading font-bold mb-6 text-primary-400">
-              Kako se pripremiti za vožnju na odmor? / How to prepare for
-              driving on vacation?
+          {/* Main Article */}
+          <article className="bg-white p-8 shadow-lg">
+            <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
+              {t.saveti.article1.title}
             </h2>
-          </section>
 
-          {/* Section 1 */}
-          <section>
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500 uppercase">
-              Saznajte uputstvo za vozače koji odlaze na odmor tokom leta / Find
-              out the instruction for drivers who are going for their vacation
-              during summer
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Many choose their car so they could drive it to their vacation,
-              i.e. across borders or to the sea. Due to frequent traffic jams
-              and high temperatures, it is important that your vehicle is in a
-              good condition, so you could travel safely. Preparation of the
-              vehicle for winter drive is somewhat more complicated, because you
-              need to have winter tires, chains for the tires and similar
-              equipment. However, there are some rules for summer drive as well.
-            </p>
-          </section>
+            <div className="mb-6">
+              <p className="text-lg text-gray-600 italic mb-4">
+                {t.saveti.article1.subtitle}
+              </p>
+              <img
+                src="/images/bridge-467397_1280.jpg"
+                alt="Vožnja na godišnji odmor"
+                className="w-full h-auto rounded-lg mb-6"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            </div>
 
-          {/* Section 2 */}
-          <section>
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500 uppercase">
-              Proverite nivo ulja u motoru i stanje klima uređaja / Check the
-              level of the oil in the engine and air condition
-            </h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Around 20% of drivers have either too small or too big amount of
-              oil in the vehicle. Checking the oil is not complicated, so it is
-              recommended to do it correctly. Checking the air condition of the
-              vehicle is also necessary, and it should be done before the
-              season. Air condition is easily checked by checking if it cools
-              down the vehicle and if it works in all gears. If it is not
-              cooling the air well enough, it means there is not enough fluids
-              in the system. The gas in the device should be refilled every 2-3
-              years (in other words, 4 years after car has been produced). The
-              lack of fluids is often the consequence of leaking through the
-              damaged pipes. These problems are solved in specialized services.
-              One more thing that is necessary for the air condition to work
-              properly, is changing filters. Filter gathers bacteria and stops
-              it from reaching vehicle cabin. Car producers usually recommend
-              changing filters every 10000-15000 km.
-            </p>
-          </section>
+            <div className="prose prose-lg max-w-none space-y-6">
+              <p className="text-gray-700 leading-relaxed">
+                {t.saveti.article1.intro}
+              </p>
 
-          {/* Section 3 */}
-          <section>
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500 uppercase">
-              Ne preterivati sa hlađenjem kabine / Do not exaggerate with
-              cooling the cabin
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Temperature that is not adjusted correctly could be very
-              dangerous. It is recommended that the difference in temperature in
-              the cabin and outside the vehicle should not be more than 5-6°C.
-              It is recommended that, if we want to make difference in
-              temperatures more than 10°C, we turn off the air condition 15
-              minutes before we leave the vehicle, so the difference in
-              temperatures would decrease. Another advice is to try to park your
-              vehicle in the shadow and to use sun protectors for the vehicle.
-            </p>
-          </section>
+              <section className="mt-8">
+                <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-600">
+                  {t.saveti.article1.section1Title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t.saveti.article1.section1Content}
+                </p>
+              </section>
 
-          {/* Section 4 */}
-          <section>
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500 uppercase">
-              Bezbednost na putevima tokom letnje sezone putovanja / Road safety
-              during traveling seasons
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Feeling tired during driving is the cause of many traffic
-              accidents. The main thing is not to start the journey if you
-              haven&apos;t had rest. It would be ideal if you could make 30 min
-              break after every two hours of driving. Of course, it is of
-              biggest importance to know the regulations of the country. Never
-              try risky overtaking.
-            </p>
-          </section>
+              <section className="mt-8">
+                <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-600">
+                  {t.saveti.article1.section2Title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t.saveti.article1.section2Content}
+                </p>
+              </section>
+
+              <section className="mt-8">
+                <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-600">
+                  {t.saveti.article1.section3Title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {t.saveti.article1.section3Content}
+                </p>
+                <div className="bg-primary-50 p-6 rounded-lg">
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    {t.saveti.article1.tiredness}
+                  </p>
+                  <a
+                    href="https://www.youtube.com/watch?v=BfZPFbdBMkE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold"
+                  >
+                    <svg
+                      className="w-6 h-6 mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                    {t.saveti.article1.videoLink}
+                  </a>
+                </div>
+              </section>
+            </div>
+          </article>
         </motion.div>
       </div>
     </div>

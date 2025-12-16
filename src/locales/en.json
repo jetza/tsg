@@ -19,7 +19,8 @@
     "symposiumsTitle": "Symposiums",
     "symposiumsP1": "Beside traffic accident expertise, Traffic Safety Group (TSG) organizes International Symposiums: \"Traffic Accident Expertise and Fraud in Insurance\" since 2009.",
     "symposiumsP2": "There is a rising number of litigations and procedures due to frauds in insurance. Among the accused, there were people from the police, traffic experts, claim accountants, liquidators, leaders of the insurance companies etc. Faculty for Transport and Traffic Engineering and TSG developed the models for finding out fraud in insurance and doing traffic accident expertise. Special attention is given to insurance companies, lawyers, judges and prosecutors, and everyone who is interested in the field of fraud in insurance.",
-    "symposiumsP3": "The usage of the Law on Road Traffic Safety is specific, thus education of experts and exchange of experiences is necessary.",
+    "symposiumsP3": "The usage of the Law on Road Traffic Safety is specific, thus knowledge from this field is systematized and prepared to make the work easier for judges, prosecutors, lawyers and other parties interested in correct usage of the Law in the procedures.",
+    "symposiumsP4": "Beside the differences in the way of expert expressing, the differences have been noticed in estimations and analysis of dangerous situations. In order to achieve clear expressing of the experts about causes and contributions concerning the occurrence and the analysis of the dangerous situation, at the Symposiums we organize, we recommend the unified way of expressing the opinions and analyzing dangerous situations. That is important in the process for the prosecutors, judges, lawyers and parties involved, so it could be clearly and easily understandable what experts could determine, and, on the other hand, what the experts determined.",
     "educationTitle": "Education",
     "educationP1": "TSG organizes training for safe participation in traffic and training for the use of PC-Crash software.",
     "educationP2": "PC-Crash is the world's leading software for simulation and reconstruction of traffic accidents. The program is used by court experts, police forensics, lawyers and insurance companies worldwide.",
@@ -62,10 +63,7 @@
     "pantelicBio": "He is assistant professor at the Faculty of Organizational Sciences in Belgrade and a consultant for information systems in traffic.",
     "medicineTitle": "Medicine",
     "cosicTitle": "Doc. Dr Sc. Med Zoran V. Ćosić, Ph.D.",
-    "cosicBio": "He is MD, with the title of assistant professor at the University. He is a clinical radiologist, with specialization of internal medicine and subspecialized in cardiology, Fellow of European Association of Cardiologist and director assistant at the Clinical Center \"Dr Dragiša Mišović Dedinje\" in Belgrade. CV (curriculum vitae)",
-    "lawTitle": "Law",
-    "lawTeamTitle": "Legal Team",
-    "lawTeamBio": "Our legal team consists of lawyers specialized in traffic law, insurance and civil liability. They provide legal support in all phases of the procedure, from drafting the lawsuit to court representation."
+    "cosicBio": "Doctor of Medicine, with the title of Associate Professor at the University. He is a clinical radiologist, with a specialization in internal medicine and subspecialization in cardiology, Fellow of the European Association of Cardiologists and Deputy Director at the Clinical Center \"Dr Dragiša Mišović Dedinje\" in Belgrade. CV (curriculum vitae)"
   },
   "delatnosti": {
     "title": "Services",
@@ -92,19 +90,21 @@
     "importance1": "The results of traffic-technical expertise represent part of the evidence material used in making a court decision. For this reason, it is necessary that the Expert's Finding and Opinion be done accurately, as the Court's decision is based on the results of traffic-technical expertise.",
     "types1": "Traffic-technical expertise can be done at the request of the Court, at the request of the defense counsel of the accused or the representative of the injured parties, at the request of another legal entity for the purpose of collecting or determining facts important for further Court proceedings, parties in Court proceedings or another legal entity for business purposes.",
     "types2": "Traffic-technical expertise can be done for the purpose of determining the omissions of traffic accident participants, but also for the purpose of determining the credibility of the occurrence of a traffic accident, i.e. detecting and proving fraud in insurance.",
-    "law": "Law on Court Experts: '...Expert work, within the meaning of this law, represents professional activities which, through the use of scientific, technical and other achievements, provide the court or other body conducting the procedure with the necessary expert knowledge used in determining, evaluating or clarifying legally relevant facts...'.",
+    "law": "Law on Court Experts: ''…Expert work, within the meaning of this law, represents professional activities which, through the use of scientific, technical and other achievements, provide the court or other body conducting the procedure with the necessary expert knowledge used in determining, evaluating or clarifying legally relevant facts…''.",
     "examplesTitle": "Several examples of traffic accident expertise:",
     "examples": [
-      "Collision of vehicles from opposite directions",
-      "Collision of vehicle and motorcycle",
-      "Collision of bus and transport composition"
-    ],
-    "servicesTitle": "Our expertise services include:",
-    "services": [
-      "Computer simulations and reconstructions of traffic accidents",
-      "Analysis of vehicle speeds and mechanical damage",
-      "Assessment of accident avoidance possibilities",
-      "Reports for court proceedings"
+      {
+        "title": "Collision of vehicles from opposite directions",
+        "file": "Sudar-vozila-iz-suprotnih-smerova.pdf"
+      },
+      {
+        "title": "Collision of vehicle and motorcycle",
+        "file": "Sudar-vozila-i-motocikla.pdf"
+      },
+      {
+        "title": "Collision of bus and transport composition",
+        "file": "Sudar-autobusa-i-transportnog-sastava.pdf"
+      }
     ]
   },
   "simpozijumi": {
@@ -151,6 +151,9 @@
     "title": "Training for PC Crash Software",
     "intro": "Training for the application of PC Crash software is based on knowledge of the software package and experience gained during traffic accident analysis. In addition to knowing how to operate PC Crash, you can also learn the specifics of using the program.",
     "specifics": "You can learn the specifics of using the program, observed during the analysis of various traffic accident cases, in a very short time.",
+    "examplesTitle": "Several examples of traffic accident analysis using PC Crash software",
+    "exampleVideo1": "Two vehicles, version A",
+    "exampleVideo2": "Two vehicles, version B",
     "about": "PC Crash is a software package whose use makes it possible to more precisely analyze elements on the basis of which it is possible to determine the causes and circumstances under which a traffic accident occurred. The program represents a tool that 'quickly' performs very complex calculations that cannot be carried out using 'conventional' methods.",
     "requirements": "For proper use of PC Crash software, professional knowledge in the field of traffic (especially traffic accident analysis) as well as knowledge of computer work is necessary. PC Crash is only an aid in traffic accident analysis, and the quality of input data on the basis of which the program performs calculations depends on the quality of the expert's work and the quality of material evidence from the File.",
     "precision": "With PC Crash software, it is possible to precisely check parameters determined by 'conventional' methods, as well as more precisely determine those parameters that could not be precisely determined by classical methods.",
@@ -160,8 +163,17 @@
   "projekti": {
     "title": "Projects",
     "intro": "The TSG team participated in the development and implementation of projects from various fields. A large number of these projects were implemented for the first time in our region. For each of the completed projects, it was most important to design the desired level of traffic safety.",
-    "passengerTransport": "Project for Safe Passenger Transport",
-    "passengerDesc": "Development of the Project for Safe Passenger Transport began in December 2004. Project implementation began in May 2009. The project goal is to improve the level of traffic safety among Carriers engaged in public mass passenger transport."
+    "passengerTitle": "Project for Safe Passenger Transport",
+    "passengerIntro": "Development of the Project for Safe Passenger Transport began in December 2004. Project implementation began in May 2009. The project goal is to improve the level of traffic safety among Carriers engaged in public mass passenger transport.",
+    "statistics1": "In the period from 1988 to 2007, more than 920,000 traffic accidents occurred on the territory of the Republic of Serbia, of which more than 260,000 traffic accidents involved casualties. In the same period, more than 23,000 people were killed in traffic accidents, and more than 348,000 people were injured.",
+    "global": "Analysis of traffic accident data at the global level leads to the conclusion that more than 90% of traffic accidents occur in poor and underdeveloped countries.",
+    "developed": "The experience of developed countries has shown that by applying appropriate measures (preventive, repressive...) it is possible to influence the reduction in the number of traffic accidents and the severity of traffic accident consequences, i.e., that traffic safety can be managed.",
+    "statistics2": "In the period from 2005 to 2009, 24,226 traffic accidents involving buses occurred on the territory of the Republic of Serbia (excluding Kosovo and Metohija). In these traffic accidents, 92 people were fatally injured, and 2,697 people were injured, and significant material damage was caused.",
+    "consequences": "The consequences of socio-political and economic events in the territories of the former Yugoslavia have affected the reduction in the level of traffic safety, and even in systems where transport is a professional activity.",
+    "children": "Data on child casualties during bus travel is particularly concerning. Our goal is to contribute to improving the level of public mass passenger transport safety by applying a series of systemic measures. Participation in the Safe Passenger Transport project is on a voluntary basis. In cooperation with the largest carriers in the country and other professional organizations, since December 2004, work has been carried out at the Department of Traffic Safety at the Faculty of Transport Engineering in Belgrade on establishing and improving activities and measures that carriers would use to reduce the risk of involvement in traffic accidents and the severity of consequences of traffic accidents that occur.",
+    "implementation": "The application and improvement of the Project are of national importance, and the results of the Project's application will be reflected in the reduction in the number of traffic accidents and the severity of consequences.",
+    "support": "The Project was supported by: the Ministry of Infrastructure, the Faculty of Transport Engineering in Belgrade, a leader in traffic safety among bus manufacturers (a company from Scandinavia), the Serbian Traffic Safety Committee, and other international companies involved in the passenger transport process.",
+    "pdfTitle": "Method for Evaluating the Existing State of Traffic Safety at Carriers"
   },
   "dokumenta": {
     "srbija": {
@@ -227,5 +239,201 @@
       "title": "North Macedonia",
       "subtitle": "Legal Regulations in North Macedonia"
     }
+  },
+  "kontakt": {
+    "title": "Contact",
+    "nameLabel": "Full Name",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "sendButton": "Send Message",
+    "infoTitle": "Contact Information",
+    "directorTitle": "DIRECTOR",
+    "assistantTitle": "ASSISTANT DIRECTOR",
+    "secretaryTitle": "BUSINESS SECRETARY",
+    "directContact": "You can also contact us directly at:",
+    "phoneContact": "or on"
+  },
+  "saveti": {
+    "title": "Advice",
+    "article1": {
+      "title": "How to prepare for driving on vacation?",
+      "subtitle": "Find out instructions for drivers who are going on a trip during summer months",
+      "intro": "Many choose their car as a means of transport for some longer trips, for example abroad or to the sea. Due to frequent traffic jams and high temperatures, it is important that your car is in good condition so you can travel safely. Preparing a car for winter driving is somewhat more complicated than summer preparation because it involves winter tires, tire chains and similar equipment. However, there are also some rules for summer driving.",
+      "section1Title": "Check the oil level in the engine and air conditioning",
+      "section1Content": "Did you know that as many as one fifth of drivers drive with too little or too much oil in the engine? Checking the oil is not complicated, so it is advised to do it the right way. Checking the air conditioning is also necessary and is done before the start of the season. The check is performed by checking whether it cools sufficiently and whether it works at all speeds. Poor cooling means there is not enough coolant in the system. Gas in the air conditioner should be refilled every 2-3 years (or 4 years from the date of manufacture of the car). Often the cause of fluid deficiency is its leakage due to damage to the pipes. These problems are solved in a specialized air conditioning service. Another thing that is important for the good functioning of the air conditioner is the replacement of the filter. The filter collects bacteria and prevents them from entering the vehicle cabin. Car manufacturers usually recommend replacing the filter every 10-15 thousand kilometers driven.",
+      "section2Title": "Do not overdo it with vehicle cooling",
+      "section2Content": "Improperly adjusted temperature can be very dangerous. It is recommended that the difference between the temperature in the car and the outside temperature should not be greater than 5-6°C. It is advised that, if we overdo it and make temperature differences greater than 10°C, we turn off the air conditioning 15 minutes before leaving the vehicle so that the temperature difference can be reduced somewhat. Another tip regarding temperature in vehicles during the summer months is to park the car in the shade and use some sun protection for the windows.",
+      "section3Title": "Road safety during the tourist season",
+      "section3Content": "The basic thing is not to set off if you are not rested. Ideally, a half-hour break should be taken every two hours of driving. Of course, wherever you travel, it is important to comply with traffic regulations and signs. Never apply risky overtaking.",
+      "tiredness": "Fatigue while driving is the cause of many traffic accidents:",
+      "videoLink": "Watch the video about fatigue behind the wheel"
+    }
+  },
+  "mediji": {
+    "title": "Media",
+    "intro": "On this page you can find our appearances in the media, TV and radio shows, as well as links to newspaper articles and press where TSG has been mentioned.",
+    "appearancesTitle": "Radio",
+    "pressTitle": "Press",
+    "comingSoon": "Content coming soon...",
+    "radioAppearances": [
+      {
+        "title": "How to implement new road projects",
+        "date": "Radio Belgrade 1, Daily News 22.04.2015",
+        "description": "At a meeting in Brussels, Serbia committed to agreeing on key projects in the field of transport and energy by the end of summer. Discussions on joint infrastructure for the Western Balkans are a step towards ensuring economic growth and a better life in the region. Milan Vujanić, professor at the Faculty of Transport Engineering in Belgrade, emphasizes that if we think about connection and cooperation in the region, the concept of the transport and energy system is the basis because transport without energy cannot exist.",
+        "audioFile": "/mp3s/Kako-realizovati-nove-putne-projekte-.mp3"
+      },
+      {
+        "title": "The advantage of wearing seat belts in vehicles is immeasurable",
+        "date": "Radio Belgrade 1, Daily News 10.08.2015",
+        "description": "From January to July this year, 290 people died on the roads in Serbia. There are numerous appeals for drivers to be more careful on the roads. One of the last ones referred to wearing seat belts. During a seven-day check, as many as 7,000 people were fined. The fine for not wearing a seat belt is 5,000 dinars, and recently this obligation also applies to the back seats in the car. Despite the fines and statistics according to which most of the dead are those who were not wearing seat belts, many still do not respect the regulations. Most drivers wear seat belts out of fear of fines, and there are those who do it for safety. Professor Milan Vujanić says that the number of deaths in traffic accidents can be halved by using seat belts. He believes that the advantage of wearing seat belts should be emphasized more often and rejects the demands of professional drivers to be exempted.",
+        "audioFile": "/mp3s/Prednost-vezivanja-pojasa-u-vozilima-nemerljiva.mp3"
+      },
+      {
+        "title": "Why drivers do (not) wear seat belts",
+        "date": "Radio Belgrade 1, Daily News 10.08.2015",
+        "description": "Despite a loud campaign and warnings that the police will more diligently check the use of seat belts in cars, as many as 7,000 people were fined during a seven-day check! Despite the fines and statistics according to which most of the dead are those who were not wearing seat belts, many still do not respect the regulations. Most drivers wear seat belts out of fear of fines, and there are those who do it for safety. Professor Milan Vujanić says that the number of deaths in traffic accidents can be halved by using seat belts. He believes that the advantage of wearing seat belts should be emphasized more often and rejects the demands of professional drivers to be exempted.",
+        "audioFile": "/mp3s/Zašto-vozači-ne-vezuju-pojas-.mp3"
+      }
+    ],
+    "pressArticles": [
+      {
+        "date": "Vesti 13.08.2015.",
+        "title": "Massacre on Serbian roads",
+        "url": "http://www.vesti-online.com/Vesti/Hronika/511980/Masakr-na-srpskim-drumovima"
+      },
+      {
+        "date": "Blic 22.07.2015.",
+        "title": "Shame in Vojvode Stepe: See what the blind walk will look like on the street",
+        "url": "http://www.blic.rs/Vesti/Beograd/577294/SRAMOTA-U-VOJVODE-STEPE-Pogledajte-kako-ce-izgledati-hod-slepih-po-ulici"
+      },
+      {
+        "date": "Večernje novosti 27.11.2014.",
+        "title": "Milan Vujanić: Experience stronger than permit",
+        "url": "http://www.novosti.rs/vesti/naslovna/drustvo/aktuelno.290.html:521428-Milan-Vujanic-Iskustvo-jace-od-dozvole"
+      },
+      {
+        "date": "N1 25.11.2014.",
+        "title": "Okanović and Vujanić: Introduce traffic education in schools",
+        "url": "http://rs.n1info.com/a14519/Vesti/Okanovic-i-Vujanic-Saobracajno-obrazovanje-uvesti-u-skole.html"
+      },
+      {
+        "date": "Srbija danas 30.06.2014.",
+        "title": "Behind the wheel without a drop of alcohol",
+        "url": "http://www.srbijadanas.com/clanak/za-volanom-bez-kapi-alkohola-30-06-2014"
+      },
+      {
+        "date": "Telegraf 10.06.2014.",
+        "title": "Do you remember darker times: Traffic accidents more terrible, shooting every day in Serbia!",
+        "url": "http://www.telegraf.rs/vesti/1108277-pamtite-li-mracnije-vreme-saobracajke-sve-stravicnije-puca-se-svaki-dan-po-srbiji-foto-video"
+      },
+      {
+        "date": "Svet 10.05.2014.",
+        "title": "Professor Milan Vujanić: Those who violate regulations should finance better traffic safety",
+        "url": "http://www.svet.rs/hronika/profesor-milan-vujanic-oni-koji-krse-propise-neka-finansiraju-bolju-bezbednost-u-saobracaju"
+      },
+      {
+        "date": "Kurir 22.12.2013.",
+        "title": "Vujanić on the accident in Šimanovci: 2 ways to immediately improve safety!",
+        "url": "http://www.kurir.rs/milan-vujanic-ovo-mozemo-odmah-da-uradimo-i-podignemo-bezbednost-clanak-1147057"
+      },
+      {
+        "date": "Politika 17.08.2013.",
+        "title": "Experts disagree on speed of Mitrović's jeep",
+        "url": "http://www.politika.rs/rubrike/Hronika/Vestaci-nesaglasni-o-brzini-Mitrovicevog-dzipa.lt.html"
+      },
+      {
+        "date": "Telegraf 11.08.2013.",
+        "title": "Where are the black spots on the Ibar highway?",
+        "url": "http://www.telegraf.rs/vesti/802414-gde-su-crne-tacke-na-ibarskoj-magistrali"
+      },
+      {
+        "date": "Blic 09.07.2013.",
+        "title": "Professor Milan Vujanić new president of the Board of 'Roads of Serbia'",
+        "url": "http://www.blic.rs/Vesti/Drustvo/392596/Profesor-Milan-Vujanic-novi-predsednik-NO-Puteva-Srbije"
+      },
+      {
+        "date": "Telegraf 27.06.2013.",
+        "title": "In these places people die most often: On roads in Serbia as many as 262 black spots!",
+        "url": "http://www.telegraf.rs/vesti/769670-na-ovim-mestima-se-najcesce-gine-na-putevima-u-srbiji-cak-262-crne-tacke"
+      },
+      {
+        "date": "Vesti 29.01.2013.",
+        "title": "Crazy traffic light in front of school: Children and drivers at the intersection at the same time",
+        "url": "http://www.vesti-online.com/Vesti/Srbija/288224/Suludi-semafor-ispred-skole-Deca-i-vozaci-istovremeno-u-raskrsnici"
+      },
+      {
+        "date": "Telegraf 18.01.2013.",
+        "title": "Confirmed: The state will seize cars from drunk drivers!",
+        "url": "http://www.telegraf.rs/vesti/502191-potvrdjeno-drzava-ce-oduzimati-automobile-pijanim-vozacima"
+      },
+      {
+        "date": "Vesti 15.01.2013.",
+        "title": "Changes to the law in Serbia: When are road workers to blame for accidents?",
+        "url": "http://www.vesti-online.com/Slobodno-Vreme/Auto-moto/284475/Izmene-zakona-u-Srbiji-Kad-su-putari-krivi-za-nesrece"
+      },
+      {
+        "date": "Blic 07.06.2009.",
+        "title": "Choose buses with recommendation",
+        "url": "http://vesti.mojauto.rs/Aktuelne-vesti/96044/Birajte-autobuse-sa-preporukom-"
+      },
+      {
+        "date": "Vrele gume 03.10.2007.",
+        "title": "On proven paths",
+        "url": "http://www.vrelegume.rs/strana.php?rubrika=15&&id_cikkek=879"
+      }
+    ]
+  },
+  "korisniLinkovi": {
+    "title": "Useful Links",
+    "safetyTitle": "Traffic Safety",
+    "safetyLinks": [
+      {
+        "name": "Traffic Safety Committee",
+        "url": "http://www.kbs.rs/sr/"
+      },
+      {
+        "name": "Traffic Safety Agency",
+        "url": "http://www.abs.gov.rs/"
+      },
+      {
+        "name": "Traffic Safety in Local Community",
+        "url": "http://bslz.org/"
+      },
+      {
+        "name": "Traffic Safety Agency of Republika Srpska",
+        "url": "http://www.absrs.org/index.php#.VWR1XU-eDGc"
+      },
+      {
+        "name": "European Transport Safety Council",
+        "url": "http://etsc.eu/"
+      }
+    ],
+    "transportTitle": "Transport",
+    "transportLinks": [
+      {
+        "name": "Faculty of Transport Engineering in Belgrade",
+        "url": "http://www.sf.bg.ac.rs/"
+      },
+      {
+        "name": "Ministry of Construction, Transport and Infrastructure",
+        "url": "http://www.mgsi.gov.rs/cir"
+      },
+      {
+        "name": "Roads of Serbia",
+        "url": "http://www.putevi-srbije.rs/index.php?lang=rs"
+      },
+      {
+        "name": "World Health Organization - Transport and health",
+        "url": "http://www.euro.who.int/en/health-topics/environment-and-health/Transport-and-health"
+      },
+      {
+        "name": "Road Safety Overseas",
+        "url": "http://www.fcowidget.com/"
+      },
+      {
+        "name": "European Commission – Mobility and Transport – Road Safety",
+        "url": "http://ec.europa.eu/transport/road_safety/index_en.htm"
+      }
+    ]
   }
 }

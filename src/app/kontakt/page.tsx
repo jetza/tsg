@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function KontaktPage() {
-  const { locale, switchLocale } = useLocale();
+  const { t } = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,20 +32,12 @@ export default function KontaktPage() {
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          {locale === "sr" ? "Kontakt" : "Contact"}
+          {t.kontakt.title}
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -61,7 +53,7 @@ export default function KontaktPage() {
                   htmlFor="name"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  {locale === "sr" ? "Ime i prezime" : "Full Name"}
+                  {t.kontakt.nameLabel}
                 </label>
                 <input
                   type="text"
@@ -97,7 +89,7 @@ export default function KontaktPage() {
                   htmlFor="subject"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  {locale === "sr" ? "Naslov" : "Subject"}
+                  {t.kontakt.subjectLabel}
                 </label>
                 <input
                   type="text"
@@ -115,7 +107,7 @@ export default function KontaktPage() {
                   htmlFor="message"
                   className="block text-sm font-semibold text-gray-700 mb-2"
                 >
-                  {locale === "sr" ? "Poruka" : "Message"}
+                  {t.kontakt.messageLabel}
                 </label>
                 <textarea
                   id="message"
@@ -132,7 +124,7 @@ export default function KontaktPage() {
                 type="submit"
                 className="w-full px-8 py-4 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
               >
-                {locale === "sr" ? "Pošalji poruku" : "Send Message"}
+                {t.kontakt.sendButton}
               </button>
             </form>
           </motion.div>
@@ -146,16 +138,16 @@ export default function KontaktPage() {
           >
             <div className="bg-white p-8">
               <h2 className="text-2xl font-heading font-bold mb-6 text-primary-500">
-                {locale === "sr"
-                  ? "Kontakt informacije"
-                  : "Contact Information"}
+                {t.kontakt.infoTitle}
               </h2>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">DIRECTOR</h3>
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    {t.kontakt.directorTitle}
+                  </h3>
                   <p className="text-gray-700">
-                    Tijana Ivanišević, graduate traffic engineer
+                    Tijana Ivanišević, dipl. inž. saobraćaja
                   </p>
                   <p className="text-gray-700">
                     Email:{" "}
@@ -170,10 +162,10 @@ export default function KontaktPage() {
 
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">
-                    ASSISTANT DIRECTOR
+                    {t.kontakt.assistantTitle}
                   </h3>
                   <p className="text-gray-700">
-                    Milan M. Vujanić, graduate traffic engineer
+                    Milan M. Vujanić, master inž. saobraćaja
                   </p>
                   <p className="text-gray-700">
                     Email:{" "}
@@ -188,7 +180,7 @@ export default function KontaktPage() {
 
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">
-                    BUSINESS SECRETARY
+                    {t.kontakt.secretaryTitle}
                   </h3>
                   <p className="text-gray-700">Branka Milojević</p>
                   <p className="text-gray-700">
@@ -204,7 +196,7 @@ export default function KontaktPage() {
 
                 <div className="pt-4 border-t-2 border-primary-100">
                   <p className="text-gray-700 mb-2">
-                    You can also contact us directly at: <br />
+                    {t.kontakt.directContact} <br />
                     <a
                       href="mailto:office@tsgserbia.com"
                       className="text-primary-400 hover:text-primary-500"
@@ -213,7 +205,7 @@ export default function KontaktPage() {
                     </a>
                   </p>
                   <p className="text-gray-700">
-                    or on{" "}
+                    {t.kontakt.phoneContact}{" "}
                     <a
                       href="tel:+381114202010"
                       className="text-primary-400 hover:text-primary-500"

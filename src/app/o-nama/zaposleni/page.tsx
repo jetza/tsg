@@ -4,21 +4,11 @@ import { motion } from "framer-motion";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function ZaposleniPage() {
-  const { t, locale, switchLocale } = useLocale();
+  const { t } = useLocale();
 
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        {/* Language Switcher */}
-        <div className="flex justify-end mb-6">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,13 +23,6 @@ export default function ZaposleniPage() {
           transition={{ delay: 0.2 }}
           className="space-y-12"
         >
-          {/* Intro */}
-          <section>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              {t.zaposleni.intro}
-            </p>
-          </section>
-
           {/* Director Tijana Ivanišević */}
           <section>
             <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500 uppercase">

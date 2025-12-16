@@ -6,8 +6,8 @@ import LogoLoader from "@/components/LogoLoader";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function HomePage() {
-  const { locale, switchLocale } = useLocale();
-
+  const { locale } = useLocale();
+  
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -17,14 +17,6 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="relative h-screen flex items-center justify-center bg-white"
       >
-        <div className="absolute top-6 right-6">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
         <div className="container mx-auto px-6 text-center">
           {/* Logo */}
           <div className="flex justify-center mb-8">

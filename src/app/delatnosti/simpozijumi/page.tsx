@@ -4,19 +4,11 @@ import { motion } from "framer-motion";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function SimpozijumiPage() {
-  const { t, locale, switchLocale } = useLocale();
+  const { t } = useLocale();
 
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -43,7 +35,7 @@ export default function SimpozijumiPage() {
             </p>
           </section>
 
-          <div className="bg-primary-50 p-8">
+          <div className="bg-primary-50 p-8 rounded-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               {t.simpozijumi.development}
             </p>
@@ -59,9 +51,33 @@ export default function SimpozijumiPage() {
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {t.simpozijumi.organization}
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               {t.simpozijumi.openType}
             </p>
+          </section>
+
+          {/* Goal Section */}
+          <section className="mt-12">
+            <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
+              {t.simpozijumi.goalTitle}
+            </h2>
+            <div className="space-y-6">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {t.simpozijumi.goal1}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {t.simpozijumi.goal2}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {t.simpozijumi.goal3}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {t.simpozijumi.goal4}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed font-semibold">
+                {t.simpozijumi.goal5}
+              </p>
+            </div>
           </section>
         </motion.div>
       </div>

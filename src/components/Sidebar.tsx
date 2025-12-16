@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useLocale } from "@/hooks/useLocale";
 
 // Color palette from lightest to darkest (better visibility on hover)
 const menuColors = [
@@ -109,6 +110,9 @@ const menuItems: MenuItem[] = [
       { title: "XV Simpozijum", href: "/dokumenta/xv-simpozijum" },
     ],
   },
+  { title: "Saveti", href: "/saveti" },
+  { title: "Korisni linkovi", href: "/korisni-linkovi" },
+  { title: "Mediji", href: "/mediji" },
   { title: "Blog", href: "/blog" },
   { title: "Kontakt", href: "/kontakt" },
   { title: "Admin", href: "/admin" },
@@ -121,12 +125,16 @@ export default function Sidebar() {
     null
   );
   const pathname = usePathname();
+  const { locale, switchLocale } = useLocale();
 
   // Close all submenus when on home page or pages without submenus
   useEffect(() => {
     if (
       pathname === "/" ||
       pathname === "/blog" ||
+      pathname === "/saveti" ||
+      pathname === "/korisni-linkovi" ||
+      pathname === "/mediji" ||
       pathname === "/kontakt" ||
       pathname === "/admin"
     ) {
@@ -391,6 +399,29 @@ export default function Sidebar() {
                 </li>
               ))}
             </ul>
+
+            {/* Language Switcher */}
+            <div className="mt-8 pt-6 border-t border-primary-400">
+              <button
+                onClick={switchLocale}
+                className="w-full px-6 py-3 bg-gradient-to-r from-primary-400 to-primary-600 text-white rounded-lg hover:from-primary-500 hover:to-primary-700 transition-all duration-300 text-center font-semibold uppercase text-sm tracking-wider shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {locale === "sr" ? "English" : "Srpski"}
+              </button>
+            </div>
           </nav>
         </div>
       </motion.aside>

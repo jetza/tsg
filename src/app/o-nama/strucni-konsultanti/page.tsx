@@ -4,21 +4,11 @@ import { motion } from "framer-motion";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function KonsultantiPage() {
-  const { t, locale, switchLocale } = useLocale();
+  const { t } = useLocale();
 
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        {/* Language Switcher */}
-        <div className="flex justify-end mb-6">
-          <button
-            onClick={() => switchLocale()}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -88,22 +78,6 @@ export default function KonsultantiPage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 {t.konsultanti.cosicBio}
-              </p>
-            </div>
-          </section>
-
-          {/* LAW Section */}
-          <section className="mt-16">
-            <h2 className="text-2xl font-heading font-bold mb-6 text-primary-500 uppercase">
-              {t.konsultanti.lawTitle}
-            </h2>
-
-            <div>
-              <h3 className="text-xl font-heading font-semibold mb-4 text-primary-400 uppercase">
-                {t.konsultanti.lawTeamTitle}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t.konsultanti.lawTeamBio}
               </p>
             </div>
           </section>

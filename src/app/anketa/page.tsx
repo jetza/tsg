@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLocale } from "@/hooks/useLocale";
 
 export default function AnketaPage() {
-  const { locale, switchLocale } = useLocale();
+  const { locale } = useLocale();
   const [selectedAnswer1, setSelectedAnswer1] = useState("");
   const [selectedAnswer2, setSelectedAnswer2] = useState("");
   const [showResults, setShowResults] = useState(false);
@@ -13,14 +13,6 @@ export default function AnketaPage() {
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={switchLocale}
-            className="px-4 py-2 bg-primary-500 text-white rounded hover:bg-primary-600 transition-colors"
-          >
-            {locale === "sr" ? "EN" : "SR"}
-          </button>
-        </div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

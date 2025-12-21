@@ -71,23 +71,62 @@ const hankenGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "TSG - Tehnika Saobraćaja Grupa",
+  metadataBase: new URL("https://tsgserbia.rs"),
+  title: {
+    default: "TSG - Tehnika Saobraćaja Grupa",
+    template: "%s | TSG Serbia",
+  },
   description:
     "Stručni konsultanti za saobraćaj - ekspertize, edukacija, projekti iz oblasti bezbednosti saobraćaja",
   keywords: [
     "saobraćaj",
-    "bezbednost",
-    "ekspertize",
-    "edukacija",
-    "TSG",
+    "bezbednost saobraćaja",
+    "saobraćajne ekspertize",
+    "edukacija vozača",
+    "PC-Crash",
+    "analiza saobraćajnih nezgoda",
+    "simpozijumi",
+    "zakoni o saobraćaju",
+    "TSG Serbia",
     "Srbija",
   ],
   authors: [{ name: "TSG Serbia" }],
+  creator: "TSG Serbia",
+  publisher: "TSG Serbia",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
-    title: "TSG - Tehnika Saobraćaja Grupa",
-    description: "Stručni konsultanti za saobraćaj",
     type: "website",
     locale: "sr_RS",
+    url: "https://tsgserbia.rs",
+    siteName: "TSG Serbia",
+    title: "TSG - Tehnika Saobraćaja Grupa",
+    description:
+      "Stručni konsultanti za saobraćaj - ekspertize, edukacija, projekti",
+    images: [
+      {
+        url: "/logo/tsg-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "TSG Serbia Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TSG - Tehnika Saobraćaja Grupa",
+    description:
+      "Stručni konsultanti za saobraćaj - ekspertize, edukacija, projekti",
+  },
+  alternates: {
+    canonical: "https://tsgserbia.rs",
   },
 };
 

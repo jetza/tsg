@@ -1,35 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const documents = [
-  {
-    title: "Zakon o bezbednosti saobraćaja na putevima",
-    country: "Srbija",
-    year: "2024",
-    size: "2.5 MB",
-  },
-  {
-    title: "Pravilnik o saobraćajnoj signalizaciji",
-    country: "Srbija",
-    year: "2023",
-    size: "1.8 MB",
-  },
-  {
-    title: "Zakon o prevoznicima u drumskom saobraćaju",
-    country: "Srbija",
-    year: "2023",
-    size: "1.2 MB",
-  },
-  {
-    title: "Zakon o bezbednosti saobraćaja",
-    country: "Crna Gora",
-    year: "2023",
-    size: "2.1 MB",
-  },
-];
+import { useLocale } from "@/contexts/LocaleContext";
+import { documents } from "@/data/documents";
 
 export default function ZakonskaRegulativaPage() {
+  const { t, locale } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -38,7 +15,7 @@ export default function ZakonskaRegulativaPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          Zakonska regulativa
+          {t.dokumenta.zakonskaRegulativa.title}
         </motion.h1>
 
         <motion.p
@@ -47,8 +24,7 @@ export default function ZakonskaRegulativaPage() {
           transition={{ delay: 0.1 }}
           className="text-lg text-gray-700 mb-12"
         >
-          Pregled zakonske regulative vezane za saobraćaj u Srbiji, Crnoj Gori i
-          BiH. Sva dokumenta su u PDF formatu i dostupna su za download.
+          {t.dokumenta.zakonskaRegulativa.intro}
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -99,7 +75,7 @@ export default function ZakonskaRegulativaPage() {
                         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                       />
                     </svg>
-                    Preuzmi
+                    {locale === "sr" ? "Preuzmi" : "Download"}
                   </button>
                 </div>
               </div>
@@ -114,17 +90,16 @@ export default function ZakonskaRegulativaPage() {
           className="mt-12 bg-primary-50 p-8"
         >
           <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500">
-            Potreban vam je određeni dokument?
+            {t.dokumenta.zakonskaRegulativa.needDocTitle}
           </h2>
           <p className="text-gray-700 mb-6">
-            Ako ne možete pronaći dokument koji vam je potreban, kontaktirajte
-            nas i mi ćemo vam pomoći.
+            {t.dokumenta.zakonskaRegulativa.needDocDesc}
           </p>
           <a
             href="/kontakt"
             className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
           >
-            Kontaktirajte nas
+            {t.dokumenta.zakonskaRegulativa.contactButton}
           </a>
         </motion.div>
       </div>

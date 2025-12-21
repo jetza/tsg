@@ -7,7 +7,7 @@ import { useLocale } from "@/hooks/useLocale";
 
 export default function HomePage() {
   const { locale } = useLocale();
-  
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}

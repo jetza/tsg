@@ -14,13 +14,12 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: "#263238",
+          background: "transparent",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#78909C",
         }}
       >
         <svg

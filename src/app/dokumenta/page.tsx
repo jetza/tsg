@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLocale } from "@/contexts/LocaleContext";
 
 export default function DokumentaPage() {
+  const { t } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
@@ -12,7 +15,7 @@ export default function DokumentaPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-12 text-primary-500"
         >
-          Dokumenta
+          {t.dokumenta.mainPage.title}
         </motion.h1>
 
         <motion.div
@@ -26,12 +29,10 @@ export default function DokumentaPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-3xl font-heading font-bold mb-4 text-primary-500">
-                    Zakonska regulativa
+                    {t.dokumenta.mainPage.regulativaTitle}
                   </h2>
                   <p className="text-lg text-gray-700">
-                    Pregled zakonske regulative vezane za saobraćaj u Srbiji,
-                    Crnoj Gori i BiH. Sva dokumenta su u PDF formatu i dostupna
-                    su za download.
+                    {t.dokumenta.mainPage.regulativaDesc}
                   </p>
                 </div>
                 <svg
@@ -68,18 +69,16 @@ export default function DokumentaPage() {
               </svg>
               <div>
                 <h3 className="text-xl font-heading font-bold mb-2 text-primary-500">
-                  Napomena za neregistrovane korisnike
+                  {t.dokumenta.mainPage.noteTitle}
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Pristup nekim dokumentima je dostupan samo registrovanim
-                  korisnicima. Registrujte se da biste dobili pristup svim
-                  materijalima.
+                  {t.dokumenta.mainPage.noteDesc}
                 </p>
                 <Link
                   href="/registrovani-korisnici"
                   className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
                 >
-                  Registruj se
+                  {t.dokumenta.mainPage.registerButton}
                 </Link>
               </div>
             </div>

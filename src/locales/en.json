@@ -195,20 +195,17 @@
         "title": "Laws",
         "subtitle": "Legal Regulations in Montenegro",
         "activeTitle": "Legal acts",
-        "lawsIntro": "Relevant Montenegrin laws relating to traffic and road safety.",
-        "lawTitle": "Law on Drivers and Driving Licenses",
-        "lawDesc": "Conditions for acquiring the right to drive motor vehicles.",
-        "englishTitle": "Laws of Montenegro",
-        "englishIntro": "Relevant laws of Montenegro related to traffic and road safety."
+        "intro": "Relevant laws of Montenegro related to traffic and road safety."
       },
       "podzakonska": {
         "title": "Bylaws",
-        "subtitle": "Legal regulations in Montenegro",
+        "subtitle": "Legal Regulations in Montenegro",
         "activeTitle": "Bylaws",
-        "englishTitle": "Bylaws of Montenegro"
+        "intro": "Bylaws that regulate the field of traffic in Montenegro in more detail."
       },
       "putovanje": {
-        "title": "If You Are Traveling by Car to Montenegro"
+        "title": "If you are traveling by car to Montenegro",
+        "file": "/pdfs/crna-gora/Ukoliko-putujete-automobilom-u-Crnu-goru.pdf"
       }
     },
     "bih": {
@@ -216,19 +213,13 @@
         "title": "Laws",
         "subtitle": "Legal Regulations in Bosnia and Herzegovina",
         "activeTitle": "Legal acts",
-        "lawsIntro": "Relevant laws of Bosnia and Herzegovina relating to traffic and road safety.",
-        "law1Title": "Law on Drivers",
-        "law1Desc": "Conditions for acquiring the right to drive motor vehicles.",
-        "law2Title": "Law on Technical Inspections of Motor Vehicles",
-        "law2Desc": "Regulates technical correctness and vehicle inspection.",
-        "englishTitle": "Laws of Bosnia and Herzegovina",
-        "englishIntro": "Relevant laws of Bosnia and Herzegovina related to traffic and road safety."
+        "intro": "Relevant laws of Bosnia and Herzegovina related to traffic and road safety."
       },
       "podzakonska": {
         "title": "Bylaws",
-        "subtitle": "Legal regulations in Bosnia and Herzegovina",
+        "subtitle": "Legal Regulations in Bosnia and Herzegovina",
         "activeTitle": "Bylaws",
-        "englishTitle": "Bylaws of Bosnia and Herzegovina"
+        "intro": "Bylaws that regulate the field of traffic in Bosnia and Herzegovina in more detail."
       }
     },
     "hrvatska": {
@@ -237,7 +228,329 @@
     },
     "makedonija": {
       "title": "North Macedonia",
-      "subtitle": "Legal Regulations in North Macedonia"
+      "subtitle": "Legal Regulations in North Macedonia",
+      "intro": "Relevant laws and regulations on traffic in North Macedonia.",
+      "speedLimitsTitle": "Speed Limits",
+      "speedLimits": [
+        "Urban area: 50 km/h",
+        "Outside urban area: 80 km/h",
+        "Expressway: 100 km/h",
+        "Highway: 130 km/h"
+      ],
+      "documentsTitle": "Entry Documents",
+      "documents": [
+        "Valid ID card or passport",
+        "Vehicle registration certificate",
+        "Valid driver's license",
+        "Green card (international insurance certificate)"
+      ],
+      "equipmentTitle": "Mandatory Equipment",
+      "equipment": [
+        "Spare wheel or tire repair kit",
+        "Warning triangle and reflective vest",
+        "Spare bulbs",
+        "First aid kit"
+      ],
+      "notesTitle": "Important Notes",
+      "notes": [
+        "Mandatory use of daytime running lights all year round",
+        "Winter equipment mandatory from November 15 to March 15",
+        "Allowed alcohol level: 0.5 permille (0.0 for young drivers)",
+        "Fines are paid on the spot"
+      ],
+      "tollTitle": "Tolls",
+      "tollDesc": "Toll fees are charged on highways in North Macedonia. Payment in cash and by card is available at all toll booths."
+    },
+    "eu": {
+      "title": "European Union - Traffic Regulations",
+      "intro": "The European Union has harmonized traffic regulations that ensure a high level of road safety in all member states.",
+      "principlesTitle": "Basic Principles",
+      "principlesIntro": "EU directives regulate:",
+      "principles": [
+        "Technical standards for vehicles",
+        "Driving licenses (uniform format)",
+        "Maximum speeds on different types of roads",
+        "Use of seat belts and child safety",
+        "Permitted blood alcohol level"
+      ],
+      "licenseTitle": "EU Driving License",
+      "licenseDesc": "A driving license issued in any EU member state is valid in all other member states. The uniform card format with a microchip facilitates identification and reduces the possibility of forgery.",
+      "inspectionTitle": "Vehicle Technical Inspection",
+      "inspectionDesc": "Member states are obliged to carry out periodic technical inspections of vehicles according to harmonized standards, ensuring that all vehicles on EU roads meet minimum technical requirements.",
+      "penaltiesTitle": "Penalties and Offenses",
+      "penaltiesDesc": "The EU is working on establishing a system of cross-border penalties, where drivers can be fined for offenses committed in another member state. Common offenses include speeding, drunk driving, and illegal parking."
+    },
+    "putovanjeAutomobilom": {
+      "title": "Practical Advice for Travel",
+      "intro": "Everything you need to know before traveling by car to Montenegro.",
+      "documentsTitle": "Documents Required for Entry",
+      "documents": [
+        "Valid ID card or passport",
+        "Vehicle registration certificate",
+        "Valid driver's license",
+        "Green card (international insurance certificate)"
+      ],
+      "speedLimitsTitle": "Speed Limits",
+      "speedLimits": [
+        "Urban area: 50 km/h",
+        "Outside urban area: 80 km/h",
+        "Expressway: 100 km/h",
+        "Highway: 120 km/h"
+      ],
+      "equipmentTitle": "Mandatory Equipment",
+      "equipment": [
+        "Spare wheel or tire repair kit",
+        "Warning triangle and reflective vest",
+        "Spare bulbs",
+        "Fire extinguisher"
+      ],
+      "notesTitle": "Important Notes",
+      "notes": [
+        "Traffic along the coast can be intense during summer season",
+        "Drive carefully on mountain roads, especially in winter",
+        "Parking in tourist areas is often paid",
+        "Mandatory use of daytime running lights while driving"
+      ]
+    },
+    "podzakonskaAktaCG": {
+      "intro": "Regulations and decrees that regulate the field of traffic in Montenegro in more detail.",
+      "item1Title": "Regulation on Traffic Signalization",
+      "item1Desc": "The method of installing and the meaning of traffic signalization.",
+      "item2Title": "Regulation on Vehicle Technical Inspection",
+      "item2Desc": "Conditions and procedure for technical inspection of motor vehicles.",
+      "item3Title": "Regulation on Vehicle Homologation",
+      "item3Desc": "Procedure for homologation of motor and trailer vehicles."
+    },
+    "kazneEvropa": {
+      "title": "Penalties in Europe",
+      "subtitle": "Traffic Penalties"
+    },
+    "simpozijumi": {
+      "title": "Symposiums",
+      "subtitle": "International Symposiums",
+      "intro": "Proceedings from International Symposiums on Traffic-Technical Expertise and Fraud in Insurance."
+    },
+    "xvSimpozijum": {
+      "title": "XV International Symposium",
+      "subtitle": "Traffic-Technical Expertise",
+      "aboutTitle": "About the Symposium",
+      "aboutDesc": "The XV International Symposium on Traffic-Technical Expertise brings together leading experts from the region and the world who share their knowledge and experience in the field of traffic accident reconstruction.",
+      "infoTitle": "Basic Information",
+      "themesTitle": "Symposium Themes",
+      "programTitle": "Program",
+      "proceedingsTitle": "Proceedings",
+      "proceedingsDesc": "All accepted papers are published in the symposium proceedings with an ISBN number. The proceedings are available to participants and interested professionals after the symposium.",
+      "previousTitle": "Previous Symposia",
+      "previousDesc": "TSG has been organizing international symposia since 2009. So far, 14 successful editions have been held with the participation of:",
+      "registrationTitle": "Registration",
+      "registrationDesc": "For information on applications, deadlines for submitting papers and registration, contact us:"
+    },
+    "zimskaOprema": {
+      "title": "Winter Equipment in Europe",
+      "subtitle": "Regulations by Country"
+    },
+    "zakonskaRegulativa": {
+      "title": "Legal Regulations",
+      "intro": "Overview of legal regulations related to traffic in Serbia, Montenegro and BiH. All documents are in PDF format and available for download.",
+      "needDocTitle": "Need a Specific Document?",
+      "needDocDesc": "If you cannot find the document you need, contact us and we will help you.",
+      "contactButton": "Contact Us"
+    },
+    "kazneData": {
+      "germany": {
+        "country": "Germany",
+        "speeding": "30-680 EUR",
+        "drinkDriving": "500-3,000 EUR",
+        "mobilePhone": "100 EUR",
+        "seatbelt": "30 EUR"
+      },
+      "france": {
+        "country": "France",
+        "speeding": "68-1,500 EUR",
+        "drinkDriving": "135-4,500 EUR",
+        "mobilePhone": "135 EUR",
+        "seatbelt": "135 EUR"
+      },
+      "italy": {
+        "country": "Italy",
+        "speeding": "42-3,382 EUR",
+        "drinkDriving": "530-6,000 EUR",
+        "mobilePhone": "165 EUR",
+        "seatbelt": "81 EUR"
+      },
+      "austria": {
+        "country": "Austria",
+        "speeding": "30-2,180 EUR",
+        "drinkDriving": "300-5,900 EUR",
+        "mobilePhone": "50 EUR",
+        "seatbelt": "35 EUR"
+      },
+      "switzerland": {
+        "country": "Switzerland",
+        "speeding": "40-up to 60 daily earnings",
+        "drinkDriving": "From 600 CHF",
+        "mobilePhone": "100 CHF",
+        "seatbelt": "60 CHF"
+      },
+      "spain": {
+        "country": "Spain",
+        "speeding": "100-600 EUR",
+        "drinkDriving": "500-1,000 EUR",
+        "mobilePhone": "200 EUR",
+        "seatbelt": "200 EUR"
+      },
+      "netherlands": {
+        "country": "Netherlands",
+        "speeding": "30-390 EUR",
+        "drinkDriving": "325-2,250 EUR",
+        "mobilePhone": "240 EUR",
+        "seatbelt": "140 EUR"
+      },
+      "belgium": {
+        "country": "Belgium",
+        "speeding": "53-2,750 EUR",
+        "drinkDriving": "170-11,000 EUR",
+        "mobilePhone": "110 EUR",
+        "seatbelt": "110 EUR"
+      }
+    },
+    "zimskaOpremaData": {
+      "serbia": {
+        "country": "Serbia",
+        "tires": "M+S or mountain symbol",
+        "period": "01.11 - 01.04",
+        "chains": "Allowed, mandatory on certain sections",
+        "notes": "Mandatory winter equipment in winter conditions"
+      },
+      "montenegro": {
+        "country": "Montenegro",
+        "tires": "M+S or mountain symbol",
+        "period": "01.11 - 31.03",
+        "chains": "Allowed, mandatory on certain sections",
+        "notes": "Fine for non-compliance 60-150 EUR"
+      },
+      "bih": {
+        "country": "BiH",
+        "tires": "M+S marking",
+        "period": "15.11 - 15.04",
+        "chains": "Allowed",
+        "notes": "Recommendation, but mandatory in winter conditions"
+      },
+      "croatia": {
+        "country": "Croatia",
+        "tires": "M+S or mountain symbol",
+        "period": "15.11 - 15.04",
+        "chains": "Allowed, mandatory on certain sections",
+        "notes": "Fine 70-280 EUR"
+      },
+      "slovenia": {
+        "country": "Slovenia",
+        "tires": "M+S or mountain symbol",
+        "period": "15.11 - 15.03",
+        "chains": "Allowed",
+        "notes": "Mandatory, fine from 120 EUR"
+      },
+      "austria": {
+        "country": "Austria",
+        "tires": "M+S minimum depth 4mm",
+        "period": "01.11 - 15.04",
+        "chains": "Allowed on snow/ice",
+        "notes": "Fine up to 5,000 EUR"
+      },
+      "germany": {
+        "country": "Germany",
+        "tires": "M+S or mountain symbol",
+        "period": "No fixed period",
+        "chains": "Allowed where indicated",
+        "notes": "Mandatory in winter conditions, fine 60-80 EUR"
+      },
+      "switzerland": {
+        "country": "Switzerland",
+        "tires": "Recommended",
+        "period": "No obligation",
+        "chains": "Mandatory where marked",
+        "notes": "Driver's responsibility, possible damage to other participants"
+      },
+      "italy": {
+        "country": "Italy",
+        "tires": "M+S or chains",
+        "period": "15.11 - 15.04 (regions)",
+        "chains": "Mandatory on certain sections",
+        "notes": "Fine 41-335 EUR, varies by region"
+      },
+      "france": {
+        "country": "France",
+        "tires": "Recommended",
+        "period": "As needed",
+        "chains": "Mandatory where marked",
+        "notes": "Chains mandatory in mountain areas"
+      }
+    },
+    "literaturaData": {
+      "book1": {
+        "title": "Traffic-Technical Expertise",
+        "author": "Prof. Dr Dušan Simović",
+        "year": "2014",
+        "desc": "Basic literature for traffic accident expertise"
+      },
+      "book2": {
+        "title": "Reconstruction of Traffic Accidents",
+        "author": "Dr Goran Vušić",
+        "year": "2018",
+        "desc": "Details on reconstruction methods"
+      },
+      "book3": {
+        "title": "PC-Crash Manual",
+        "author": "Dr Hermann Steffan",
+        "year": "2022",
+        "desc": "Practical guide for using PC-Crash software"
+      },
+      "book4": {
+        "title": "Traffic Safety",
+        "author": "Prof. Dr Krsto Lipovac",
+        "year": "2017",
+        "desc": "Systemic approach to traffic safety"
+      },
+      "book5": {
+        "title": "Traces and Evidence in Traffic Accidents",
+        "author": "Dr Miloš Kopitović",
+        "year": "2015",
+        "desc": "Analysis and documentation of evidence"
+      },
+      "book6": {
+        "title": "Proceedings - XIV Symposium",
+        "author": "TSG",
+        "year": "2023",
+        "desc": "Papers from the 14th International Symposium"
+      }
+    },
+    "simpozijumData": {
+      "date": "October 2024",
+      "location": "Belgrade, Serbia",
+      "lang": "Serbian and English",
+      "participants": "Over 200 participants from 15 countries",
+      "theme1": "Latest techniques in traffic accident reconstruction",
+      "theme2": "Use of drones and 3D scanning in expertise",
+      "theme3": "Artificial intelligence in traffic accident analysis",
+      "theme4": "Electric and autonomous vehicles - new challenges in expertise",
+      "theme5": "Safety of pedestrians and cyclists",
+      "theme6": "European regulations and practice",
+      "program1": "Plenary lecture",
+      "program2": "Professional paper sessions",
+      "program3": "Poster session",
+      "program4": "Workshops and demonstrations",
+      "program5": "Round table",
+      "prev1": "Over 1,500 participants through all 14 editions",
+      "prev2": "200+ published professional and scientific papers",
+      "prev3": "International cooperation with experts from 20+ countries"
+    },
+    "mainPage": {
+      "title": "Documents",
+      "regulativaTitle": "Legal Regulations",
+      "regulativaDesc": "Overview of legal regulations related to traffic in Serbia, Montenegro and BiH. All documents are in PDF format and available for download.",
+      "noteTitle": "Note for Unregistered Users",
+      "noteDesc": "Access to some documents is available only to registered users. Register to gain access to all materials.",
+      "registerButton": "Register"
     }
   },
   "kontakt": {
@@ -387,10 +700,6 @@
     "title": "Useful Links",
     "safetyTitle": "Traffic Safety",
     "safetyLinks": [
-      {
-        "name": "Traffic Safety Committee",
-        "url": "http://www.kbs.rs/sr/"
-      },
       {
         "name": "Traffic Safety Agency",
         "url": "http://www.abs.gov.rs/"

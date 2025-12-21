@@ -5,7 +5,9 @@ import {
   useContext,
   useState,
   useEffect,
+  useRef,
   ReactNode,
+  startTransition,
 } from "react";
 import srLocale from "@/locales/sr.json";
 import enLocale from "@/locales/en.json";
@@ -26,20 +28,26 @@ interface LocaleContextType {
 const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  // Initialize locale from localStorage or default to "sr"
-  const [locale, setLocale] = useState<Locale>(() => {
-    if (typeof window !== "undefined") {
+  // Initialize locale to default "sr" to match server-side rendering
+  const [locale, setLocale] = useState<Locale>("sr");
+  const isHydratedRef = useRef(false);
+
+  // Load locale from localStorage after hydration
+  useEffect(() => {
+    if (typeof window !== "undefined" && !isHydratedRef.current) {
       const savedLocale = localStorage.getItem("locale") as Locale;
       if (savedLocale && (savedLocale === "sr" || savedLocale === "en")) {
-        return savedLocale;
+        startTransition(() => {
+          setLocale(savedLocale);
+        });
       }
+      isHydratedRef.current = true;
     }
-    return "sr";
-  });
+  }, []);
 
-  // Save locale to localStorage when it changes
+  // Save locale to localStorage when it changes (only after hydration)
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (isHydratedRef.current && typeof window !== "undefined") {
       localStorage.setItem("locale", locale);
     }
   }, [locale]);

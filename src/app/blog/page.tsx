@@ -5,7 +5,7 @@ import { useLocale } from "@/hooks/useLocale";
 
 export default function BlogPage() {
   const { locale } = useLocale();
-  
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-6xl">

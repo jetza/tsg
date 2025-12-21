@@ -5,6 +5,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useLocale } from "@/hooks/useLocale";
+import {
+  HiOutlineGlobeAlt,
+  HiOutlineBookOpen,
+  HiOutlineFlag,
+} from "react-icons/hi2";
 
 // Color palette from lightest to darkest (better visibility on hover)
 const menuColors = [
@@ -18,6 +23,7 @@ const menuColors = [
 interface MenuItem {
   title: string;
   href: string;
+  icon?: React.ReactNode;
   submenu?: MenuItem[];
 }
 
@@ -35,23 +41,23 @@ const menuItems: MenuItem[] = [
     title: "Delatnosti",
     href: "/delatnosti",
     submenu: [
-      { title: "Ekspertize", href: "/delatnosti/ekspertize" },
-      { title: "Simpozijumi", href: "/delatnosti/simpozijumi" },
       {
-        title: "Edukacija",
-        href: "/delatnosti/edukacija",
+        title: "Edukacije",
+        href: "/delatnosti/edukacije",
         submenu: [
           {
             title: "Obuka za bezbedno učestvovanje u saobraćaju",
-            href: "/delatnosti/edukacija/obuka-za-bezbedno-ucestvovanje",
+            href: "/delatnosti/edukacije/obuka-za-bezbedno-ucestvovanje",
           },
           {
             title: "Obuka za upotrebu programa PC Crash",
-            href: "/delatnosti/edukacija/obuka-pc-crash",
+            href: "/delatnosti/edukacije/obuka-pc-crash",
           },
         ],
       },
+      { title: "Ekspertize", href: "/delatnosti/ekspertize" },
       { title: "Projekti", href: "/delatnosti/projekti" },
+      { title: "Simpozijumi", href: "/delatnosti/simpozijumi" },
     ],
   },
   {
@@ -61,6 +67,7 @@ const menuItems: MenuItem[] = [
       {
         title: "Srbija",
         href: "/dokumenta/srbija",
+        icon: <HiOutlineFlag className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/srbija/zakoni" },
           {
@@ -72,6 +79,7 @@ const menuItems: MenuItem[] = [
       {
         title: "Crna Gora",
         href: "/dokumenta/crna-gora",
+        icon: <HiOutlineFlag className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/crna-gora/zakoni" },
           {
@@ -87,6 +95,7 @@ const menuItems: MenuItem[] = [
       {
         title: "BiH",
         href: "/dokumenta/bih",
+        icon: <HiOutlineFlag className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/bih/zakoni" },
           {
@@ -95,19 +104,26 @@ const menuItems: MenuItem[] = [
           },
         ],
       },
-      { title: "EU", href: "/dokumenta/eu" },
-      { title: "Hrvatska", href: "/dokumenta/hrvatska" },
-      { title: "Makedonija", href: "/dokumenta/makedonija" },
       {
-        title: "Kazne za pojedine saobraćajne prekršaje u zemljama Evrope",
-        href: "/dokumenta/kazne-evropa",
+        title: "Hrvatska",
+        href: "/dokumenta/hrvatska",
+        icon: <HiOutlineFlag className="w-4 h-4" />,
       },
       {
-        title: "Zimska oprema u zemljama Evrope",
-        href: "/dokumenta/zimska-oprema-evropa",
+        title: "Makedonija",
+        href: "/dokumenta/makedonija",
+        icon: <HiOutlineFlag className="w-4 h-4" />,
       },
-      { title: "Stručna literatura", href: "/dokumenta/strucna-literatura" },
-      { title: "XV Simpozijum", href: "/dokumenta/xv-simpozijum" },
+      {
+        title: "Evropa i region",
+        href: "/dokumenta/evropa",
+        icon: <HiOutlineGlobeAlt className="w-4 h-4" />,
+      },
+      {
+        title: "Simpozijumi",
+        href: "/dokumenta/simpozijumi",
+        icon: <HiOutlineBookOpen className="w-4 h-4" />,
+      },
     ],
   },
   { title: "Saveti", href: "/saveti" },
@@ -115,7 +131,6 @@ const menuItems: MenuItem[] = [
   { title: "Mediji", href: "/mediji" },
   { title: "Blog", href: "/blog" },
   { title: "Kontakt", href: "/kontakt" },
-  { title: "Admin", href: "/admin" },
 ];
 
 export default function Sidebar() {
@@ -164,7 +179,10 @@ export default function Sidebar() {
               onClick={() => toggleNestedSubmenu(subitem.title)}
               className="peer w-full flex items-center justify-between px-4 py-2 hover:bg-primary-400 transition-colors text-sm text-white font-light relative"
             >
-              <span>{subitem.title}</span>
+              <span className="flex items-center gap-2">
+                {subitem.icon && <span>{subitem.icon}</span>}
+                {subitem.title}
+              </span>
               {/* Bottom border for submenu button */}
               <div
                 className={`absolute bottom-0 left-0 h-0.5 bg-primary-100 transition-all duration-1000 ${
@@ -208,7 +226,10 @@ export default function Sidebar() {
             className="block px-4 py-2 hover:bg-primary-400 transition-colors text-sm text-white font-light relative group"
             onClick={() => setIsOpen(false)}
           >
-            {subitem.title}
+            <span className="flex items-center gap-2">
+              {subitem.icon && <span>{subitem.icon}</span>}
+              {subitem.title}
+            </span>
             {/* Bottom border for submenu link */}
             <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary-100 transition-all duration-1000 group-hover:w-full" />
           </Link>
@@ -400,14 +421,14 @@ export default function Sidebar() {
               ))}
             </ul>
 
-            {/* Language Switcher */}
-            <div className="mt-8 pt-6 border-t border-primary-400">
+            {/* Language Switcher and Admin at the bottom */}
+            <div className="mt-8 pt-6 border-t border-primary-400 space-y-3">
               <button
                 onClick={switchLocale}
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary-400 to-primary-600 text-white rounded-lg hover:from-primary-500 hover:to-primary-700 transition-all duration-300 text-center font-semibold uppercase text-sm tracking-wider shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                className="w-full px-4 py-2 text-white hover:bg-primary-400 transition-all duration-300 text-left font-light text-sm flex items-center gap-2"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -419,8 +440,35 @@ export default function Sidebar() {
                     d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                {locale === "sr" ? "English" : "Srpski"}
+                {locale === "sr" ? "EN" : "SR"}
               </button>
+
+              <Link
+                href="/admin"
+                className="w-full px-4 py-2 text-white hover:bg-primary-400 transition-all duration-300 text-left font-light text-sm flex items-center gap-2"
+                onClick={() => setIsOpen(false)}
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                Admin
+              </Link>
             </div>
           </nav>
         </div>

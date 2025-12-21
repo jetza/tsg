@@ -2,84 +2,12 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useLocale } from "@/hooks/useLocale";
-
-const zakoni = [
-  {
-    name: "Zakon o bezbednosti saobraćaja na putevima",
-    file: "zakon-o-bezbednosti-saobracaja-na-putevima.pdf",
-  },
-  {
-    name: "Zakon o sudskim veštacima",
-    file: "zakon-o-sudskim-vestacima.pdf",
-  },
-  {
-    name: "Zakon o javnim putevima",
-    file: "zakon-o-javnim-putevima.pdf",
-  },
-  {
-    name: "Zakon o bezbednosti i interoperabilnosti železnice",
-    file: "zakon-o-bezbednosti-i-interoperabilnosti-zeleznice.pdf",
-  },
-  {
-    name: "Zakon o prevozu u drumskom saobraćaju",
-    file: "zakon-o-prevozu-u-drumskom-saobracaju.pdf",
-  },
-  {
-    name: "Zakon o transportu opasnog tereta",
-    file: "zakon-o-transportu-opasnog-tereta.pdf",
-  },
-  {
-    name: "Zakon o prometu eksplozivnih materija",
-    file: "zakon-o-prometu-eksplozivnih-materija.pdf",
-  },
-  {
-    name: "Zakon o ugovorima o prevozu u drumskom saobraćaju",
-    file: "zakon-o-ugovorima-o-prevozu-u-drumskom-saobracaju.pdf",
-  },
-  {
-    name: "Krivični Zakonik",
-    file: "krivicni-zakonik.pdf",
-  },
-  {
-    name: "Zakonik o krivičnom postupku",
-    file: "zakonik-o-krivicnom-postupku.pdf",
-  },
-  {
-    name: "Zakon o prekršajima",
-    file: "zakon-o-prekrsajima.pdf",
-  },
-  {
-    name: "Zakon o parničnom postupku",
-    file: "zakon-o-panicnom-postupku.pdf",
-  },
-  {
-    name: "Zakon o vanparničnom postupku",
-    file: "zakon-o-vanpanicnom-postupku.pdf",
-  },
-  {
-    name: "Zakon o opštem upravnom postupku",
-    file: "zakon-o-opstem-upravnom-postupku.pdf",
-  },
-  {
-    name: "Zakon o izvršenju i obezbeđenju",
-    file: "zakon-o-izvrsenju-i-obezbedjenju.pdf",
-  },
-  {
-    name: "Zakon o izvršenju krivičnih sankcija",
-    file: "zakon-o-izvrsenju-krivicnih-sankcija.pdf",
-  },
-  {
-    name: "Zakon o privrednim društvima",
-    file: "zakon-o-privrednim-drustvima.pdf",
-  },
-  {
-    name: "Zakon o radu",
-    file: "zakon-o-radu.pdf",
-  },
-];
+import { useLocale } from "@/contexts/LocaleContext";
+import { zakoni } from "@/data/zakoni";
 
 export default function SrbijaZakoniPage() {
+  const { t } = useLocale();
+
   return (
     <div className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
@@ -88,7 +16,7 @@ export default function SrbijaZakoniPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-heading font-bold mb-8 text-primary-500"
         >
-          Zakoni
+          {t.dokumenta.srbija.zakoni.title}
         </motion.h1>
 
         <motion.div
@@ -100,7 +28,7 @@ export default function SrbijaZakoniPage() {
           {/* Važeći zakoni */}
           <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
-              Zakonska akta – važeća
+              {t.dokumenta.srbija.zakoni.activeTitle}
             </h2>
 
             <div className="space-y-3">
@@ -125,12 +53,6 @@ export default function SrbijaZakoniPage() {
                 </Link>
               ))}
             </div>
-          </div>
-
-          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
-            <p className="text-gray-700">
-              <strong>Napomena:</strong> PDF dokumenta se otvaraju u novom tabu.
-            </p>
           </div>
         </motion.div>
       </div>

@@ -31,7 +31,7 @@ export default function ObukaPCCrashPage() {
           </p>
 
           {/* Examples Section */}
-          <div className="mt-8 mb-8">
+          {/* <div className="mt-8 mb-8">
             <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500">
               {t.obukaPCCrash.examplesTitle}
             </h2>
@@ -67,7 +67,7 @@ export default function ObukaPCCrashPage() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="bg-primary-50 p-8 mt-8">
             <p className="text-gray-700 leading-relaxed mb-4">

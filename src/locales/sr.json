@@ -194,20 +194,17 @@
         "title": "Zakoni",
         "subtitle": "Zakonska regulativa u Crnoj Gori",
         "activeTitle": "Zakonska akta",
-        "lawsIntro": "Relevantni zakoni Crne Gore koji se odnose na saobraćaj i bezbednost na putevima.",
-        "lawTitle": "Zakon o vozačima i saobraćajnim dozvolama",
-        "lawDesc": "Uslovi za sticanje prava na upravljanje motornim vozilima.",
-        "englishTitle": "Laws of Montenegro",
-        "englishIntro": "Relevant laws of Montenegro related to traffic and road safety."
+        "intro": "Relevantni zakoni Crne Gore koji se odnose na saobraćaj i bezbednost na putevima."
       },
       "podzakonska": {
         "title": "Podzakonska akta",
         "subtitle": "Zakonska regulativa u Crnoj Gori",
         "activeTitle": "Podzakonska akta",
-        "englishTitle": "Bylaws of Montenegro"
+        "intro": "Podzakonski akti koji detaljnije uređuju oblast saobraćaja u Crnoj Gori."
       },
       "putovanje": {
-        "title": "Ukoliko putujete automobilom u Crnu Goru"
+        "title": "Ukoliko putujete automobilom u Crnu Goru",
+        "file": "/pdfs/crna-gora/Ukoliko-putujete-automobilom-u-Crnu-goru.pdf"
       }
     },
     "bih": {
@@ -215,19 +212,13 @@
         "title": "Zakoni",
         "subtitle": "Zakonska regulativa u Bosni i Hercegovini",
         "activeTitle": "Zakonska akta",
-        "lawsIntro": "Relevantni zakoni Bosne i Hercegovine koji se odnose na saobraćaj i bezbednost na putevima.",
-        "law1Title": "Zakon o vozačima",
-        "law1Desc": "Uslovi za sticanje prava na upravljanje motornim vozilima.",
-        "law2Title": "Zakon o tehničkim pregledima motornih vozila",
-        "law2Desc": "Reguliše tehničku ispravnost i pregled vozila.",
-        "englishTitle": "Laws of Bosnia and Herzegovina",
-        "englishIntro": "Relevant laws of Bosnia and Herzegovina related to traffic and road safety."
+        "intro": "Relevantni zakoni Bosne i Hercegovine koji se odnose na saobraćaj i bezbednost na putevima."
       },
       "podzakonska": {
         "title": "Podzakonska akta",
         "subtitle": "Zakonska regulativa u Bosni i Hercegovini",
         "activeTitle": "Podzakonska akta",
-        "englishTitle": "Bylaws of Bosnia and Herzegovina"
+        "intro": "Podzakonski akti koji detaljnije uređuju oblast saobraćaja u Bosni i Hercegovini."
       }
     },
     "hrvatska": {
@@ -237,6 +228,305 @@
     "makedonija": {
       "title": "Makedonija",
       "subtitle": "Zakonska regulativa u Makedoniji"
+    },
+    "eu": {
+      "title": "Evropska unija - Saobraćajna regulativa",
+      "intro": "Evropska unija ima harmonizovanu saobraćajnu regulativu koja obezbeđuje visok nivo bezbednosti saobraćaja u svim državama članicama.",
+      "principlesTitle": "Osnovni principi",
+      "principlesIntro": "EU direktivama se regulišu:",
+      "principles": [
+        "Tehnički standardi za vozila",
+        "Vozačke dozvole (jedinstveni format)",
+        "Maksimalne brzine na različitim tipovima puteva",
+        "Upotreba sigurnosnih pojaseva i zaštita dece",
+        "Dozvoljeni nivo alkohola u krvi"
+      ],
+      "licenseTitle": "Vozačka dozvola EU",
+      "licenseDesc": "Vozačka dozvola izdata u bilo kojoj državi članici EU važeća je u svim ostalim državama članicama. Jedinstveni format u vidu kartice sa mikročipom olakšava identifikaciju i smanjuje mogućnost falsifikovanja.",
+      "inspectionTitle": "Tehnički pregled vozila",
+      "inspectionDesc": "Države članice su obavezne da sprovode periodične tehničke preglede vozila prema harmonizovanim standardima, čime se obezbeđuje da sva vozila na putevima EU ispunjavaju minimalne tehničke uslove.",
+      "penaltiesTitle": "Kazne i prekršaji",
+      "penaltiesDesc": "EU radi na uspostavljanju sistema prekograničnih kazni, gde vozači mogu biti kažnjeni za prekršaje učinjene u drugoj državi članici. Najčešći prekršaji uključuju prekoračenje brzine, vožnju pod uticajem alkohola i nepropisno parkiranje."
+    },
+    "hrvatska": {
+      "title": "Hrvatska",
+      "subtitle": "Zakonska regulativa u Hrvatskoj"
+    },
+    "makedonija": {
+      "title": "Makedonija",
+      "subtitle": "Zakonska regulativa u Makedoniji"
+    },
+    "putovanjeAutomobilom": {
+      "title": "Praktični saveti za putovanje",
+      "intro": "Sve što treba da znate pre putovanja automobilom u Crnu Goru.",
+      "documentsTitle": "Dokumenti potrebni za ulazak",
+      "documents": [
+        "Važeća lična karta ili pasoš",
+        "Saobraćajna dozvola vozila",
+        "Važeća vozačka dozvola",
+        "Zeleni karton (međunarodna polisa osiguranja)"
+      ],
+      "speedLimitsTitle": "Ograničenja brzine",
+      "speedLimits": [
+        "Naseljeno mesto: 50 km/h",
+        "Van naselja: 80 km/h",
+        "Brzi put: 100 km/h",
+        "Auto-put: 120 km/h"
+      ],
+      "equipmentTitle": "Obavezna oprema",
+      "equipment": [
+        "Rezervni točak ili set za popravku guma",
+        "Trougao i reflektujući prsluk",
+        "Rezervne sijalice",
+        "Aparatič za gašenje požara"
+      ],
+      "notesTitle": "Važne napomene",
+      "notes": [
+        "Duž obale saobraćaj može biti intenzivan tokom letnje sezone",
+        "Planinskim putevima voziti oprezno, posebno zimi",
+        "Parkiranje u turističkim mestima često je naplatno",
+        "Tokom vožnje obavezno korišćenje dnevnih svetala"
+      ]
+    },
+    "podzakonskaAktaCG": {
+      "intro": "Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u Crnoj Gori.",
+      "item1Title": "Pravilnik o saobraćajnoj signalizaciji",
+      "item1Desc": "Način postavljanja i značenje saobraćajne signalizacije.",
+      "item2Title": "Pravilnik o tehničkom pregledu vozila",
+      "item2Desc": "Uslovi i postupak tehničkog pregleda motornih vozila.",
+      "item3Title": "Pravilnik o homologaciji vozila",
+      "item3Desc": "Postupak homologacije motornih i priključnih vozila."
+    },
+    "kazneEvropa": {
+      "title": "Kazne u Evropi",
+      "subtitle": "Penalties in Europe"
+    },
+    "simpozijumi": {
+      "title": "Simpozijumi",
+      "subtitle": "Symposiums",
+      "intro": "Zbornici radova sa Međunarodnih simpozijuma o saobraćajno-tehničkim ekspertizama i prevarama u osiguranju."
+    },
+    "xvSimpozijum": {
+      "title": "XV Međunarodni simpozijum",
+      "subtitle": "XV International Symposium",
+      "aboutTitle": "O Simpozijumu",
+      "aboutDesc": "XV Međunarodni simpozijum o saobraćajno-tehničkim ekspertizama okuplja vodeće stručnjake iz regiona i sveta koji dele svoje znanje i iskustvo u oblasti rekonstrukcije saobraćajnih nezgoda.",
+      "infoTitle": "Osnovne informacije",
+      "themesTitle": "Teme simpozijuma",
+      "programTitle": "Program",
+      "proceedingsTitle": "Zbornik radova",
+      "proceedingsDesc": "Svi prihvaćeni radovi objavljuju se u zborniku radova simpozijuma sa ISBN brojem. Zbornik je dostupan učesnicima i zainteresovanim stručnjacima nakon simpozijuma.",
+      "previousTitle": "Dotadašnji simpozijumi",
+      "previousDesc": "TSG organizuje međunarodne simpozijume od 2009. godine. Do sada je održano 14 uspešnih izdanja sa učešćem:",
+      "registrationTitle": "Prijava za učešće",
+      "registrationDesc": "Za informacije o prijavama, rokovima za slanje radova i registraciji, kontaktirajte nas:"
+    },
+    "zimskaOprema": {
+      "title": "Zimska oprema u Evropi",
+      "subtitle": "Winter Equipment in Europe"
+    },
+    "zakonskaRegulativa": {
+      "title": "Zakonska regulativa",
+      "intro": "Pregled zakonske regulative vezane za saobraćaj u Srbiji, Crnoj Gori i BiH. Sva dokumenta su u PDF formatu i dostupna su za download.",
+      "needDocTitle": "Potreban vam je određeni dokument?",
+      "needDocDesc": "Ako ne možete pronaći dokument koji vam je potreban, kontaktirajte nas i mi ćemo vam pomoći.",
+      "contactButton": "Kontaktirajte nas"
+    },
+    "kazneData": {
+      "germany": {
+        "country": "Nemačka",
+        "speeding": "30-680 EUR",
+        "drinkDriving": "500-3,000 EUR",
+        "mobilePhone": "100 EUR",
+        "seatbelt": "30 EUR"
+      },
+      "france": {
+        "country": "Francuska",
+        "speeding": "68-1,500 EUR",
+        "drinkDriving": "135-4,500 EUR",
+        "mobilePhone": "135 EUR",
+        "seatbelt": "135 EUR"
+      },
+      "italy": {
+        "country": "Italija",
+        "speeding": "42-3,382 EUR",
+        "drinkDriving": "530-6,000 EUR",
+        "mobilePhone": "165 EUR",
+        "seatbelt": "81 EUR"
+      },
+      "austria": {
+        "country": "Austrija",
+        "speeding": "30-2,180 EUR",
+        "drinkDriving": "300-5,900 EUR",
+        "mobilePhone": "50 EUR",
+        "seatbelt": "35 EUR"
+      },
+      "switzerland": {
+        "country": "Švajcarska",
+        "speeding": "40-do 60 dnevnih zarada",
+        "drinkDriving": "Od 600 CHF",
+        "mobilePhone": "100 CHF",
+        "seatbelt": "60 CHF"
+      },
+      "spain": {
+        "country": "Španija",
+        "speeding": "100-600 EUR",
+        "drinkDriving": "500-1,000 EUR",
+        "mobilePhone": "200 EUR",
+        "seatbelt": "200 EUR"
+      },
+      "netherlands": {
+        "country": "Holandija",
+        "speeding": "30-390 EUR",
+        "drinkDriving": "325-2,250 EUR",
+        "mobilePhone": "240 EUR",
+        "seatbelt": "140 EUR"
+      },
+      "belgium": {
+        "country": "Belgija",
+        "speeding": "53-2,750 EUR",
+        "drinkDriving": "170-11,000 EUR",
+        "mobilePhone": "110 EUR",
+        "seatbelt": "110 EUR"
+      }
+    },
+    "zimskaOpremaData": {
+      "serbia": {
+        "country": "Srbija",
+        "tires": "M+S ili planinarski simbol",
+        "period": "01.11 - 01.04",
+        "chains": "Dozvoljeni, obavezni na pojedinim deonicama",
+        "notes": "Obavezna zimska oprema u zimskim uslovima"
+      },
+      "montenegro": {
+        "country": "Crna Gora",
+        "tires": "M+S ili planinarski simbol",
+        "period": "01.11 - 31.03",
+        "chains": "Dozvoljeni, obavezni na pojedinim deonicama",
+        "notes": "Kazna za nepoštovanje 60-150 EUR"
+      },
+      "bih": {
+        "country": "BiH",
+        "tires": "M+S oznaka",
+        "period": "15.11 - 15.04",
+        "chains": "Dozvoljeni",
+        "notes": "Preporuka, ali obavezno u zimskim uslovima"
+      },
+      "croatia": {
+        "country": "Hrvatska",
+        "tires": "M+S ili planinarski simbol",
+        "period": "15.11 - 15.04",
+        "chains": "Dozvoljeni, obavezni na pojedinim deonicama",
+        "notes": "Kazna 70-280 EUR"
+      },
+      "slovenia": {
+        "country": "Slovenija",
+        "tires": "M+S ili planinarski simbol",
+        "period": "15.11 - 15.03",
+        "chains": "Dozvoljeni",
+        "notes": "Obavezno, kazna od 120 EUR"
+      },
+      "austria": {
+        "country": "Austrija",
+        "tires": "M+S minimalna dubina 4mm",
+        "period": "01.11 - 15.04",
+        "chains": "Dozvoljeni na snegu/ledu",
+        "notes": "Kazna do 5,000 EUR"
+      },
+      "germany": {
+        "country": "Nemačka",
+        "tires": "M+S ili planinarski simbol",
+        "period": "Bez fiksnog perioda",
+        "chains": "Dozvoljeni gde je naznačeno",
+        "notes": "Obavezno u zimskim uslovima, kazna 60-80 EUR"
+      },
+      "switzerland": {
+        "country": "Švajcarska",
+        "tires": "Preporučeno",
+        "period": "Bez obaveze",
+        "chains": "Obavezni gde je označeno",
+        "notes": "Odgovornost vozača, moguće oštećenje drugih učesnika"
+      },
+      "italy": {
+        "country": "Italija",
+        "tires": "M+S ili lanci",
+        "period": "15.11 - 15.04 (regije)",
+        "chains": "Obavezni na određenim deonicama",
+        "notes": "Kazna 41-335 EUR, varira po regijama"
+      },
+      "france": {
+        "country": "Francuska",
+        "tires": "Preporučeno",
+        "period": "Po potrebi",
+        "chains": "Obavezni gde je označeno",
+        "notes": "Lanci obavezni u planinskim predelima"
+      }
+    },
+    "literaturaData": {
+      "book1": {
+        "title": "Saobraćajno-tehničke ekspertize",
+        "author": "Prof. dr Dušan Simović",
+        "year": "2014",
+        "desc": "Osnovna literature za ekspertize saobraćajnih nezgoda"
+      },
+      "book2": {
+        "title": "Rekonstrukcija saobraćajnih nezgoda",
+        "author": "Dr Goran Vušić",
+        "year": "2018",
+        "desc": "Detaljno o metodama rekonstrukcije"
+      },
+      "book3": {
+        "title": "PC-Crash priručnik",
+        "author": "Dr Hermann Steffan",
+        "year": "2022",
+        "desc": "Praktični vodič za korišćenje PC-Crash softvera"
+      },
+      "book4": {
+        "title": "Bezbednost saobraćaja",
+        "author": "Prof. dr Krsto Lipovac",
+        "year": "2017",
+        "desc": "Sistemski pristup bezbednosti saobraćaja"
+      },
+      "book5": {
+        "title": "Tragovi i dokazi u saobraćajnim nezgodama",
+        "author": "Dr Miloš Kopitović",
+        "year": "2015",
+        "desc": "Analiza i dokumentovanje dokaza"
+      },
+      "book6": {
+        "title": "Zbornik radova - XIV Simpozijum",
+        "author": "TSG",
+        "year": "2023",
+        "desc": "Radovi sa 14. Međunarodnog simpozijuma"
+      }
+    },
+    "simpozijumData": {
+      "date": "Oktobar 2024",
+      "location": "Beograd, Srbija",
+      "lang": "Srpski i engleski jezik",
+      "participants": "Preko 200 učesnika iz 15 zemalja",
+      "theme1": "Najnovije tehnike rekonstrukcije saobraćajnih nezgoda",
+      "theme2": "Upotreba dronova i 3D skeniranja u ekspertizama",
+      "theme3": "Veštačka inteligencija u analizi saobraćajnih nezgoda",
+      "theme4": "Elektični i autonomna vozila - nove izazove u ekspertizama",
+      "theme5": "Bezbednost pešaka i biciklista",
+      "theme6": "Evropska regulativa i praksa",
+      "program1": "Plenarno predavanje",
+      "program2": "Sesije stručnih radova",
+      "program3": "Poster sesija",
+      "program4": "Radionice i demonstracije",
+      "program5": "Okrugli sto",
+      "prev1": "Preko 1,500 učesnika kroz svih 14 izdanja",
+      "prev2": "200+ objavljenih stručnih i naučnih radova",
+      "prev3": "Međunarodna saradnja sa stručnjacima iz 20+ zemalja"
+    },
+    "mainPage": {
+      "title": "Dokumenta",
+      "regulativaTitle": "Zakonska regulativa",
+      "regulativaDesc": "Pregled zakonske regulative vezane za saobraćaj u Srbiji, Crnoj Gori i BiH. Sva dokumenta su u PDF formatu i dostupna su za download.",
+      "noteTitle": "Napomena za neregistrovane korisnike",
+      "noteDesc": "Pristup nekim dokumentima je dostupan samo registrovanim korisnicima. Registrujte se da biste dobili pristup svim materijalima.",
+      "registerButton": "Registruj se"
     }
   },
   "kontakt": {
@@ -386,10 +676,6 @@
     "title": "Korisni linkovi",
     "safetyTitle": "Bezbednost saobraćaja",
     "safetyLinks": [
-      {
-        "name": "Komitet za bezbednost saobraćaja",
-        "url": "http://www.kbs.rs/sr/"
-      },
       {
         "name": "Agencija za bezbednost saobraćaja",
         "url": "http://www.abs.gov.rs/"

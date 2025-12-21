@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useLocale } from "@/hooks/useLocale";
+import { useLocale } from "@/contexts/LocaleContext";
+import { crnaGoraZakoni } from "@/data/crna-gora-zakoni";
 
 export default function CrnaGoraZakoniPage() {
   const { t } = useLocale();
@@ -35,29 +36,27 @@ export default function CrnaGoraZakoniPage() {
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
               {t.dokumenta.crnaGora.zakoni.activeTitle}
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {t.dokumenta.crnaGora.zakoni.lawsIntro}
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {t.dokumenta.crnaGora.zakoni.intro}
             </p>
 
-            <div className="space-y-6 mt-6">
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  {t.dokumenta.crnaGora.zakoni.lawTitle}
-                </h3>
-                <p className="text-gray-600">
-                  {t.dokumenta.crnaGora.zakoni.lawDesc}
-                </p>
-              </div>
+            <div className="space-y-4">
+              {crnaGoraZakoni.map((zakon) => (
+                <div
+                  key={zakon.name}
+                  className="border-l-4 border-primary-400 pl-4 py-2"
+                >
+                  <a
+                    href={zakon.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-primary-500 hover:text-primary-700 hover:underline transition-colors"
+                  >
+                    {zakon.name}
+                  </a>
+                </div>
+              ))}
             </div>
-          </div>
-
-          <div className="bg-primary-50 p-8">
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
-              {t.dokumenta.crnaGora.zakoni.englishTitle}
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {t.dokumenta.crnaGora.zakoni.englishIntro}
-            </p>
           </div>
         </motion.div>
       </div>

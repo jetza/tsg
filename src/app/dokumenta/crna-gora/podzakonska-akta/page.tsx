@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useLocale } from "@/hooks/useLocale";
+import { useLocale } from "@/contexts/LocaleContext";
+import { crnaGoraPodzakonska } from "@/data/crna-gora-podzakonska";
 
 export default function CrnaGoraPodzakonskaAktaPage() {
   const { t } = useLocale();
@@ -33,51 +34,29 @@ export default function CrnaGoraPodzakonskaAktaPage() {
         >
           <div className="bg-white p-8">
             <h2 className="text-3xl font-heading font-bold mb-6 text-primary-500">
-              Podzakonska akta Crne Gore
+              {t.dokumenta.crnaGora.podzakonska.activeTitle}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Pravilnici i uredbe koje detaljnije regulišu oblast saobraćaja u
-              Crnoj Gori.
+              {t.dokumenta.crnaGora.podzakonska.intro}
             </p>
 
             <div className="space-y-4">
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Pravilnik o saobraćajnoj signalizaciji
-                </h3>
-                <p className="text-gray-600">
-                  Način postavljanja i značenje saobraćajne signalizacije.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Pravilnik o tehničkom pregledu vozila
-                </h3>
-                <p className="text-gray-600">
-                  Uslovi i postupak tehničkog pregleda motornih vozila.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-primary-400 pl-4">
-                <h3 className="text-xl font-semibold text-primary-500 mb-2">
-                  Pravilnik o homologaciji vozila
-                </h3>
-                <p className="text-gray-600">
-                  Postupak homologacije motornih i priključnih vozila.
-                </p>
-              </div>
+              {crnaGoraPodzakonska.map((akt) => (
+                <div
+                  key={akt.name}
+                  className="border-l-4 border-primary-400 pl-4 py-2"
+                >
+                  <a
+                    href={akt.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-primary-500 hover:text-primary-700 hover:underline transition-colors"
+                  >
+                    {akt.name}
+                  </a>
+                </div>
+              ))}
             </div>
-          </div>
-
-          <div className="bg-primary-50 p-8">
-            <h3 className="text-2xl font-heading font-semibold mb-4 text-primary-500">
-              Bylaws of Montenegro
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Regulations and decrees that regulate traffic in Montenegro in
-              more detail.
-            </p>
           </div>
         </motion.div>
       </div>

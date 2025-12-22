@@ -71,21 +71,16 @@ export default function ProjektiPage() {
 
               {/* PDF Link */}
               <div className="mt-8">
-                <a
-                  href="/pdfs/Metod-vrednovanja-postojeceg-stanja-bezbednosti-saobracaja-kod-prevoznika.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-lg text-primary-600 hover:text-primary-700 transition-colors"
-                >
-                  <svg
-                    className="w-6 h-6 mr-2 text-red-600"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
+                <div className="border-l-4 border-primary-400 pl-4 py-2">
+                  <a
+                    href="/pdfs/Metod-vrednovanja-postojeceg-stanja-bezbednosti-saobracaja-kod-prevoznika.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
                   >
-                    <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
-                  </svg>
-                  {t.projekti.pdfTitle}
-                </a>
+                    {t.projekti.pdfTitle}
+                  </a>
+                </div>
               </div>
             </div>
           </section>

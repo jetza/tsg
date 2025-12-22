@@ -50,7 +50,7 @@ export default function CrnaGoraPodzakonskaAktaPage() {
                     href={akt.file}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-semibold text-primary-500 hover:text-primary-700 hover:underline transition-colors"
+                    className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
                   >
                     {akt.name}
                   </a>

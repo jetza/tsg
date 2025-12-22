@@ -51,29 +51,25 @@ export default function EkspertizePage() {
             <h2 className="text-2xl font-heading font-bold mb-4 text-primary-500">
               {t.ekspertize.examplesTitle}
             </h2>
-            <ul className="space-y-3">
+            <div className="space-y-4">
               {t.ekspertize.examples.map(
                 (example: { title: string; file: string }, index: number) => (
-                  <li key={index}>
+                  <div
+                    key={index}
+                    className="border-l-4 border-primary-400 pl-4 py-2"
+                  >
                     <a
                       href={`/pdfs/${example.file}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-lg text-primary-600 hover:text-primary-700 transition-colors"
+                      className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
                     >
-                      <svg
-                        className="w-6 h-6 mr-2 text-red-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
-                      </svg>
                       {example.title}
                     </a>
-                  </li>
+                  </div>
                 )
               )}
-            </ul>
+            </div>
           </div>
         </motion.div>
       </div>

@@ -9,7 +9,7 @@ export default function SrbijaZakoniPage() {
   const { t } = useLocale();
 
   return (
-    <div className="min-h-screen py-20 px-6">
+    <div className="min-h-screen py-20 px-6 pr-6 md:pr-40">
       <div className="container mx-auto max-w-4xl">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -33,24 +33,19 @@ export default function SrbijaZakoniPage() {
 
             <div className="space-y-3">
               {zakoni.map((zakon, index) => (
-                <Link
+                <div
                   key={index}
-                  href={`/pdfs/srbija/zakoni/${zakon.file}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 hover:bg-primary-50 transition-colors rounded group"
+                  className="border-l-4 border-primary-400 pl-4 py-2"
                 >
-                  <svg
-                    className="w-6 h-6 text-red-600 flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
+                  <Link
+                    href={`/pdfs/srbija/zakoni/${zakon.file}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-primary-500 transition-colors"
                   >
-                    <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
-                  </svg>
-                  <span className="text-gray-700 group-hover:text-primary-500">
                     {zakon.name}
-                  </span>
-                </Link>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>

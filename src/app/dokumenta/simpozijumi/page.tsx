@@ -87,7 +87,7 @@ export default function SimpozijumiPage() {
                           href={rad.file}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-primary-600 hover:text-primary-700 hover:underline"
+                          className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
                         >
                           {rad.title}
                         </a>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 
 // Montserrat - za naslove i navigaciju
@@ -143,7 +144,8 @@ export default function RootLayout({
         <LocaleProvider>
           <div className="flex min-h-screen">
             <Sidebar />
-            <main className="flex-1 ml-0 md:ml-64 transition-all duration-300">
+            <Header />
+            <main className="flex-1 ml-0 md:ml-80 transition-all duration-300">
               {children}
             </main>
           </div>

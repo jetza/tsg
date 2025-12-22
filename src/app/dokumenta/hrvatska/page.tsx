@@ -37,7 +37,7 @@ export default function HrvatskaPage() {
                 href="/pdfs/hrvatska/Zakon-o-prijevozu-u-cestovnom-prometu-Republike-Hrvatske.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl font-semibold text-primary-500 hover:text-primary-700 hover:underline transition-colors"
+                className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
               >
                 Zakon o prijevozu u cestovnom prometu Republike Hrvatske
               </a>

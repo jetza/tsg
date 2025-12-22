@@ -76,7 +76,7 @@ export default function DokumentaPage() {
                 </p>
                 <Link
                   href="/registrovani-korisnici"
-                  className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
+                  className="inline-block px-6 py-3 bg-primary-500 text-white hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
                 >
                   {t.dokumenta.mainPage.registerButton}
                 </Link>

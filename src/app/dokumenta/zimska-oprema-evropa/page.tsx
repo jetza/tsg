@@ -37,7 +37,7 @@ export default function ZimskaOpremaEvropaPage() {
                 href="/pdfs/Zimska-oprema-1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg text-primary-600 hover:text-primary-700 hover:underline"
+                className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
               >
                 Zimska oprema u zemljama Evrope
               </a>

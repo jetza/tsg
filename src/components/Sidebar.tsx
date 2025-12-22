@@ -2,13 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useLocale } from "@/hooks/useLocale";
 import {
   HiOutlineGlobeAlt,
   HiOutlineBookOpen,
-  HiOutlineFlag,
+  HiOutlineUser,
+  HiClipboardDocumentList,
 } from "react-icons/hi2";
 
 // Color palette from lightest to darkest (better visibility on hover)
@@ -67,7 +69,7 @@ const menuItems: MenuItem[] = [
       {
         title: "Srbija",
         href: "/dokumenta/srbija",
-        icon: <HiOutlineFlag className="w-4 h-4" />,
+        icon: <HiClipboardDocumentList className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/srbija/zakoni" },
           {
@@ -79,7 +81,7 @@ const menuItems: MenuItem[] = [
       {
         title: "Crna Gora",
         href: "/dokumenta/crna-gora",
-        icon: <HiOutlineFlag className="w-4 h-4" />,
+        icon: <HiClipboardDocumentList className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/crna-gora/zakoni" },
           {
@@ -95,7 +97,7 @@ const menuItems: MenuItem[] = [
       {
         title: "BiH",
         href: "/dokumenta/bih",
-        icon: <HiOutlineFlag className="w-4 h-4" />,
+        icon: <HiClipboardDocumentList className="w-4 h-4" />,
         submenu: [
           { title: "Zakoni", href: "/dokumenta/bih/zakoni" },
           {
@@ -107,12 +109,12 @@ const menuItems: MenuItem[] = [
       {
         title: "Hrvatska",
         href: "/dokumenta/hrvatska",
-        icon: <HiOutlineFlag className="w-4 h-4" />,
+        icon: <HiClipboardDocumentList className="w-4 h-4" />,
       },
       {
         title: "Makedonija",
         href: "/dokumenta/makedonija",
-        icon: <HiOutlineFlag className="w-4 h-4" />,
+        icon: <HiClipboardDocumentList className="w-4 h-4" />,
       },
       {
         title: "Evropa i region",
@@ -151,11 +153,13 @@ export default function Sidebar() {
       pathname === "/korisni-linkovi" ||
       pathname === "/mediji" ||
       pathname === "/kontakt" ||
-      pathname === "/admin"
+      pathname === "/login"
     ) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      setOpenSubmenu(null);
-      setOpenNestedSubmenu(null);
+      const timer = setTimeout(() => {
+        setOpenSubmenu(null);
+        setOpenNestedSubmenu(null);
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [pathname]);
 
@@ -271,24 +275,26 @@ export default function Sidebar() {
 
       {/* Sidebar */}
       <motion.aside
-        initial={{ x: -300 }}
+        initial={{ x: -320 }}
         animate={{
           x:
             isOpen ||
             (typeof window !== "undefined" && window.innerWidth >= 768)
               ? 0
-              : -300,
+              : -320,
         }}
-        className={`fixed left-0 top-0 h-screen w-64 bg-primary-500 text-white  z-40 overflow-y-auto ${
+        className={`fixed left-0 top-0 h-screen w-80 bg-primary-500 text-white  z-40 overflow-y-auto ${
           isOpen ? "block" : "hidden md:block"
         }`}
       >
         <div className="p-6">
           <Link href="/" className="block mb-8">
-            <img
+            <Image
               src="/logo/tria.svg"
               alt="TSG Logo"
-              className="w-24 h-20 mx-auto"
+              width={96}
+              height={80}
+              className="mx-auto"
             />
           </Link>
 
@@ -421,53 +427,23 @@ export default function Sidebar() {
               ))}
             </ul>
 
-            {/* Language Switcher and Admin at the bottom */}
-            <div className="mt-8 pt-6 border-t border-primary-400 space-y-3">
+            {/* Language Switcher and Login at the bottom - Mobile only */}
+            <div className="mt-8 pt-6 border-t border-primary-400 space-y-3 md:hidden">
               <button
                 onClick={switchLocale}
                 className="w-full px-4 py-2 text-white hover:bg-primary-400 transition-all duration-300 text-left font-light text-sm flex items-center gap-2"
               >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <HiOutlineGlobeAlt className="w-4 h-4" />
                 {locale === "sr" ? "EN" : "SR"}
               </button>
 
               <Link
-                href="/admin"
+                href="/login"
                 className="w-full px-4 py-2 text-white hover:bg-primary-400 transition-all duration-300 text-left font-light text-sm flex items-center gap-2"
                 onClick={() => setIsOpen(false)}
               >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                Admin
+                <HiOutlineUser className="w-4 h-4" />
+                Login
               </Link>
             </div>
           </nav>

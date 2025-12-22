@@ -156,7 +156,7 @@ export default function HomePage() {
                   : "Training for the most comprehensive program for traffic accident analysis - PC Crash. In addition to knowing how to operate PC Crash, you can also learn the specifics of using the program."}
               </p>
               <Link
-                href="/delatnosti/edukacija"
+                href="/delatnosti/edukacije/obuka-pc-crash/"
                 className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
               >
                 {locale === "sr" ? "Pročitajte više" : "Read More"}
@@ -182,7 +182,7 @@ export default function HomePage() {
                 download.
               </p>
               <Link
-                href="/dokumenta/zakonska-regulativa"
+                href="/dokumenta/srbija/zakoni/"
                 className="inline-block px-6 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-colors border-2 border-[#546e7a]"
               >
                 Pogledajte dokumente

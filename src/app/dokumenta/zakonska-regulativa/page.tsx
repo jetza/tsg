@@ -61,7 +61,7 @@ export default function ZakonskaRegulativaPage() {
                     <span>•</span>
                     <span>{doc.size}</span>
                   </div>
-                  <button className="inline-flex items-center px-4 py-2 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]">
+                  <button className="inline-flex items-center px-4 py-2 bg-primary-500 text-white hover:bg-primary-300 transition-all border-2 border-[#546e7a]">
                     <svg
                       className="w-5 h-5 mr-2"
                       fill="none"
@@ -97,7 +97,7 @@ export default function ZakonskaRegulativaPage() {
           </p>
           <a
             href="/kontakt"
-            className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
+            className="inline-block px-6 py-3 bg-primary-500 text-white hover:bg-primary-300 transition-all border-2 border-[#546e7a]"
           >
             {t.dokumenta.zakonskaRegulativa.contactButton}
           </a>

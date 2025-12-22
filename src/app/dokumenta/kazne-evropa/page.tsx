@@ -37,7 +37,7 @@ export default function KazneEvropaPage() {
                 href="/pdfs/Kazne-za-pojedine-saobracajne-prekrsaje-u-zemljama-Evrope.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg text-primary-600 hover:text-primary-700 hover:underline"
+                className="text-gray-700 hover:text-primary-500 hover:underline transition-colors"
               >
                 Kazne za pojedine saobraćajne prekršaje u zemljama Evrope
               </a>

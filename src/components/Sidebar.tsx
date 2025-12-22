@@ -139,7 +139,7 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
   const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(
-    null
+    null,
   );
   const pathname = usePathname();
   const { locale, switchLocale } = useLocale();

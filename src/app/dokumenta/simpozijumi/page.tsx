@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function SimpozijumiPage() {
   const { t } = useLocale();
   const [expandedSimpozijum, setExpandedSimpozijum] = useState<string | null>(
-    null
+    null,
   );
 
   const toggleSimpozijum = (naziv: string) => {
@@ -16,7 +16,7 @@ export default function SimpozijumiPage() {
   };
 
   return (
-    <div className="min-h-screen py-20 px-6">
+    <div className="min-h-screen py-20 px-6 pr-6 md:pr-40 md:ml-40">
       <div className="container mx-auto max-w-6xl">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

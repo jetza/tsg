@@ -2,7 +2,7 @@
 
 export default function EvropaPage() {
   return (
-    <div className="min-h-screen py-20 px-6 pr-6 md:pr-40">
+    <div className="min-h-screen py-20 px-6 pr-6 md:pr-40 md:ml-40">
       <div className="container mx-auto max-w-4xl">
         <h1 className="text-5xl font-heading font-bold mb-8 text-primary-500">
           Evropa i region

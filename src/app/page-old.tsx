@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from"framer-motion";
-import Link from"next/link";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -15,7 +15,9 @@ export default function HomePage() {
           className="max-w-5xl mx-auto"
         >
           <h1 className="text-6xl md:text-8xl font-heading font-bold text-primary-500 mb-6 leading-tight">
-            Traffic Safety<br />Group
+            Traffic Safety
+            <br />
+            Group
           </h1>
           <p className="text-2xl md:text-3xl text-gray-600 mb-12 max-w-2xl">
             Stručnjaci za saobraćajno-tehničke ekspertize
@@ -57,8 +59,8 @@ export default function HomePage() {
                 putevima&rdquo; i nekih od podzakonskih akata. Vodeći
                 prevoznici, sa preko 2,000 vozila učestvuju u našem projektu
                 podizanja nivoa bezbednosti u prevozu putnika. Organizujemo
-                stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali
-                i učestvujemo kao predavači na konferencijama koje organizuju
+                stručne skupove čiji je cilj unapređenje nivoa poslovanja, ali i
+                učestvujemo kao predavači na konferencijama koje organizuju
                 Privredna komora Srbije, Saobraćajni fakultet u Beogradu, IRU
                 Academy iz Ženeve i drugi.
               </p>

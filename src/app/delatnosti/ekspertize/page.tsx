@@ -67,7 +67,7 @@ export default function EkspertizePage() {
                       {example.title}
                     </a>
                   </div>
-                )
+                ),
               )}
             </div>
           </div>

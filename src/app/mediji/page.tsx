@@ -44,7 +44,7 @@ export default function MedijiPage() {
                       description: string;
                       audioFile: string;
                     },
-                    index: number
+                    index: number,
                   ) => (
                     <div key={index} className="bg-white p-6 rounded-lg shadow">
                       <h4 className="text-xl font-heading font-bold text-primary-600 mb-2">
@@ -66,7 +66,7 @@ export default function MedijiPage() {
                         Vaš pregledač ne podržava audio element.
                       </audio>
                     </div>
-                  )
+                  ),
                 )}
               </div>
             </section>
@@ -80,7 +80,7 @@ export default function MedijiPage() {
                 {t.mediji.pressArticles.map(
                   (
                     article: { date: string; title: string; url: string },
-                    index: number
+                    index: number,
                   ) => (
                     <div
                       key={index}
@@ -98,7 +98,7 @@ export default function MedijiPage() {
                         {article.title}
                       </a>
                     </div>
-                  )
+                  ),
                 )}
               </div>
             </section>

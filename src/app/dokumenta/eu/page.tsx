@@ -40,7 +40,7 @@ export default function EUPage() {
                   {t.dokumenta.eu.principles.map(
                     (principle: string, index: number) => (
                       <li key={index}>{principle}</li>
-                    )
+                    ),
                   )}
                 </ul>
               </div>

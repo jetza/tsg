@@ -57,7 +57,7 @@ export default function KorisniLinkoviPage() {
                         {link.name}
                       </a>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </section>
@@ -93,7 +93,7 @@ export default function KorisniLinkoviPage() {
                         {link.name}
                       </a>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </section>

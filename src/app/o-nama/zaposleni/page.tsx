@@ -62,7 +62,7 @@ export default function ZaposleniPage() {
                     <span className="mr-2">•</span>
                     <span>{consultant}</span>
                   </li>
-                )
+                ),
               )}
             </ul>
           </section>
